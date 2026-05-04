@@ -1,0 +1,45 @@
+---
+export interface Props {
+  hospitalProximity: { hospital: string; minutes: string }[];
+  commute: Record<string, string>;
+  cityName: string;
+}
+const { hospitalProximity, commute, cityName } = Astro.props;
+const commuteEntries = Object.entries(commute);
+---
+
+<div class="space-y-4">
+  <div>
+    <p class="section-eyebrow">Drive-Time Truth</p>
+    <h3 class="font-display italic text-xl text-navy">Exact Minutes from {cityName}</h3>
+    <span class="gold-rule"></span>
+  </div>
+
+  {hospitalProximity.length > 0 && (
+    <div>
+      <p class="text-[9px] tracking-[0.2em] uppercase text-taupe mb-2">Hospital Proximity</p>
+      <div class="divide-y divide-gray-100 border border-gray-100 rounded-xl overflow-hidden">
+        {hospitalProximity.map(h => (
+          <div class="flex items-center justify-between px-4 py-3 bg-white">
+            <span class="text-sm font-sans text-charcoal">{h.hospital}</span>
+            <span class="font-display italic text-navy text-lg">{h.minutes} <span class="text-xs text-taupe font-sans not-italic">min</span></span>
+          </div>
+        ))}
+      </div>
+    </div>
+  )}
+
+  <div>
+    <p class="text-[9px] tracking-[0.2em] uppercase text-taupe mb-2">Key Commutes</p>
+    <div class="divide-y divide-gray-100 border border-gray-100 rounded-xl overflow-hidden">
+      {commuteEntries.map(([dest, time]) => (
+        <div class="flex items-center justify-between px-4 py-3 bg-white">
+          <span class="text-sm font-sans text-charcoal">{dest}</span>
+          <span class="font-display italic text-navy text-lg">{time}</span>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <p class="text-xs text-taupe font-sans">Drive times reflect typical non-rush hour. On-call physicians should verify peak-hour estimates with Google Maps for their specific hospital shift.</p>
+</div>
