@@ -1,0 +1,471 @@
+/* Option 4 dialogue FAQ (visible Q&A, dark) */
+.sb-faq-dark{background:#0D1B2E !important;}
+.sb-faq-dark .section-eyebrow{color:#C4952A !important;}
+.sb-faq-dark .section-heading{color:#F5EEDF !important;}
+.sb-faq-dark span[aria-hidden="true"]{color:rgba(255,255,255,0.10) !important;opacity:1 !important;}
+.sb-faq-dark .text-taupe{color:#D8CFC0 !important;}
+.sb-qa-group{display:block !important;margin-top:14px;}
+.sb-qa{padding:22px 0;border-top:1px solid rgba(196,149,42,0.20);}
+.sb-qa:first-child{border-top:0;}
+.sb-qa-q{margin:0;font-family:Inter,system-ui,sans-serif;font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#C4952A;line-height:1.5;}
+.sb-qa-a{margin:9px 0 0;font-family:Cormorant Garamond,Georgia,serif;font-size:20px;color:#F5F0E8;line-height:1.45;}
+.sb-qa-a a{color:#C4952A;text-decoration:underline;}
+.sb-qa-a p{margin:0 0 8px;}
+@media (min-width:1024px){.sb-qa-a{font-size:22px;}.sb-qa{padding:24px 0;}}
+
+/* ============================================================
+   SB GLOBAL OVERRIDES  -  EDIT THIS FILE TO CHANGE ALL PAGES.
+   Linked sitewide as /sb-global.css. Selectors are html-prefixed
+   so they win over the older per-page inline footer rules.
+   Contains: desktop footer layout + floating contact-bar removal.
+   ============================================================ */
+/* ===== A11y: footer fine-print contrast + footer link tap targets (all widths) ===== */
+html footer [style*="color:rgba(255,255,255,0.35)"]{color:rgba(255,255,255,0.6)!important;}
+html footer [style*="color:rgba(255,255,255,0.22)"]{color:rgba(255,255,255,0.6)!important;}
+html footer a[style*="padding:3px 0"]{padding-top:7px!important;padding-bottom:7px!important;}
+
+/* ===== Mobile: stack tagged Sell two-column grids into one column ===== */
+@media (max-width:1023px){
+  .sb-stack-mobile{grid-template-columns:1fr!important;}
+}
+/* ===== Mobile: center the logo, kept in flow so the header grows/shrinks with the scroll resize (never clips); hamburger in its own right column ===== */
+@media (max-width:1023px){
+  html #site-header > div{display:grid!important;grid-template-columns:44px 1fr 44px!important;align-items:center!important;min-height:0!important;}
+  html #site-header > div > a:has(.sb-logo-wrap){grid-column:1 / 3!important;justify-self:start!important;position:static!important;transform:none!important;margin:0!important;}
+  html #site-header #hamburger{grid-column:3!important;justify-self:end!important;margin:0!important;}
+}
+
+@media(min-width:1024px){
+/* ---- Desktop footer: spacious 4-column layout ---- */
+html footer .max-w-screen-xl{max-width:none!important;display:grid!important;grid-template-columns:1.5fr 1.15fr 0.9fr 1.05fr!important;column-gap:56px!important;row-gap:0!important;align-items:start!important;padding:56px 88px 30px!important;}
+html footer .max-w-screen-xl>div:first-child{display:contents!important;}
+html footer .max-w-screen-xl>div:first-child>div:first-child{grid-column:1!important;grid-row:1!important;}
+html footer .max-w-screen-xl>div:first-child>div:last-child{grid-column:4!important;grid-row:1!important;text-align:left!important;}
+html footer .max-w-screen-xl>div:nth-child(2){grid-column:2!important;grid-row:1!important;border-top:none!important;padding-top:0!important;margin-bottom:0!important;}
+html footer .max-w-screen-xl>div:nth-child(3){grid-column:3!important;grid-row:1!important;border-top:none!important;padding-top:0!important;margin-bottom:0!important;}
+html footer #footer-bottom-bar{grid-column:1 / -1!important;grid-row:2!important;margin-top:44px!important;border-top:1px solid rgba(255,255,255,0.10)!important;padding-top:22px!important;padding-bottom:0!important;display:flex!important;align-items:center!important;justify-content:space-between!important;flex-wrap:wrap!important;gap:12px 24px!important;}
+html footer .sb-logo-wrap img{height:58px!important;}
+html footer .max-w-screen-xl>div:first-child>div:first-child>p{font-size:14px!important;color:rgba(255,255,255,0.5)!important;margin-top:16px!important;line-height:1.6!important;}
+html footer .max-w-screen-xl>div:first-child>div:first-child>div:last-child{gap:18px!important;margin-top:20px!important;}
+html footer .max-w-screen-xl>div:first-child>div:first-child>div:last-child svg{width:22px!important;height:22px!important;}
+html footer p[style*="letter-spacing:0.22em"]{font-size:12px!important;letter-spacing:0.2em!important;margin-bottom:18px!important;color:#C4952A!important;}
+html footer [style*="grid-template-columns:1fr 1fr"]{display:grid!important;grid-template-columns:1fr 1fr!important;gap:2px 28px!important;}
+html footer [style*="grid-template-columns:1fr 1fr"] a{display:block!important;font-size:14px!important;padding:5px 0!important;}
+html footer [style*="grid-template-columns:1fr 1fr"] a+a::before{content:none!important;}
+html footer .max-w-screen-xl>div:nth-child(3) a{display:block!important;font-size:14px!important;padding:5px 0!important;}
+html footer .max-w-screen-xl>div:first-child>div:last-child>p{font-size:14px!important;color:rgba(255,255,255,0.5)!important;line-height:1.8!important;}
+html footer #footer-cta{font-size:12px!important;padding:9px 24px!important;margin-top:18px!important;letter-spacing:0.18em!important;}
+html footer #footer-bottom-bar p{font-size:12px!important;color:rgba(255,255,255,0.32)!important;}
+html footer #footer-industry-logos{display:block!important;width:200px!important;height:auto!important;opacity:0.7!important;margin-top:0!important;}
+html footer .footer-mobile-logos{display:none!important;}
+/* ---- Remove floating "Ready to Talk?" contact bar on desktop ---- */
+html #sb-sticky-bar{display:none!important;}
+}
+
+
+/* ===== CONSOLIDATED GLOBAL HEADER/NAV (single source so no page can miss it) ===== */
+/* __SB_GLOBAL_HEADER_CSS__ */
+@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/cormorant-garamond-400.woff2) format('woff2')}@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:400;font-display:swap;src:url(/fonts/cormorant-garamond-400-italic.woff2) format('woff2')}@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:600;font-display:swap;src:url(/fonts/cormorant-garamond-600.woff2) format('woff2')}@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:600;font-display:swap;src:url(/fonts/cormorant-garamond-600-italic.woff2) format('woff2')}@font-face{font-family:'EB Garamond';font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/eb-garamond-400.woff2) format('woff2')}@font-face{font-family:'EB Garamond';font-style:italic;font-weight:400;font-display:swap;src:url(/fonts/eb-garamond-400-italic.woff2) format('woff2')}@font-face{font-family:'Inter';font-style:normal;font-weight:300;font-display:swap;src:url(/fonts/inter-300.woff2) format('woff2')}@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/inter-400.woff2) format('woff2')}@font-face{font-family:'Inter';font-style:normal;font-weight:500;font-display:swap;src:url(/fonts/inter-500.woff2) format('woff2')}@font-face{font-family:'Inter';font-style:normal;font-weight:600;font-display:swap;src:url(/fonts/inter-600.woff2) format('woff2')}
+/* ===== "Buy" group: mobile drawer (bracketed panel) ===== */
+#nav-panel .nav-buy-mobile{display:flex;flex-direction:column;gap:16px;background:rgba(255,255,255,0.05);border-left:2px solid #C4952A;border-radius:0 12px 12px 0;padding:14px 16px;}
+#nav-panel .nav-buy-mobile-label{font-family:Inter,system-ui,sans-serif;font-size:11px;font-weight:600;letter-spacing:0.24em;text-transform:uppercase;color:#C4952A;}
+#nav-panel .nav-buy-mobile-item{display:flex;align-items:center;justify-content:space-between;}
+#nav-panel .nav-buy-mobile-chev{color:#C4952A;font-size:1.1em;line-height:1;margin-left:12px;}
+.nav-acc{display:flex;flex-direction:column;}.nav-acc-head{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;background:none;border:0;margin:0;padding:0;cursor:pointer;color:inherit;font-family:inherit;line-height:inherit;text-align:left;}.nav-acc-chev{color:#C4952A;font-size:1.4em;line-height:1;display:inline-block;transition:transform .2s ease;}.nav-acc.open .nav-acc-chev{transform:rotate(90deg);}.nav-acc-panel{max-height:0;overflow:hidden;transition:max-height .28s ease;}.nav-acc.open .nav-acc-panel{max-height:340px;}.nav-acc-inner{display:flex;flex-direction:column;gap:14px;padding:14px 0 2px 16px;border-left:2px solid rgba(196,149,42,0.45);margin-left:2px;}.nav-acc-item{font-size:0.95em;opacity:0.9;}
+
+/* ================================================================
+   MOBILE HOME OPTIMIZATION v1  (global region - keep ABOVE the
+   unclosed desktop media query below. All rules mobile-scoped.)
+   Doctrine: collapse with CSS, never remove from DOM.
+   ================================================================ */
+
+/* --- Generic CSS-only expander (checkbox hack) --- */
+.sbx-toggle{position:absolute;opacity:0;pointer-events:none;}
+.sbx-label{display:none;}
+/* footer accordion chrome: inert on desktop (label renders as plain block) */
+.ftr-acc-label{display:block;pointer-events:none;}
+.ftr-acc-icon{display:none;}
+/* jump-link TOC pills: crawlable on all breakpoints */
+#home-toc{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;padding:14px 16px;background:#F2EFE9;border-bottom:1px solid rgba(196,149,42,0.25);}
+#home-toc a{font-family:Inter,system-ui,sans-serif;font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#0D1B2E;text-decoration:none;border:1px solid rgba(13,27,46,0.3);border-radius:999px;padding:7px 14px;background:#fff;white-space:nowrap;}
+#home-toc a:active{background:#C4952A;color:#0D1B2E;}
+/* header auto-hide helper (JS toggles class; transform avoids CLS) */
+#site-header{transition:transform .28s ease;}
+#site-header.sb-hd-hide{transform:translateY(-105%);}
+
+@media (max-width:767px){
+  /* TOC: horizontal snap row with scroll affordance */
+  #home-toc{flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding-right:0;}
+  #home-toc::-webkit-scrollbar{display:none;}
+  #home-toc a{font-size:10.5px;padding:7px 12px;}
+  #home-toc a:last-of-type{margin-right:32px;}
+  /* sticky right-edge fade + chevron: signals more pills to the right,
+     stays pinned while the row scrolls, fades naturally at row end */
+  #home-toc::after{content:"\203A";position:sticky;right:0;flex:0 0 34px;margin-left:-34px;align-self:stretch;display:flex;align-items:center;justify-content:flex-end;padding-right:4px;background:linear-gradient(to right,rgba(242,239,233,0),#F2EFE9 55%);color:#C4952A;font-size:22px;font-weight:600;pointer-events:none;}
+
+  /* --- Expander mechanics (mobile only) --- */
+  .sbx-label{display:flex;align-items:center;justify-content:center;gap:8px;font-family:Inter,system-ui,sans-serif;font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#0D1B2E;background:#fff;border:1px solid rgba(196,149,42,0.55);border-radius:10px;padding:13px 12px;cursor:pointer;margin:14px 0 0;white-space:nowrap;}
+  .sbx-label .sbx-icon{font-family:Inter,system-ui,sans-serif;font-weight:600;color:#C4952A;}
+  .sbx-label .sbx-icon::before{content:"+";}
+  .sbx-toggle:checked ~ .sbx-label .sbx-icon::before{content:"-";}
+  .sbx-label .sbx-more{display:inline;}
+  .sbx-label .sbx-less{display:none;}
+  .sbx-toggle:checked ~ .sbx-label .sbx-more{display:none;}
+  .sbx-toggle:checked ~ .sbx-label .sbx-less{display:inline;}
+  .sbx-body{max-height:0;overflow:hidden;transition:max-height .6s cubic-bezier(.4,0,.2,1);}
+  .sbx-toggle:checked ~ .sbx-body{max-height:6000px;}
+
+  /* ================================================================
+     LIFESTYLE CARD SKIN - GLOBAL SINGLE SOURCE (mobile)
+     Applies to EVERY .ls-card sitewide: homepage strip + editorial,
+     all 53 city/lifestyle pages. Edit here once; all cards follow.
+     Photo fills the card above a solid navy band with gold keyline;
+     eyebrow + desc hidden visually, kept in DOM for crawlers.
+     ================================================================ */
+  .ls-card{position:relative;}
+  .ls-card picture{height:calc(100% - 50px) !important;display:block;}
+  .ls-card img{width:100% !important;height:100% !important;}
+  .ls-card .ls-overlay{position:absolute;left:0;right:0;bottom:0;top:auto !important;height:50px;background:#0D1B2E !important;background-image:none !important;border-top:2px solid #C4952A;border-radius:0 !important;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;padding:0 10px !important;}
+  .ls-card .ls-eyebrow{display:none !important;}
+  .ls-card .ls-desc{display:none !important;}
+  .ls-card .ls-title{font-size:16px !important;margin:0 !important;color:#fff !important;line-height:1.1 !important;text-shadow:none !important;}
+  .ls-card .ls-cta{font-size:8.5px !important;letter-spacing:.14em;color:#C4952A !important;white-space:nowrap;margin:0 !important;}
+
+  /* --- Homepage-only STRUCTURE: reveal the 6-tile strip as a grid
+         (city strips stay hidden; their editorial cards carry the
+         global skin above) --- */
+  .sb-home #lifestyles-section .ls-desktop-strip{display:grid !important;grid-template-columns:1fr 1fr;gap:10px;height:auto !important;margin-top:24px !important;}
+  .sb-home #lifestyles-section .ls-desktop-strip .ls-card{flex:none !important;height:168px !important;}
+
+  /* --- Tax calc: widget folds behind expander ---
+     collapsed state must also zero the card's own padding/border/shadow,
+     or they render as a stray navy band below the toggle --- */
+  .sb-home #calc-section #calc-card{max-height:0;overflow:hidden;margin-top:0;padding-top:0 !important;padding-bottom:0 !important;border-width:0 !important;box-shadow:none !important;transition:max-height .6s cubic-bezier(.4,0,.2,1),padding .45s ease;}
+  .sb-home #calc-exp:checked ~ #calc-card{max-height:4000px;margin-top:14px;padding-top:28px !important;padding-bottom:24px !important;border-width:1px !important;box-shadow:0 2px 0 rgba(0,35,73,0.06),0 8px 32px rgba(0,35,73,0.08),0 1px 0 rgba(196,149,42,0.18) inset !important;overflow:visible !important;}
+
+  /* --- Testimonials: swipe + dots only --- */
+  #tl-prev,#tl-next{display:none !important;}
+
+  /* --- Trust bar: hidden on mobile. Kept in DOM (indexed at full
+         weight); all four signals duplicate the hero copy and schema,
+         so the band adds no unique extractable text on this page. --- */
+  #trust-bar{display:none !important;}
+
+  /* --- Market band: tighter rows on mobile --- */
+  #market-data .mkt-row{margin-bottom:6px !important;}
+
+  /* --- Chrome dedupe: drawer Call hidden (bottom bar owns Call);
+         injected top-bar call link hidden --- */
+  #btn-nav-contact{display:none !important;}
+  #sb-bar-call{display:none !important;}
+
+  /* --- Drawer label: shorten About on mobile only --- */
+  .nav-about-full{display:none;}
+  .nav-about-short{display:inline;}
+
+  /* --- Market band: top 5 rows, worker tags rows 6+ as .mkt-row-x --- */
+  #mkt-rows-exp:not(:checked) ~ .mkt-row-x{display:none !important;}
+  .mkt-more-label{margin:4px 0 0;}
+
+  /* --- Footer accordions (worker injects toggles; links stay in DOM) --- */
+  .ftr-acc-label{pointer-events:auto;display:flex;align-items:center;justify-content:space-between;cursor:pointer;}
+  .ftr-acc-label p{margin-bottom:0 !important;}
+  .ftr-acc-icon{display:inline;color:#C4952A;font-weight:600;font-size:15px;line-height:1;}
+  .ftr-acc-icon::before{content:"+";}
+  .sbx-toggle:checked ~ .ftr-acc-label .ftr-acc-icon::before{content:"-";}
+  .ftr-acc-body{max-height:0 !important;overflow:hidden;transition:max-height .5s ease;}
+  #ftr-mkts-exp:checked ~ .ftr-acc-body,
+  #ftr-offc-exp:checked ~ .ftr-acc-body{max-height:700px !important;}
+  .ftr-offc-label{justify-content:flex-end;gap:8px;margin-top:8px;}
+
+  /* --- Footer Call Us hidden on mobile (bottom bar owns Call) --- */
+  #footer-cta{display:none !important;}
+
+  /* --- Physician page: the calc sits in a py-10 wrapper stacked on the
+         intro wrapper and its own 40px padding (3 units = 120px gaps).
+         Zero the middle wrapper vertically; the section pads itself. --- */
+  .phys-mcard + div.px-5{padding-top:0 !important;padding-bottom:0 !important;}
+  .phys-mcard{padding-bottom:0 !important;}
+
+  /* --- Schools "Browse Every Market": Option D sticky filter bar.
+         Markup + bridge JS already exist in the page (#schBarD);
+         this styles it and makes it the sole mobile filter UI --- */
+  #schBarD{position:sticky;top:8px;z-index:30;display:flex;gap:8px;align-items:center;background:#F5F0E8;border:1px solid rgba(196,149,42,0.45);border-radius:12px;padding:10px;margin:4px 0 14px;box-shadow:0 4px 14px rgba(13,27,46,0.10);}
+  #schdCity{flex:1;min-width:118px;padding:10px 6px;border-radius:8px;border:1px solid rgba(13,27,46,0.25);background:#fff;color:#0D1B2E;font-family:Inter,system-ui,sans-serif;font-size:12px;font-weight:600;}
+  .schd-chips{display:flex;gap:4px;flex-shrink:0;}
+  .schd-c{font-family:Inter,system-ui,sans-serif;font-size:8.5px;letter-spacing:.02em;font-weight:700;padding:9px 5px;border-radius:7px;border:1px solid rgba(13,27,46,0.2);color:#0D1B2E;background:transparent;cursor:pointer;}
+  .schd-c.active{background:#0D1B2E;color:#fff;border-color:#0D1B2E;}
+  /* the old pill cloud + tab row retire on mobile (links stay in DOM) */
+  #schChips{display:none !important;}
+  #schTabs{display:none !important;}
+
+  /* --- Schools page: main clearance is desktop-scaled (144px);
+         mobile header needs only the sitewide 88px --- */
+  main[style*="padding-top:144px"]{padding-top:88px !important;}
+
+  /* --- Navy CTA card wrappers (physician + state relocation pages):
+         48px wrapper padding + 52/64 card interior is desktop-scaled;
+         tighten both on mobile --- */
+  div[style*="padding:48px 2%"]{padding-top:16px !important;padding-bottom:16px !important;}
+  section.bg-navy.rounded-2xl[style*="max-width:680px"]{padding:36px 22px !important;}
+
+  /* --- Drawer: compact spacing so all 9 links fit; scroll as safety net --- */
+  #nav-panel{padding-top:60px !important;padding-bottom:20px !important;overflow-y:auto;}
+  #nav-panel .flex.flex-col{gap:15px !important;}
+  #nav-panel .nav-link{font-size:18px;line-height:1.25;}
+  /* the Call block container: button already hidden by dedupe, its border/padding
+     rendered as a dead strip - hide the whole block on mobile */
+  #nav-panel .mt-auto{display:none !important;}
+}
+/* desktop: editorial lifestyle group stays hidden (strip is the desktop UI);
+   wrapper re-parented the cards so the old direct-child hide no longer matches */
+@media (min-width:1024px){
+  #ls-editorial{display:none !important;}
+}
+/* map search banner: gold strip atop the address finder cards (schools + physician) */
+.sb-map-banner{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;background:linear-gradient(90deg,rgba(196,149,42,0.95),rgba(196,149,42,0.82));border-radius:8px;padding:8px 14px;margin-bottom:16px;}
+.sb-map-banner b{background:#0D1B2E;color:#E8C572;font-family:Inter,system-ui,sans-serif;font-size:10px;letter-spacing:.06em;text-transform:uppercase;padding:3px 9px;border-radius:4px;font-weight:700;line-height:1.4;}
+.sb-map-banner span{color:#0D1B2E;font-family:Inter,system-ui,sans-serif;font-size:12px;font-weight:700;}
+/* schools Option D bar is mobile-only; desktop keeps the pill cloud */
+#schBarD{display:none;}
+@media (max-width:767px){ #schBarD{display:flex;} }
+/* school level label: full on desktop, abbreviated on mobile */
+.lvl-abbr{display:none;}
+@media (max-width:767px){
+  .lvl-full{display:none;}
+  .lvl-abbr{display:inline;}
+}
+/* desktop default for the About label spans */
+.nav-about-short{display:none;}
+.nav-about-full{display:inline;}
+
+/* r47: stat arrows - green gains, red declines (sitewide) */
+html .wgs-ti .u{color:#8FD3A8;}
+html .wgs-ti .dn{color:#F2937E;}
+html .wgs-pd.up{color:#2E7D4F;}
+html .wgs-pd.dn{color:#B23A2E;}
+html .wgs-ledger .pr .u,html .wgs-cmp-grid .v .u{color:#2E7D4F;}
+html .wgs-ledger .pr .dn,html .wgs-cmp-grid .v .dn{color:#B23A2E;}
+html .wgs-ledger button.on .pr .u,html .wgs-cmp-grid a.cur .v .u{color:#8FD3A8;}
+html .wgs-ledger button.on .pr .dn,html .wgs-cmp-grid a.cur .v .dn{color:#F2937E;}
+
+/* sb-mr market-report callout (moved from insights.css r108) marker: sb-mr-callout-global-2026
+   .sb-mr-list + .sb-mr-cityref used on 13 pages that do not load insights.css. Must stay ABOVE the
+   unclosed @media (min-width:1024px) below so these apply on mobile too. Verbatim from insights.css. */
+.sb-mr-list{list-style:none;padding:0;margin:0 0 28px}
+.sb-mr-list li{margin:0 0 1px}
+.sb-mr-list a{display:block;background:#fff;border:1px solid #e6dfd2;padding:14px 16px;text-decoration:none;color:#0D1B2E;font-family:'Inter',sans-serif;font-size:15px;line-height:1.4}
+.sb-mr-list a strong{font-weight:600;margin-right:8px}
+.sb-mr-list a span{display:block;font-size:11.5px;color:#6b6b6b;margin-top:4px;letter-spacing:.02em}
+.sb-mr-cityref{background:#EFE8DC;border-left:3px solid #C4952A;padding:16px 18px;margin:26px 0;font-family:'Inter',sans-serif;font-size:14.5px;line-height:1.6;color:#1A1A1A}
+.sb-mr-cityref a{color:#0D1B2E;font-weight:600;text-decoration:none;border-bottom:1px solid rgba(196,149,42,.6)}
+
+
+@media (min-width: 1024px) {
+
+  /* ══ GLOBAL ══════════════════════════════════════════════════ */
+  body { padding-bottom: 0 !important; }
+  #bottom-nav  { display: none !important; }
+  #hamburger   { display: none !important; }
+  #nav-drawer  { display: none !important; }
+  #site-header .desktop-nav { display: flex !important; align-items: center; gap: 14px; background: rgba(0,20,40,0.52); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); padding: 9px 18px; border-radius: 999px; }
+  #site-header > div { max-width: 1280px; margin: 0 auto; padding: 0 40px; width: 100%; box-sizing: border-box; }
+  .desktop-nav a { font-family: Inter, system-ui, sans-serif; font-size: 15px; font-weight: 300; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(255,255,255,0.75); text-decoration: none; transition: color 0.2s ease; white-space: nowrap; }
+  .desktop-nav a:hover { color: #C4952A; }
+  #site-header .sb-logo-wrap img { height: 100px !important; }
+  #site-header.shrunk .sb-logo-wrap img { height: 64px !important; }
+
+  /* ══ SECTION HEADINGS ════════════════════════════════════════ */
+  .section-eyebrow { font-size: 11px !important; letter-spacing: 0.28em !important; }
+  .section-heading  { font-size: clamp(2.2rem, 3.5vw, 3rem) !important; }
+  .gold-rule        { width: 56px !important; margin-bottom: 28px !important; }
+
+  /* ══ HERO ════════════════════════════════════════════════════ */
+  .hero-section { height: 100vh !important; }
+  /* Hero banner - match city-page height on desktop */
+  section.relative.h-48.overflow-hidden { height: 600px !important; }
+
+  /* Hide "Specializing in..." subtext on desktop */
+  .hero-sub { display: none !important; }
+
+  /* Fade out headline + eyebrow after 4.5s on desktop */
+  .hero-headline.entered,
+  .hero-eyebrow.entered {
+    animation: desktopHeroFade 1.2s ease 4.5s forwards;
+  }
+  @keyframes desktopHeroFade {
+    from { opacity: 1; }
+    to   { opacity: 0; pointer-events: none; }
+  }
+@media (min-width:1024px){.desktop-nav a{position:relative;}.desktop-nav a:not(:first-child)::before{content:"";position:absolute;left:-7px;top:50%;transform:translateY(-50%);height:13px;width:1px;background:rgba(196,149,42,0.65);}}
+#site-header.hero-active{background-color:rgba(0,20,40,0.45)!important;-webkit-backdrop-filter:blur(8px)!important;backdrop-filter:blur(8px)!important;}#site-header.hero-active .sb-logo-wrap{opacity:1!important;}@media (min-width:1280px){#site-header > div{max-width:none!important;}#site-header .desktop-nav{background:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;padding:0!important;gap:min(53px, calc(26px + (100vw - 1280px) * 0.11))!important;}#site-header .desktop-nav a{color:#FFFFFF!important;font-size:13px!important;letter-spacing:0.11em!important;text-shadow:none!important;}#site-header .desktop-nav .nav-buy-toggle{font-size:13px!important;letter-spacing:0.11em!important;}#site-header .desktop-nav a:hover{color:#C4952A!important;}#site-header .desktop-nav a:not(:first-child)::before{display:none!important;}}
+/* ===== "Buy" dropdown: desktop nav ===== */
+#site-header .desktop-nav .nav-buy{position:relative;display:flex;align-items:center;}
+#site-header .desktop-nav .nav-buy::before{content:"";position:absolute;left:-7px;top:50%;transform:translateY(-50%);height:13px;width:1px;background:rgba(196,149,42,0.65);}
+#site-header .desktop-nav .nav-buy-toggle{font-family:Inter,system-ui,sans-serif;font-size:15px;font-weight:300;letter-spacing:0.16em;text-transform:uppercase;color:rgba(255,255,255,0.75);background:none;border:0;padding:0;margin:0;cursor:pointer;display:inline-flex;align-items:center;gap:6px;white-space:nowrap;transition:color .2s ease;}
+#site-header .desktop-nav .nav-buy:hover .nav-buy-toggle,#site-header .desktop-nav .nav-buy:focus-within .nav-buy-toggle{color:#C4952A;}
+#site-header .desktop-nav .nav-buy-caret{font-size:9px;transition:transform .2s ease;}
+#site-header .desktop-nav .nav-buy:hover .nav-buy-caret,#site-header .desktop-nav .nav-buy:focus-within .nav-buy-caret{transform:rotate(180deg);}
+#site-header .desktop-nav .nav-buy-menu{position:absolute;top:100%;left:50%;transform:translateX(-50%) translateY(6px);min-width:184px;display:flex;flex-direction:column;gap:2px;background:#001428;border:1px solid rgba(196,149,42,0.45);border-radius:10px;padding:14px 8px 8px;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .2s ease,transform .2s ease;box-shadow:0 20px 44px rgba(0,0,0,0.5);z-index:60;}
+#site-header .desktop-nav .nav-buy:hover .nav-buy-menu,#site-header .desktop-nav .nav-buy:focus-within .nav-buy-menu{opacity:1;visibility:visible;pointer-events:auto;transform:translateX(-50%) translateY(0);}
+#site-header .desktop-nav .nav-buy-menu a{font-family:Inter,system-ui,sans-serif;font-size:13px!important;font-weight:400;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.82)!important;text-decoration:none;padding:10px 16px;border-radius:6px;white-space:nowrap;transition:color .2s ease,background .2s ease;}
+#site-header .desktop-nav .nav-buy-menu a::before{display:none!important;}
+#site-header .desktop-nav .nav-buy-menu a:hover{color:#C4952A!important;background:rgba(196,149,42,0.12);}
+@media (min-width:1280px){#site-header .desktop-nav .nav-buy::before{display:none!important;}#site-header .desktop-nav .nav-buy-toggle{color:#FFFFFF!important;font-size:16px!important;}#site-header .desktop-nav .nav-buy:hover .nav-buy-toggle,#site-header .desktop-nav .nav-buy:focus-within .nav-buy-toggle{color:#C4952A!important;}}
+/* ===== end consolidated header/nav ===== */
+
+/* ===== City page: cap stats dashboard to the page grid (desktop only) ===== */
+html .wgs{max-width:1280px;margin-left:auto;margin-right:auto;padding-left:8px;padding-right:8px;box-sizing:border-box;}
+
+/* ===== City stats dashboard: desktop quadrant layout (all four metrics at once) ===== */
+html .wgs .wgs-tabs{display:none;}
+html .wgs .wgs-pbox{display:grid;grid-template-columns:1fr 1fr;min-height:0;border-radius:10px;padding:clamp(20px,2.4vw,30px);}
+html .wgs .wgs-panel{position:static;inset:auto;opacity:1;transform:none;pointer-events:auto;display:flex;flex-direction:column;}
+html .wgs .wgs-panel:nth-child(odd){padding-right:clamp(20px,2.6vw,36px);}
+html .wgs .wgs-panel:nth-child(even){padding-left:clamp(20px,2.6vw,36px);border-left:1px solid rgba(150,110,30,0.20);}
+html .wgs .wgs-panel:nth-child(-n+2){padding-bottom:clamp(18px,2.2vw,30px);}
+html .wgs .wgs-panel:nth-child(n+3){padding-top:clamp(18px,2.2vw,30px);border-top:1px solid rgba(150,110,30,0.20);}
+
+/* ===== Navy "Let's Talk" CTA: contain + trim on desktop (was full-bleed) ===== */
+html section.sb-band[style*="background:#002349"]{max-width:980px;margin-left:auto !important;margin-right:auto !important;padding:48px 40px;display:flex;flex-direction:column;align-items:center;justify-content:center;}
+
+/* ===== Content rail (desktop): unified 1280 column + research measure, left-anchored (F-pattern). ===== */
+/* Applies to city / lifestyle / sell / physician content sections (any <section> with the eyebrow+heading+rule pattern). */
+/* Auto-excluded: navy CTAs and bg-navy CTAs (no .section-heading), heroes (sell hero via min-height, others have no heading), */
+/* iHF/listings sections (carry .sb-listing-updated), and the city listings section (#lifestyles-section). */
+body.sb-rail section:has(.section-heading):not([style*="background:#002349"]):not([style*="min-height:260px"]):not(:has(.sb-listing-updated)):not(:has(.tl-card)):not(#sb-no-rail){
+  padding-left:  max(40px, calc((100% - 1280px) / 2)) !important;
+  padding-right: max(40px, calc((100% - 1280px) / 2)) !important;
+}
+/* neutralize 1280 wrappers (descendant OR the section itself) so content fills the rail from one left edge */
+body.sb-rail section:has(.section-heading):not([style*="background:#002349"]):not([style*="min-height:260px"]):not(:has(.sb-listing-updated)):not(:has(.tl-card)):not(#sb-no-rail) .max-w-screen-xl,
+body.sb-rail section.max-w-screen-xl:has(.section-heading):not([style*="min-height:260px"]):not(:has(.sb-listing-updated)){
+  max-width:none !important; margin-left:0 !important; margin-right:0 !important;
+}
+/* body copy held to ~66ch (50-75 cpl optimal band) with 1.6 line-height; alignment left untouched to avoid flipping card text */
+body.sb-rail section:has(.section-heading):not([style*="background:#002349"]):not([style*="min-height:260px"]):not(:has(.sb-listing-updated)):not(:has(.tl-card)):not(#sb-no-rail) p.text-sm.leading-relaxed:not(.dft-desc),
+body.sb-rail section:has(.section-heading):not([style*="background:#002349"]):not([style*="min-height:260px"]):not(:has(.sb-listing-updated)):not(:has(.tl-card)):not(#sb-no-rail) p.text-left.text-sm{
+  max-width:66ch !important; line-height:1.6 !important;
+}
+
+/* ===== Ticker tape: larger text (desktop) ===== */
+html .wgs-ribbon .wgs-ti{font-size:14px;}
+
+/* ===== Lifestyle "Browse by lifestyle" cards: Plated treatment (desktop strip) ===== */
+/* Full-bleed photo kept; adds inset gold keyline, darkened nameplate, serif title + gold rule, hover. */
+.ls-desktop-strip .ls-card{ flex:1 1 0 !important; border-radius:4px !important; }
+.ls-desktop-strip .ls-card::after{
+  content:""; position:absolute; inset:9px; border:1px solid rgba(224,188,107,.55);
+  border-radius:2px; z-index:3; pointer-events:none; transition:border-color .55s;
+}
+.ls-desktop-strip .ls-card:hover::after{ border-color:#E0BC6B; }
+.ls-desktop-strip .ls-overlay{
+  border-radius:4px !important; padding:18px 16px !important;
+  background:linear-gradient(to top, rgba(0,16,32,.93) 0%, rgba(0,16,32,.74) 30%, rgba(0,16,32,.12) 64%, rgba(0,16,32,0) 100%) !important;
+}
+.ls-desktop-strip .ls-eyebrow{ color:#E0BC6B !important; font-size:9.5px !important; letter-spacing:.22em !important; margin-bottom:6px !important; }
+.ls-desktop-strip .ls-title{ font-size:22px !important; margin:0 !important; }
+.ls-desktop-strip .ls-title::after{
+  content:""; display:block; width:26px; height:1.5px; background:#C4952A; margin:10px 0 0; transition:width .55s;
+}
+.ls-desktop-strip .ls-card:hover .ls-title::after{ width:46px; }
+.ls-desktop-strip .ls-desc{ display:none !important; }
+.ls-desktop-strip .ls-cta{ color:#E0BC6B !important; font-size:10px !important; letter-spacing:.16em !important; margin-top:11px !important; opacity:.9 !important; }
+.ls-desktop-strip .ls-card:hover .ls-cta{ opacity:1 !important; }
+
+/* ===== Home fixes: match city alignment + CTA ===== */
+/* calc-section caps its OWN background to 1280; neutralize so bg is full-bleed and content rails to 1280 like city */
+body.sb-rail #calc-section{ max-width:none !important; margin-left:0 !important; margin-right:0 !important; }
+/* navy "Ready to Begin" CTA: contain + center to match the city navy CTA (was full-bleed) */
+body.sb-rail section.bg-navy.rounded-2xl.sb-band{
+  max-width:980px; margin-left:auto !important; margin-right:auto !important; padding:48px 40px;
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+}
+
+/* ===== City stats dashboard: desktop quadrant layout (all four metrics at once) ===== */
+html .wgs-allcols .wgs-tabs{display:none;}
+html .wgs-allcols .wgs-pbox{display:grid;grid-template-columns:1fr 1fr;min-height:0;border-radius:10px;padding:clamp(20px,2.4vw,30px);}
+html .wgs-allcols .wgs-panel{position:static;inset:auto;opacity:1;transform:none;pointer-events:auto;display:flex;flex-direction:column;}
+html .wgs-allcols .wgs-panel:nth-child(odd){padding-right:clamp(20px,2.6vw,36px);}
+html .wgs-allcols .wgs-panel:nth-child(even){padding-left:clamp(20px,2.6vw,36px);border-left:1px solid rgba(150,110,30,0.20);}
+html .wgs-allcols .wgs-panel:nth-child(-n+2){padding-bottom:clamp(18px,2.2vw,30px);}
+html .wgs-allcols .wgs-panel:nth-child(n+3){padding-top:clamp(18px,2.2vw,30px);border-top:1px solid rgba(150,110,30,0.20);}
+
+/* ===== Sell pages: standardize content sections to the sitewide 1280 rail (were inline-capped to 680/1040) ===== */
+body.sb-rail main .sb-band > div[style*="max-width:680px"]{max-width:1280px !important;}
+body.sb-rail main .sb-band > div[style*="max-width:680px"] > p.text-sm,
+body.sb-rail main .sb-band > div[style*="max-width:680px"] > p.text-xs{max-width:66ch !important;margin-left:0 !important;margin-right:auto !important;}
+
+/* ===== Sell navy CTA contained to 980px like other pages; price field focus ===== */
+body.sb-rail div.bg-navy.rounded-2xl.sb-band{max-width:980px !important;margin-left:auto !important;margin-right:auto !important;}
+#snc-price:focus{border-bottom-color:#C4952A !important;}
+
+/* ===== Sell FAQ: cap the Q&A block to 980px to line up with the CTA below (overrides the 1280 sell-rail) ===== */
+body.sb-rail main .sb-band > div[style*="max-width:680px"]:has(.faq-accordion-group){max-width:980px !important;}
+
+/* ===== Listings section header: align to the page rail (desktop; header only) ===== */
+/* Listings sections carry .sb-listing-updated and are excluded from the rail so the IDX */
+/* widget can run wide. That leaves their eyebrow+heading flush at the section's fixed 80px */
+/* desktop pad instead of the 1280 rail edge. Shift ONLY the header wrapper to the rail edge. */
+/* Origin = the header's containing block (.max-w-screen-xl = section content box = mainW - 176, */
+/* i.e. minus 2x[8px sb-band margin + 80px desktop pad]); scrollbar-safe and pixel-matches every */
+/* other section edge: 8 + max(40, (mainW-1280)/2). Widget stays full-width (rule targets header only). */
+body.sb-rail section:has(.sb-listing-updated) > .max-w-screen-xl > div[style*="overflow:visible"]{
+  margin-left: calc(max(40px, (100% - 1104px) / 2) - 80px) !important;
+}
+
+/* Option 4 dialogue FAQ: 2-column on desktop (city/grid pages) */
+.sb-qa-2col{display:grid !important;grid-template-columns:1fr 1fr;gap:0 56px;align-items:start;}
+.sb-qa-2col .sb-qa:nth-child(2){border-top:0;}
+
+/* ===== r39: compact desktop stats dashboard so the full card fits above the fold ===== */
+/* Narrower card = smaller SVG scale; explicit chart caps + tighter type do the rest.   */
+html .wgs{max-width:1040px;}
+html .wgs .wgs-big{font-size:clamp(38px,3.8vw,48px) !important;}
+html .wgs .wgs-panel[data-p="0"] .wgs-viz{max-height:60px;}
+html .wgs .wgs-panel[data-p="1"] .wgs-viz{max-height:160px;}
+html .wgs .wgs-pbox{padding:clamp(16px,1.8vw,22px);}
+html .wgs .wgs-panel:nth-child(odd){padding-right:clamp(16px,2vw,26px);}
+html .wgs .wgs-panel:nth-child(even){padding-left:clamp(16px,2vw,26px);}
+html .wgs .wgs-panel:nth-child(-n+2){padding-bottom:clamp(12px,1.5vw,18px);}
+html .wgs .wgs-panel:nth-child(n+3){padding-top:clamp(12px,1.5vw,18px);}
+html .wgs .wgs-pd{margin-top:4px;}
+html .wgs .wgs-note{margin-top:7px;}
+html .wgs .wgs-bd{padding:12px 16px 12px;}
+html .wgs .wgs-mast{margin-bottom:10px;}
+html .wgs .wgs-foot{margin-top:9px;}
+
+/* ===== r46: desktop housing stats card ~15% overall reduction (fold fit) ===== */
+html .wgs{max-width:880px;}
+html .wgs .wgs-big,html #sb-home-wgs .wgs-big{font-size:clamp(32px,3.2vw,40px) !important;}
+html .wgs .wgs-panel[data-p="0"] .wgs-viz,html #sb-home-wgs .wgs-panel[data-p="0"] .wgs-viz{max-height:50px;}
+html .wgs .wgs-panel[data-p="1"] .wgs-viz,html #sb-home-wgs .wgs-panel[data-p="1"] .wgs-viz{max-height:126px;}
+html .wgs .wgs-dialwrap{width:148px;}
+html .wgs .wgs-dialctr .v{font-size:31px;}
+html .wgs .wgs-mast .t{font-size:20px;}
+html .wgs .wgs-mast{margin-bottom:8px;padding-bottom:5px;}
+html .wgs .wgs-bd{padding:10px 14px 10px;}
+html .wgs .wgs-pbox{padding:clamp(13px,1.5vw,18px);}
+html .wgs .wgs-panel:nth-child(odd){padding-right:clamp(13px,1.7vw,22px);}
+html .wgs .wgs-panel:nth-child(even){padding-left:clamp(13px,1.7vw,22px);}
+html .wgs .wgs-panel:nth-child(-n+2){padding-bottom:clamp(10px,1.3vw,15px);}
+html .wgs .wgs-panel:nth-child(n+3){padding-top:clamp(10px,1.3vw,15px);}
+html .wgs .wgs-note{font-size:11.5px;margin-top:6px;}
+html .wgs .wgs-pd{font-size:11px;margin-top:4px;}
+html .wgs .wgs-ribbon{padding:5px 0;}
+html .wgs .wgs-foot{margin-top:7px;font-size:7.5px;}
+html .wgs .wgs-cmp,html .wgs-cmp{margin:0 0 9px;}
+html .wgs .wgs-cmp-lab,html #sb-home-wgs .wgs-lsw-lab{margin:0 10px 8px 1px;}
+html .wgs .wgs-cmp-sw,html #sb-home-wgs .wgs-lsw{width:340px;margin:0 0 8px;}
+html .wgs .wgs-cmp-sw button,html #sb-home-wgs .wgs-lsw button{padding:7px 2px;font-size:9px;}
+html .wgs .wgs-cmp-grid,html #sb-home-wgs .wgs-ledger{gap:4px;margin-bottom:9px;}
+html .wgs .wgs-cmp-grid a,html #sb-home-wgs .wgs-ledger button{padding:4px 2px;}
+html .wgs .wgs-cmp-grid a .nm,html #sb-home-wgs .wgs-ledger button .nm{font-size:10px;min-height:21px;}
+html .wgs .wgs-cmp-grid a .v,html #sb-home-wgs .wgs-ledger button .pr{font-size:8.5px;}
+html section#market-data .section-heading{font-size:clamp(23px,2.3vw,29px) !important;}
+
+/* ===== r82 2026-07-23: sitewide body copy + hero eyebrow unification (Option A) ===== */
+p.text-sm{font-size:clamp(15px,1.7vw,18px) !important;line-height:1.62 !important;}
+.step-row p{font-size:clamp(15px,1.7vw,18px) !important;line-height:1.6 !important;}
+.step-row h3{font-size:clamp(16px,1.8vw,19px) !important;}
+.nyfl-eyebrow{font-size:11px !important;letter-spacing:0.28em !important;}

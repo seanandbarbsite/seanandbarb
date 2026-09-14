@@ -1,0 +1,28 @@
+{
+  "updated": "September 2026",
+  "note": "Featured homes shown on the ten city hub pages. Refresh monthly with the market data. Sean and Barb listings first, then Premier Sotheby's. Empty array = no block on that page. 3 to 6 entries per city. Photo files go in /images/featured/. url is optional; with only mls set, the card links to /listing/?id=MLS_32.",
+  "schema_example": {
+    "address": "1234 Lake Butler Boulevard",
+    "community": "Keene's Pointe",
+    "price": "$1,850,000",
+    "beds": 5,
+    "baths": 4,
+    "sqft": "4,120",
+    "photo": "/images/featured/o6404038.webp",
+    "mls": "O6404038",
+    "url": "/windermere-homes-for-sale/listing/O6404038/",
+    "listedBy": "Sean & Barb"
+  },
+  "cities": {
+    "orlando": [],
+    "winter-garden": [],
+    "windermere": [],
+    "dr-phillips": [],
+    "lake-nona": [],
+    "winter-park": [],
+    "maitland": [],
+    "longwood": [],
+    "lake-mary": [],
+    "oviedo": []
+  }
+}

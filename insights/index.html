@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Central Florida Real Estate Insights | Buyers, Sellers &amp; Physicians | Sean &amp; Barb</title>
+<meta content="Real estate insights and guides for Central Florida: physician relocation, buyer and seller advice, and local market news. From Sean &amp; Barb, Premier Sotheby's International Realty, serving ten markets with over 60 years combined." name="description"/>
+<link href="https://www.seanandbarb.com/insights/" rel="canonical"/>
+<meta content="website" property="og:type"/>
+<meta content="Central Florida Real Estate Insights | Sean &amp; Barb" property="og:title"/>
+<meta content="Guides and market insights for buyers, sellers, and relocating physicians across Central Florida." property="og:description"/>
+<meta content="https://www.seanandbarb.com/images/hero.webp" property="og:image"/>
+<meta content="https://www.seanandbarb.com/insights/" property="og:url"/>
+<link href="/_astro/Layout.BuFzuhHC.css" rel="stylesheet"/>
+<link href="/sb-global.css" rel="stylesheet"/>
+<link href="/insights/insights.css?v=20260827a" rel="stylesheet"/>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Blog", "name": "Sean & Barb Central Florida Real Estate Insights", "url": "https://www.seanandbarb.com/insights/", "publisher": {"@type": "Organization", "@id": "https://www.seanandbarb.com/#realestateagent", "name": "Sean & Barb | Premier Sotheby's International Realty", "sameAs": ["https://www.linkedin.com/in/seanandbarbrealtors/", "https://www.facebook.com/SeanAndBarbRealtors", "https://www.instagram.com/seanandbarbrealtors/"]}}</script>
+</head>
+<body>
+<header id="site-header" class="fixed top-0 left-0 right-0 z-50 px-5 py-1 bg-navy"></header><script type="module">/*sb-blog-header*/</script>
+<main class="sb-blog-wrap">
+  <section class="sb-blog-hero">
+    <p class="sb-blog-eyebrow">Central Florida Real Estate</p>
+    <h1>Insights and Guides</h1>
+    <p>Expert guides and market insights for buyers, sellers, and relocating physicians across Central Florida's ten luxury markets.</p>
+  </section>
+  <div class="sb-mr-xlink"><div class="sb-mr-cityref" id="sb-mr-insights-xlink-2026"><p style="margin:0 0 6px;font-family:'Inter',sans-serif;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#6b6b6b;font-weight:600">Updated monthly</p><p style="margin:0">Median prices across our ten markets ran from $446,975 in Orlando to $1,157,500 in Windermere in July 2026. <a href="/market-report/">See all ten market reports</a>.</p></div></div><div class="sb-blog-layout">
+    <aside class="sb-blog-rail" aria-label="Browse insights by category">
+      <p class="sb-blog-rail-eyebrow">Browse by category</p>
+      <select class="sb-blog-rail-select" id="sb-rail-select" aria-label="Browse insights by category"></select>
+      <ul class="sb-blog-rail-list" id="sb-rail-list"></ul>
+    </aside>
+    <div class="sb-blog-main">
+      <p class="sb-blog-count" id="sb-blog-count" aria-live="polite"></p>
+      <div class="sb-blog-grid"><!--__BLOG_CARDS__--></div>
+    </div>
+  </div>
+  <script>/*sb-insights-rail*/(function(){
+    var grid=document.querySelector('.sb-blog-grid');
+    var list=document.getElementById('sb-rail-list');
+    var sel=document.getElementById('sb-rail-select');
+    var countEl=document.getElementById('sb-blog-count');
+    if(!grid||!list||!sel)return;
+    var cards=[].slice.call(grid.querySelectorAll('.sb-blog-card'));
+    var counts={};
+    cards.forEach(function(c){var k=c.getAttribute('data-category')||'';if(k){counts[k]=(counts[k]||0)+1;}});
+    var cats=Object.keys(counts).sort(function(a,b){return counts[b]-counts[a]||a.localeCompare(b);});
+    function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');}
+    var liHtml='<li class="sb-blog-rail-item is-active" data-cat="all">All<span class="sb-blog-rail-c">'+cards.length+'</span></li>';
+    var optHtml='<option value="all">All categories ('+cards.length+')</option>';
+    cats.forEach(function(c){liHtml+='<li class="sb-blog-rail-item" data-cat="'+esc(c)+'">'+esc(c)+'<span class="sb-blog-rail-c">'+counts[c]+'</span></li>';optHtml+='<option value="'+esc(c)+'">'+esc(c)+' ('+counts[c]+')</option>';});
+    list.innerHTML=liHtml;sel.innerHTML=optHtml;
+    function apply(cat){
+      var shown=0;
+      cards.forEach(function(card){var m=(cat==='all'||card.getAttribute('data-category')===cat);card.style.display=m?'':'none';if(m)shown++;});
+      list.querySelectorAll('.sb-blog-rail-item').forEach(function(x){x.classList.toggle('is-active',x.getAttribute('data-cat')===cat);});
+      if(sel.value!==cat)sel.value=cat;
+      if(countEl)countEl.textContent='Showing '+shown+(shown===1?' article':' articles')+(cat==='all'?'':' in '+cat);
+    }
+    list.addEventListener('click',function(e){var li=e.target.closest('.sb-blog-rail-item');if(li)apply(li.getAttribute('data-cat'));});
+    sel.addEventListener('change',function(){apply(sel.value);});
+    apply('all');
+  })();</script>
+</main>
+<footer class="bg-[#001428] text-white/70"></footer>
+</body>
+</html>

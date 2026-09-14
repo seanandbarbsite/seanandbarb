@@ -1,0 +1,351 @@
+/* ═══════════════════════════════════════════════════════════════
+   Sean & Barb · iHomeFinder Agent Max Style Override
+   ═══════════════════════════════════════════════════════════════
+   
+   TWO-STEP INSTALL:
+   Step 1: Paste this entire block into:
+           IHF Control Panel → Setup → Design/Branding Setup → CSS tab
+   Step 2: The matching <style> block is already injected into your
+           idx, listing, and listing-report pages automatically.
+   ═══════════════════════════════════════════════════════════════ */
+
+/* Global font + color reset */
+#ihf-main *, #ihf-render-target-listing *,
+.ihf-container *, [class*="kestrel"] * {
+  font-family: Inter, system-ui, sans-serif !important;
+}
+
+/* Background matches site cream */
+#ihf-main, #ihf-render-target-listing, .ihf-container {
+  background-color: #F5F0E8 !important;
+  color: #1a1a1a !important;
+}
+
+/* ── All buttons → navy + gold pill ── */
+#ihf-main button, #ihf-render-target-listing button,
+.ihf-container button,
+#ihf-main [role="button"],
+#ihf-render-target-listing [role="button"] {
+  background-color: #002349 !important;
+  color: #C4952A !important;
+  border: none !important;
+  border-radius: 999px !important;
+  font-family: Inter, system-ui, sans-serif !important;
+  font-size: 11px !important;
+  letter-spacing: 0.14em !important;
+  text-transform: uppercase !important;
+  font-weight: 500 !important;
+}
+#ihf-main button:hover, #ihf-render-target-listing button:hover {
+  background-color: #001428 !important;
+}
+
+/* Exception: icon-only / close buttons stay subtle */
+#ihf-main button[aria-label*="close"],
+#ihf-main button[aria-label*="Clear"],
+#ihf-render-target-listing button[aria-label*="close"] {
+  background-color: transparent !important;
+  color: #666 !important;
+  border: 1px solid #ddd !important;
+}
+
+/* ── Inputs + selects ── */
+#ihf-main input, #ihf-render-target-listing input,
+#ihf-main select, #ihf-render-target-listing select,
+#ihf-main textarea {
+  border: 1px solid rgba(0,35,73,0.2) !important;
+  border-radius: 8px !important;
+  background: #ffffff !important;
+  font-family: Inter, system-ui, sans-serif !important;
+  color: #1a1a1a !important;
+}
+#ihf-main input:focus, #ihf-main select:focus {
+  border-color: #C4952A !important;
+  outline: none !important;
+  box-shadow: 0 0 0 2px rgba(196,149,42,0.18) !important;
+}
+
+/* ── Links → navy, hover gold ── */
+#ihf-main a, #ihf-render-target-listing a {
+  color: #002349 !important;
+}
+#ihf-main a:hover, #ihf-render-target-listing a:hover {
+  color: #C4952A !important;
+}
+
+/* ── Listing price → serif italic navy ── */
+#ihf-main [class*="price"],
+#ihf-render-target-listing [class*="price"] {
+  font-family: Cormorant Garamond, Georgia, serif !important;
+  font-style: italic !important;
+  color: #002349 !important;
+  font-size: 18px !important;
+  font-weight: 400 !important;
+}
+
+/* ── Cards → white rounded, no shadow ── */
+#ihf-main [class*="card"], #ihf-main [class*="Card"],
+#ihf-render-target-listing [class*="card"],
+#ihf-render-target-listing [class*="Card"] {
+  background: #ffffff !important;
+  border: 1px solid rgba(0,35,73,0.1) !important;
+  border-radius: 14px !important;
+  box-shadow: none !important;
+  overflow: hidden !important;
+}
+
+/* ── Tab / nav bar → cream bg, gold active ── */
+#ihf-main [role="tab"], #ihf-render-target-listing [role="tab"] {
+  font-size: 11px !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
+  color: #888 !important;
+  border-bottom: 2px solid transparent !important;
+  background: transparent !important;
+}
+#ihf-main [role="tab"][aria-selected="true"],
+#ihf-render-target-listing [role="tab"][aria-selected="true"] {
+  color: #002349 !important;
+  border-bottom-color: #C4952A !important;
+}
+
+/* ── Tabs container ── */
+#ihf-main [role="tablist"],
+#ihf-render-target-listing [role="tablist"] {
+  background: #F5F0E8 !important;
+  border-bottom: 1px solid rgba(0,35,73,0.1) !important;
+}
+
+/* ── Checkboxes + radios ── */
+#ihf-main input[type="checkbox"],
+#ihf-main input[type="radio"],
+#ihf-render-target-listing input[type="checkbox"],
+#ihf-render-target-listing input[type="radio"] {
+  accent-color: #C4952A !important;
+}
+
+/* ── IHF blue color overrides → navy ── */
+#ihf-main [class*="primary"],
+#ihf-render-target-listing [class*="primary"] {
+  background-color: #002349 !important;
+  color: #fff !important;
+}
+
+/* ── Pagination ── */
+#ihf-main [class*="pagination"] a,
+#ihf-main [class*="pagination"] button,
+#ihf-render-target-listing [class*="pagination"] a,
+#ihf-render-target-listing [class*="pagination"] button {
+  border-radius: 999px !important;
+  border: 1px solid rgba(0,35,73,0.2) !important;
+  color: #002349 !important;
+}
+#ihf-main [class*="pagination"] [aria-current],
+#ihf-render-target-listing [class*="pagination"] [aria-current] {
+  background: #002349 !important;
+  color: #C4952A !important;
+  border-color: #002349 !important;
+}
+
+/* ── Map rounded corners ── */
+#ihf-main [class*="map"],
+#ihf-render-target-listing [class*="map"] {
+  border-radius: 12px !important;
+  overflow: hidden !important;
+}
+
+/* ── Remove any IHF blue backgrounds ── */
+#ihf-main [style*="background-color: rgb(0, 112, 243)"],
+#ihf-main [style*="background-color:#0070f3"],
+#ihf-main [style*="color: rgb(0, 112, 243)"] {
+  background-color: #002349 !important;
+  color: #C4952A !important;
+}
+
+/* ═══════════════════════════════════════════════════════
+   IDX Search Results Page - Filter Dropdown Redesign
+   Applies ONLY to #ihf-main (the /idx/ all-listings page)
+   Does NOT affect lifestyle/city widget pages
+   ═══════════════════════════════════════════════════════ */
+
+/* Hide the three native filter dropdowns (price, beds/baths, type) */
+#ihf-main select,
+#ihf-main [class*="dropdown"],
+#ihf-main [class*="Dropdown"],
+#ihf-main [class*="filter-row"],
+#ihf-main [class*="FilterRow"],
+#ihf-main [class*="search-filter"]:not([class*="button"]):not([class*="submit"]) {
+  display: none !important;
+}
+
+/* ── Header: editorial serif title + result count ── */
+#ihf-main [class*="results-header"],
+#ihf-main [class*="ResultsHeader"],
+#ihf-main [class*="search-header"],
+#ihf-main [class*="SearchHeader"] {
+  background: #F5F0E8 !important;
+  border-bottom: 1px solid rgba(0,35,73,0.1) !important;
+  padding: 14px 16px 10px !important;
+}
+
+/* Result count → gold spaced caps */
+#ihf-main [class*="result-count"],
+#ihf-main [class*="ResultCount"],
+#ihf-main [class*="results-count"],
+#ihf-main [class*="listing-count"] {
+  font-family: Inter, system-ui, sans-serif !important;
+  font-size: 10px !important;
+  letter-spacing: 0.18em !important;
+  text-transform: uppercase !important;
+  color: #C4952A !important;
+  font-weight: 500 !important;
+}
+
+/* Active filter tags - style as navy/gold pills */
+#ihf-main [class*="active-filter"],
+#ihf-main [class*="ActiveFilter"],
+#ihf-main [class*="filter-tag"],
+#ihf-main [class*="FilterTag"],
+#ihf-main [class*="applied-filter"],
+#ihf-main [class*="search-tag"] {
+  background: #002349 !important;
+  color: #C4952A !important;
+  border: none !important;
+  border-radius: 999px !important;
+  font-size: 10px !important;
+  padding: 4px 10px !important;
+  font-family: Inter, system-ui, sans-serif !important;
+  letter-spacing: 0.04em !important;
+}
+
+/* Filter tag × close buttons */
+#ihf-main [class*="active-filter"] button,
+#ihf-main [class*="filter-tag"] button,
+#ihf-main [class*="applied-filter"] button,
+#ihf-main [class*="search-tag"] button {
+  background: transparent !important;
+  color: rgba(196,149,42,0.6) !important;
+  border: none !important;
+  border-radius: 0 !important;
+  font-size: 11px !important;
+  padding: 0 0 0 4px !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+}
+
+/* Filter chips container - horizontal scroll row */
+#ihf-main [class*="active-filters"],
+#ihf-main [class*="ActiveFilters"],
+#ihf-main [class*="applied-filters"],
+#ihf-main [class*="filter-tags"] {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 5px !important;
+  padding: 8px 16px !important;
+  background: #F5F0E8 !important;
+  border-bottom: 1px solid rgba(0,35,73,0.08) !important;
+}
+
+/* Sort row - clean single line */
+#ihf-main [class*="sort"],
+#ihf-main [class*="Sort"] {
+  background: #F5F0E8 !important;
+  border-bottom: 1px solid rgba(0,35,73,0.08) !important;
+  padding: 6px 16px !important;
+  font-size: 10px !important;
+  color: #6B5D52 !important;
+  font-family: Inter, system-ui, sans-serif !important;
+}
+
+/* List/Map toggle → pill buttons */
+#ihf-main [class*="view-toggle"],
+#ihf-main [class*="ViewToggle"],
+#ihf-main [class*="layout-toggle"],
+#ihf-main [class*="display-toggle"] {
+  gap: 4px !important;
+}
+#ihf-main [class*="view-toggle"] button,
+#ihf-main [class*="ViewToggle"] button,
+#ihf-main [class*="layout-toggle"] button {
+  border-radius: 999px !important;
+  font-size: 10px !important;
+  padding: 4px 12px !important;
+  border: 1px solid rgba(0,35,73,0.18) !important;
+  background: #fff !important;
+  color: #6B5D52 !important;
+}
+#ihf-main [class*="view-toggle"] button[class*="active"],
+#ihf-main [class*="view-toggle"] button[aria-pressed="true"],
+#ihf-main [class*="ViewToggle"] button[class*="active"] {
+  background: #002349 !important;
+  color: #C4952A !important;
+  border-color: #002349 !important;
+}
+
+/* Listing alert button → gold outline pill */
+#ihf-main [class*="alert"],
+#ihf-main [class*="Alert"] {
+  background: #002349 !important;
+  color: #C4952A !important;
+  border: none !important;
+  border-radius: 999px !important;
+  letter-spacing: 0.14em !important;
+  text-transform: uppercase !important;
+  font-size: 11px !important;
+  width: 100% !important;
+  margin-bottom: 10px !important;
+}
+
+
+/* ── Stellar MLS Disclaimer: compact tap-to-expand ── */
+.ihf-disclaimer,
+.idx-disclaimer,
+.ihf-idx-required-links,
+.ihf-required-links,
+.ihf-footer-disclaimer,
+.ihf-idx-links,
+.rets-disclaimer,
+[class*="Disclaimer"],
+[class*="disclaimer"] {
+  font-size: 9px !important;
+  line-height: 1.4 !important;
+  color: #9B8E84 !important;
+  padding: 6px 12px 4px !important;
+  margin: 0 !important;
+  border-top: 1px solid rgba(0,35,73,0.08) !important;
+  background: #F5F0E8 !important;
+  max-height: 48px !important;
+  overflow: hidden !important;
+  cursor: pointer !important;
+  transition: max-height 0.35s ease !important;
+}
+.ihf-disclaimer img,
+.idx-disclaimer img,
+[class*="disclaimer"] img,
+[class*="Disclaimer"] img {
+  max-height: 18px !important;
+  width: auto !important;
+  margin-bottom: 2px !important;
+  display: inline-block !important;
+}
+.ihf-disclaimer strong,
+.idx-disclaimer strong,
+[class*="disclaimer"] strong,
+[class*="Disclaimer"] strong {
+  font-size: 9px !important;
+  font-weight: 600 !important;
+}
+.ihf-disclaimer p,
+.idx-disclaimer p,
+[class*="disclaimer"] p,
+[class*="Disclaimer"] p {
+  font-size: 9px !important;
+  line-height: 1.4 !important;
+  margin: 0 !important;
+}
+.ihf-disclaimer.sb-open,
+.idx-disclaimer.sb-open,
+[class*="Disclaimer"].sb-open,
+[class*="disclaimer"].sb-open {
+  max-height: 500px !important;
+}

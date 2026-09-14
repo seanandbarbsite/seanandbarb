@@ -1,0 +1,238 @@
+[
+ {
+  "slug": "market-report-central-florida",
+  "url": "/market-report/",
+  "title": "Central Florida Home Prices, July 2026: All Ten Markets",
+  "description": "Median prices ranged from $446,975 in Orlando to $1,157,500 in Windermere. Days in RPR, months of supply, and price per square foot for all ten markets.",
+  "category": "Market Reports",
+  "publishDate": "2026-08-26",
+  "heroImage": "/images/hero.webp",
+  "readingMinutes": 5
+ },
+ {
+  "slug": "market-report-windermere",
+  "url": "/market-report/windermere-fl/",
+  "title": "Windermere, FL Home Prices, July 2026: Median $1,157,500",
+  "description": "Median single-family price $1,157,500, 5.55 months of supply, 57 days in RPR, $348 per square foot. Balanced Market.",
+  "category": "Market Reports",
+  "publishDate": "2026-08-26",
+  "heroImage": "/images/windermere.webp",
+  "readingMinutes": 7
+ },
+ {
+  "slug": "market-report-winter-park",
+  "url": "/market-report/winter-park-fl/",
+  "title": "Winter Park, FL Home Prices, July 2026: Median $889,000",
+  "description": "Median single-family price $889,000, 4.42 months of supply, 78 days in RPR, $440 per square foot. Seller's Market.",
+  "category": "Market Reports",
+  "publishDate": "2026-08-26",
+  "heroImage": "/images/winter-park.webp",
+  "readingMinutes": 7
+ },
+ {
+  "slug": "market-report-maitland",
+  "url": "/market-report/maitland-fl/",
+  "title": "Maitland, FL Home Prices, July 2026: Median $827,000",
+  "description": "Median single-family price $827,000, 3.33 months of supply, 49 days in RPR, $330 per square foot. Seller's Market.",
+  "category": "Market Reports",
+  "publishDate": "2026-08-26",
+  "heroImage": "/images/maitland.webp",
+  "readingMinutes": 7
+ },
+ {
+  "slug": "market-report-lake-nona",
+  "url": "/market-report/lake-nona-fl/",
+  "title": "Lake Nona, FL Home Prices, July 2026: Median $782,000",
+  "description": "Median single-family price $782,000, 5.65 months of supply, 41 days in RPR, $301 per square foot. Balanced Market.",
+  "category": "Market Reports",
+  "publishDate": "2026-08-26",
+  "heroImage": "/images/lake-nona.webp",
+  "readingMinutes": 7
+ },
+ {
+  "slug": "market-report-winter-garden",
+  "url": "/market-report/winter-garden-fl/",
+  "title": "Winter Garden, FL Home Prices, July 2026: Median $675,351",
+  "description": "Median single-family price $675,351, 4.50 months of supply, 42 days in RPR, $253 per square foot. Seller's Market.",
+  "category": "Market Reports",
+  "publishDate": "2026-08-26",
+  "heroImage": "/images/winter-garden.webp",
+  "readingMinutes": 7
+ },
+ {
+  "slug": "market-report-lake-mary",
+  "url": "/market-report/lake-mary-fl/",
+  "title": "Lake Mary, FL Home Prices, July 2026: Median $632,500",
+  "description": "Median single-family price $632,500, 3.41 months of supply, 46 days in RPR, $251 per square foot. Seller's Market.",
+  "category": "Market Reports",
+  "publishDate": "2026-08-26",
+  "heroImage": "/images/lake-mary.webp",
+  "readingMinutes": 7
+ },
+ {
+  "slug": "market-report-dr-phillips",
+  "url": "/market-report/dr-phillips-fl/",
+  "title": "Dr. Phillips, FL Home Prices, July 2026: Median $625,000",
+  "description": "Median single-family price $625,000, 3.50 months of supply, 43 days in RPR, $290 per square foot. Seller's Market.",
+  "category": "Market Reports",
+  "publishDate": "2026-08-26",
+  "heroImage": "/images/dr-phillips.webp",
+  "readingMinutes": 7
+ },
+ {
+  "slug": "market-report-oviedo",
+  "url": "/market-report/oviedo-fl/",
+  "title": "Oviedo, FL Home Prices, July 2026: Median $610,000",
+  "description": "Median single-family price $610,000, 3.06 months of supply, 55 days in RPR, $246 per square foot. Seller's Market.",
+  "category": "Market Reports",
+  "publishDate": "2026-08-26",
+  "heroImage": "/images/oviedo.webp",
+  "readingMinutes": 7
+ },
+ {
+  "slug": "market-report-longwood",
+  "url": "/market-report/longwood-fl/",
+  "title": "Longwood, FL Home Prices, July 2026: Median $532,500",
+  "description": "Median single-family price $532,500, 2.47 months of supply, 50 days in RPR, $249 per square foot. Seller's Market.",
+  "category": "Market Reports",
+  "publishDate": "2026-08-26",
+  "heroImage": "/images/longwood.webp",
+  "readingMinutes": 7
+ },
+ {
+  "slug": "market-report-orlando",
+  "url": "/market-report/orlando-fl/",
+  "title": "Orlando, FL Home Prices, July 2026: Median $446,975",
+  "description": "Median single-family price $446,975, 4.44 months of supply, 48 days in RPR, $247 per square foot. Seller's Market.",
+  "category": "Market Reports",
+  "publishDate": "2026-08-26",
+  "heroImage": "/images/orlando.webp",
+  "readingMinutes": 7
+ },
+ {
+  "slug": "central-florida-seller-pricing-2026",
+  "title": "Pricing a Luxury Home in a Balanced Market: Why the First Two Weeks Decide Everything",
+  "description": "With Central Florida homes taking around 32 days to sell and price reductions on roughly 22% of listings, pricing strategy matters more than ever. Here is how luxury sellers should approach it.",
+  "category": "Selling",
+  "publishDate": "2026-08-04",
+  "heroImage": "/images/insights/pool/pool-02.webp",
+  "readingMinutes": 2
+ },
+ {
+  "slug": "downtown-orlando-lake-eola-tower-2026",
+  "title": "Downtown Orlando's First Branded Condo Residences? A 37-Story Lake Eola Tower Clears a Key Vote",
+  "description": "Orlando's planning board approved zoning for a proposed 37-story tower near Lake Eola that could bring a five-star hotel and downtown's first branded condo residences. Here is what it signals for the luxury market.",
+  "category": "Local Real Estate News",
+  "publishDate": "2026-07-30",
+  "heroImage": "/images/insights/pool/pool-06.webp",
+  "readingMinutes": 2
+ },
+ {
+  "slug": "central-florida-buyer-market-shift-2026",
+  "title": "More Inventory, Longer Days on Market: Why Central Florida Buyers Have Room to Negotiate",
+  "description": "Orlando homes are now taking around 32 days to sell, up from 22 a year ago, with price reductions on roughly 22% of listings. Here is what the rebalanced market means for luxury and physician buyers.",
+  "category": "Buying",
+  "publishDate": "2026-07-28",
+  "heroImage": "/images/insights/pool/pool-05.webp",
+  "readingMinutes": 2
+ },
+ {
+  "slug": "orlando-health-tupperware-hospital-2026",
+  "title": "Orlando Health Plans a New Hospital at the Former Tupperware Campus: What It Means for Physicians",
+  "description": "Orlando Health filed plans for a 146-bed acute-care hospital with an eight-story patient tower near the Tupperware SunRail station. Here is what another major practice location means for physicians relocating to Central Florida.",
+  "category": "Moving to Central Florida",
+  "publishDate": "2026-07-23",
+  "heroImage": "/images/insights/pool/pool-01.webp",
+  "readingMinutes": 2
+ },
+ {
+  "slug": "lake-nona-laureate-park-426-homes-2026",
+  "title": "426 New Homes Coming to Lake Nona: What It Means for Relocating Physicians",
+  "description": "Tavistock has approval to add 426 homesites to Lake Nona's Laureate Park, just south of Medical City. Here is what new inventory next to the hospitals means for physicians planning a Central Florida move.",
+  "category": "New Construction Communities",
+  "publishDate": "2026-07-21",
+  "heroImage": "/images/insights/pool/pool-04.webp",
+  "readingMinutes": 2
+ },
+ {
+  "slug": "central-florida-lifestyle-physician-families",
+  "title": "The Physician Family's Lifestyle Guide to Central Florida: Spas, MICHELIN Dining, and More",
+  "description": "Beyond hospitals and schools, Central Florida offers a MICHELIN-recognized dining scene, world-class spas, and luxury shopping. Here is a relocating physician family's guide to the best of life off the clock.",
+  "category": "Physician Relocation",
+  "publishDate": "2026-07-16",
+  "heroImage": "/images/insights/pool/pool-08.webp",
+  "readingMinutes": 2
+ },
+ {
+  "slug": "best-schools-physician-families-central-florida",
+  "title": "Best Schools for Physician Families in Central Florida: A-Rated Public and Top Private",
+  "description": "Both major districts serving Central Florida's luxury markets hold A state grades, and the region offers nationally ranked private schools like Windermere Preparatory. Here is a guide to the best schools for relocating physician families.",
+  "category": "Physician Relocation",
+  "publishDate": "2026-07-14",
+  "heroImage": "/images/insights/pool/pool-07.webp",
+  "readingMinutes": 2
+ },
+ {
+  "slug": "florida-homestead-exemption-save-our-homes",
+  "title": "Florida Homestead Exemption and Save Our Homes: A Physician's Guide to Ongoing Tax Savings",
+  "description": "Florida's homestead exemption cuts up to $50,000 off your home's taxable value, and the Save Our Homes cap limits annual assessment increases to 3%. For a physician in an appreciating market, that can mean thousands saved every year. Here is how it works.",
+  "category": "Physician Relocation",
+  "publishDate": "2026-07-09",
+  "heroImage": "/images/insights/pool/pool-03.webp",
+  "readingMinutes": 3
+ },
+ {
+  "slug": "establishing-florida-domicile-physicians",
+  "title": "Establishing Florida Domicile Correctly: A Physician's Guide to Avoiding Residency Audits",
+  "description": "Buying a Florida home does not automatically make you a Florida resident for tax purposes. High-tax states run aggressive residency audits. Here are the essential steps to establish airtight Florida domicile and protect your tax savings.",
+  "category": "Physician Relocation",
+  "publishDate": "2026-07-07",
+  "heroImage": "/images/insights/pool/pool-02.webp",
+  "readingMinutes": 3
+ },
+ {
+  "slug": "florida-medical-license-relocating-physicians",
+  "title": "Florida Medical License for Relocating Physicians: Timeline, IMLC, and the Compliance Checklist",
+  "description": "A standard Florida medical license takes 2 to 6 months; the Interstate Medical Licensure Compact can get you practicing in 3 to 6 weeks. Here is the full timeline, eligibility, and the address-change checklist that protects your prescriptions.",
+  "category": "Physician Relocation",
+  "publishDate": "2026-07-02",
+  "heroImage": "/images/insights/pool/pool-06.webp",
+  "readingMinutes": 4
+ },
+ {
+  "slug": "physician-tax-savings-moving-to-florida",
+  "title": "How Much Will Physicians Save Moving to Florida? A State-by-State Tax Breakdown",
+  "description": "Florida has zero state income tax. For a physician earning $500K, that can mean $18,000 to $50,000+ saved every year. Here is the state-by-state math, plus the estate-tax and Roth-conversion advantages most guides miss.",
+  "category": "Physician Relocation",
+  "publishDate": "2026-06-30",
+  "heroImage": "/images/insights/florida-tax-savings.webp",
+  "readingMinutes": 4
+ },
+ {
+  "slug": "central-florida-hospitals-physicians",
+  "title": "Where Physicians Practice in Central Florida: A Guide to the Major Hospital Systems",
+  "description": "From AdventHealth Orlando's $1 billion expansion to Orlando Health ORMC's Level I Trauma Center and the Lake Nona Medical City ecosystem, here is where physicians practice across Central Florida, with bed counts, specialties, and residency programs.",
+  "category": "Physician Relocation",
+  "publishDate": "2026-06-26",
+  "heroImage": "/images/insights/central-florida-hospitals.webp",
+  "readingMinutes": 3
+ },
+ {
+  "slug": "central-florida-luxury-communities-physicians",
+  "title": "Where Physicians Live: Central Florida's Luxury Communities, From Windermere to Lake Nona",
+  "description": "Windermere's Isleworth, Keene's Pointe, and Golden Oak; Dr. Phillips' Bay Hill; Lake Nona's medical-city luxury. Here is an overview of where relocating physicians live across Central Florida's ten markets, with price ranges and links to each community.",
+  "category": "Physician Relocation",
+  "publishDate": "2026-06-26",
+  "heroImage": "/images/insights/luxury-communities.webp",
+  "readingMinutes": 2
+ },
+ {
+  "slug": "physician-mortgage-loans-florida",
+  "title": "Physician Mortgage Loans in Florida: 0% Down, No PMI, and Student Loans Excluded",
+  "description": "Physician mortgage loans let doctors buy $1M+ Central Florida homes with as little as 0% to 5% down, no PMI ever, and student loans excluded from your debt-to-income ratio. Here is how they compare to conventional jumbo loans and which lenders serve Central Florida.",
+  "category": "Physician Relocation",
+  "publishDate": "2026-06-26",
+  "heroImage": "/images/insights/physician-mortgage.webp",
+  "readingMinutes": 3
+ }
+]

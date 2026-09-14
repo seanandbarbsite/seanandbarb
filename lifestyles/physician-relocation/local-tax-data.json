@@ -1,0 +1,304 @@
+{
+  "_meta": {
+    "purpose": "Cascading dropdown data for the physician tax calculator. When a state is selected, populate the city field from that state's cities array. States not listed here have NO local income tax, so hide or disable the city field for them.",
+    "source": "Tax Foundation 2026, ITEP, state and city revenue departments. Rates are physician-level (high earner) approximations. Verify against current city schedules before publishing, and keep the 'illustration only, consult a tax professional' disclaimer.",
+    "rate_format": "Decimal share of income (0.024 = 2.4%). Add this to the state rate to get the physician's total escaped rate when moving to Florida.",
+    "special_cases": {
+      "graduated_income": "Rate is the top marginal local rate; a physician's effective rate is slightly lower. Fine as an approximation at physician income.",
+      "surcharge_of_state_tax": "Not a percent of income. It is a percent of the state tax owed. Use surchargeRate against computed state tax, or the listed physicianLocalRate as a rough income-equivalent.",
+      "graduated_regional": "Applies only above income thresholds, so the flat rate overstates for lower incomes. physicianLocalRate is an effective estimate for a $400K to $600K earner."
+    },
+    "no_local_income_tax_states": [
+      "New Jersey",
+      "Illinois",
+      "Minnesota",
+      "Connecticut",
+      "Massachusetts",
+      "California",
+      "Virginia",
+      "Georgia",
+      "Wisconsin",
+      "North Carolina",
+      "Arizona",
+      "and all nine no-income-tax states"
+    ]
+  },
+  "states": {
+    "NY": [
+      {
+        "name": "New York City",
+        "physicianLocalRate": 0.03876,
+        "type": "graduated_income",
+        "note": "Resident tax, graduated 3.078% to 3.876%. Physician marginal about 3.876%."
+      },
+      {
+        "name": "Yonkers",
+        "physicianLocalRate": 0.0115,
+        "type": "surcharge_of_state_tax",
+        "surchargeRate": 0.1675,
+        "note": "16.75% of your New York state tax. About 1.1% of income for a physician."
+      },
+      {
+        "name": "Rest of New York (no city tax)",
+        "physicianLocalRate": 0.0,
+        "type": "none",
+        "note": ""
+      }
+    ],
+    "MD": [
+      {
+        "name": "Baltimore City",
+        "physicianLocalRate": 0.032,
+        "type": "flat_county",
+        "note": "Maryland local tax is county-based and unavoidable. Range statewide is 2.25% to 3.20%."
+      },
+      {
+        "name": "Montgomery County",
+        "physicianLocalRate": 0.032,
+        "type": "flat_county",
+        "note": ""
+      },
+      {
+        "name": "Prince George's County",
+        "physicianLocalRate": 0.032,
+        "type": "flat_county",
+        "note": ""
+      },
+      {
+        "name": "Howard County",
+        "physicianLocalRate": 0.032,
+        "type": "flat_county",
+        "note": ""
+      },
+      {
+        "name": "Baltimore County",
+        "physicianLocalRate": 0.032,
+        "type": "flat_county",
+        "note": ""
+      },
+      {
+        "name": "Anne Arundel County",
+        "physicianLocalRate": 0.0281,
+        "type": "flat_county",
+        "note": "Verify current rate."
+      },
+      {
+        "name": "Other Maryland county",
+        "physicianLocalRate": 0.026,
+        "type": "flat_county",
+        "note": "Confirm the exact county rate, 2.25% to 3.20%."
+      }
+    ],
+    "OH": [
+      {
+        "name": "Columbus",
+        "physicianLocalRate": 0.025,
+        "type": "flat_municipal",
+        "note": ""
+      },
+      {
+        "name": "Cleveland",
+        "physicianLocalRate": 0.025,
+        "type": "flat_municipal",
+        "note": ""
+      },
+      {
+        "name": "Cincinnati",
+        "physicianLocalRate": 0.018,
+        "type": "flat_municipal",
+        "note": ""
+      },
+      {
+        "name": "Dayton",
+        "physicianLocalRate": 0.025,
+        "type": "flat_municipal",
+        "note": ""
+      },
+      {
+        "name": "Toledo",
+        "physicianLocalRate": 0.025,
+        "type": "flat_municipal",
+        "note": ""
+      },
+      {
+        "name": "Akron",
+        "physicianLocalRate": 0.025,
+        "type": "flat_municipal",
+        "note": ""
+      },
+      {
+        "name": "Other Ohio municipality",
+        "physicianLocalRate": 0.02,
+        "type": "flat_municipal",
+        "note": "Range 0.5% to 3%. Confirm the specific city."
+      },
+      {
+        "name": "Unincorporated Ohio (no city tax)",
+        "physicianLocalRate": 0.0,
+        "type": "none",
+        "note": ""
+      }
+    ],
+    "PA": [
+      {
+        "name": "Philadelphia",
+        "physicianLocalRate": 0.0374,
+        "type": "flat_wage",
+        "note": "Resident wage tax. Confirm current rate, it declines gradually."
+      },
+      {
+        "name": "Pittsburgh",
+        "physicianLocalRate": 0.03,
+        "type": "flat_wage",
+        "note": "1% city plus 2% school district."
+      },
+      {
+        "name": "Scranton",
+        "physicianLocalRate": 0.034,
+        "type": "flat_wage",
+        "note": ""
+      },
+      {
+        "name": "Reading",
+        "physicianLocalRate": 0.036,
+        "type": "flat_wage",
+        "note": ""
+      },
+      {
+        "name": "Other Pennsylvania municipality",
+        "physicianLocalRate": 0.01,
+        "type": "flat_wage",
+        "note": "Local Earned Income Tax, typically about 1%."
+      }
+    ],
+    "MI": [
+      {
+        "name": "Detroit",
+        "physicianLocalRate": 0.024,
+        "type": "flat_city",
+        "note": "Resident rate."
+      },
+      {
+        "name": "Grand Rapids",
+        "physicianLocalRate": 0.015,
+        "type": "flat_city",
+        "note": ""
+      },
+      {
+        "name": "Other Michigan city (Lansing, Flint, etc.)",
+        "physicianLocalRate": 0.01,
+        "type": "flat_city",
+        "note": ""
+      },
+      {
+        "name": "Rest of Michigan (no city tax)",
+        "physicianLocalRate": 0.0,
+        "type": "none",
+        "note": ""
+      }
+    ],
+    "KY": [
+      {
+        "name": "Louisville (Jefferson County)",
+        "physicianLocalRate": 0.022,
+        "type": "flat_occupational",
+        "note": "Occupational tax on wages."
+      },
+      {
+        "name": "Lexington (Fayette County)",
+        "physicianLocalRate": 0.0225,
+        "type": "flat_occupational",
+        "note": ""
+      },
+      {
+        "name": "Other Kentucky locality",
+        "physicianLocalRate": 0.015,
+        "type": "flat_occupational",
+        "note": "Varies widely by city and county."
+      }
+    ],
+    "OR": [
+      {
+        "name": "Portland (Multnomah County / Metro)",
+        "physicianLocalRate": 0.025,
+        "type": "graduated_regional",
+        "note": "Metro 1% over $125K plus Multnomah 1.5% over $125K and another 1.5% over $250K. Marginal reaches about 4% over $250K; 2.5% is an effective estimate for a $400K to $600K earner."
+      },
+      {
+        "name": "Rest of Oregon (no local income tax)",
+        "physicianLocalRate": 0.0,
+        "type": "none",
+        "note": ""
+      }
+    ],
+    "MO": [
+      {
+        "name": "Kansas City",
+        "physicianLocalRate": 0.01,
+        "type": "flat_earnings",
+        "note": ""
+      },
+      {
+        "name": "St. Louis",
+        "physicianLocalRate": 0.01,
+        "type": "flat_earnings",
+        "note": ""
+      },
+      {
+        "name": "Rest of Missouri (no city tax)",
+        "physicianLocalRate": 0.0,
+        "type": "none",
+        "note": ""
+      }
+    ],
+    "IN": [
+      {
+        "name": "Indianapolis (Marion County)",
+        "physicianLocalRate": 0.0202,
+        "type": "flat_county",
+        "note": "Indiana local tax is county-based."
+      },
+      {
+        "name": "Other Indiana county",
+        "physicianLocalRate": 0.015,
+        "type": "flat_county",
+        "note": "Range 0.5% to over 3%. Confirm the county."
+      }
+    ],
+    "DE": [
+      {
+        "name": "Wilmington",
+        "physicianLocalRate": 0.0125,
+        "type": "flat_city",
+        "note": ""
+      },
+      {
+        "name": "Rest of Delaware (no city tax)",
+        "physicianLocalRate": 0.0,
+        "type": "none",
+        "note": ""
+      }
+    ],
+    "AL": [
+      {
+        "name": "Birmingham",
+        "physicianLocalRate": 0.01,
+        "type": "flat_occupational",
+        "note": ""
+      },
+      {
+        "name": "Other Alabama locality",
+        "physicianLocalRate": 0.01,
+        "type": "flat_occupational",
+        "note": "A handful of cities levy an occupational tax."
+      },
+      {
+        "name": "Rest of Alabama (no city tax)",
+        "physicianLocalRate": 0.0,
+        "type": "none",
+        "note": ""
+      }
+    ]
+  },
+  "_note": "Keyed by USPS postal code (matches the calculator TAX table and savings-data.json). Cities: physicianLocalRate is a decimal; type 'surcharge_of_state_tax' means surchargeRate applies to state tax."
+}

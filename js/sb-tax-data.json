@@ -1,0 +1,2103 @@
+{
+ "version": "2026.1",
+ "tax_year": 2026,
+ "generated": "2026-08-19",
+ "next_review": "2027-01-15",
+ "review_notes": [
+  "HI: SB 3125 adds a 13% bracket above $1M for tax years after 2026-12-31.",
+  "GA: HB 463 authorizes further 0.125pt annual reductions toward a 3.99% floor, revenue-trigger dependent.",
+  "SC: confirm base treatment under H.4216 (federal standard deduction decoupling).",
+  "IN: scheduled reduction to 2.90% for 2027. MT: scheduled 5.40% for 2027. MS: 3.75% for 2027.",
+  "Verify all locality rates; none were verified in this pass.",
+  "Locality tables other than NY are unverified as of this build.",
+  "Philadelphia rate steps down again each July 1 through FY30. Recheck every July.",
+  "PA non-Philadelphia municipal EIT rates still unverified.",
+  "Toledo OH rate disputed (2.25 vs 2.5); confirm with RITA or the City of Toledo.",
+  "Catch-all locality entries (\"Other X\") are averages, not exact rates.",
+  "Ohio School District Income Tax is not modelled."
+ ],
+ "states": {
+  "AL": {
+   "brackets": {
+    "single": [
+     [
+      500,
+      0.02
+     ],
+     [
+      3000,
+      0.04
+     ],
+     [
+      null,
+      0.05
+     ]
+    ],
+    "joint": [
+     [
+      1000,
+      0.02
+     ],
+     [
+      6000,
+      0.04
+     ],
+     [
+      null,
+      0.05
+     ]
+    ]
+   },
+   "verified": "2026-08-19",
+   "source": "Tax Foundation, State Individual Income Tax Rates and Brackets, as of 2026-01-01",
+   "status": "verified"
+  },
+  "AZ": {
+   "brackets": {
+    "single": [
+     [
+      null,
+      0.025
+     ]
+    ],
+    "joint": [
+     [
+      null,
+      0.025
+     ]
+    ]
+   },
+   "verified": "2026-08-19",
+   "source": "Tax Foundation, State Individual Income Tax Rates and Brackets, as of 2026-01-01",
+   "status": "verified"
+  },
+  "AR": {
+   "brackets": {
+    "single": [
+     [
+      4600,
+      0.02
+     ],
+     [
+      null,
+      0.039
+     ]
+    ],
+    "joint": [
+     [
+      4600,
+      0.02
+     ],
+     [
+      null,
+      0.039
+     ]
+    ]
+   },
+   "verified": "2026-08-19",
+   "source": "Tax Foundation, State Individual Income Tax Rates and Brackets, as of 2026-01-01",
+   "status": "verified"
+  },
+  "CA": {
+   "brackets": {
+    "single": [
+     [
+      10756,
+      0.01
+     ],
+     [
+      25499,
+      0.02
+     ],
+     [
+      40245,
+      0.04
+     ],
+     [
+      55866,
+      0.06
+     ],
+     [
+      70606,
+      0.08
+     ],
+     [
+      360659,
+      0.093
+     ],
+     [
+      432787,
+      0.103
+     ],
+     [
+      721314,
+      0.113
+     ],
+     [
+      1000000,
+      0.123
+     ],
+     [
+      null,
+      0.133
+     ]
+    ],
+    "joint": [
+     [
+      21512,
+      0.01
+     ],
+     [
+      50998,
+      0.02
+     ],
+     [
+      80490,
+      0.04
+     ],
+     [
+      111732,
+      0.06
+     ],
+     [
+      141212,
+      0.08
+     ],
+     [
+      721318,
+      0.093
+     ],
+     [
+      865574,
+      0.103
+     ],
+     [
+      1000000,
+      0.113
+     ],
+     [
+      1442628,
+      0.123
+     ],
+     [
+      null,
+      0.133
+     ]
+    ]
+   },
+   "verified": "2026-08-19",
+   "source": "Tax Foundation, State Individual Income Tax Rates and Brackets, as of 2026-01-01",
+   "status": "verified"
+  },
+  "CO": {
+   "brackets": {
+    "single": [
+     [
+      null,
+      0.044
+     ]
+    ],
+    "joint": [
+     [
+      null,
+      0.044
+     ]
+    ]
+   },
+   "verified": "2026-08-19",
+   "source": "Tax Foundation, State Individual Income Tax Rates and Brackets, as of 2026-01-01",
+   "status": "verified"
+  },
+  "CT": {
+   "brackets": {
+    "single": [
+     [
+      10000,
+      0.02
+     ],
+     [
+      50000,
+      0.045
+     ],
+     [
+      100000,
+      0.055
+     ],
+     [
+      200000,
+      0.06
+     ],
+     [
+      250000,
+      0.065
+     ],
+     [
+      500000,
+      0.069
+     ],
+     [
+      null,
+      0.0699
+     ]
+    ],
+    "joint": [
+     [
+      20000,
+      0.02
+     ],
+     [
+      100000,
+      0.045
+     ],
+     [
+      200000,
+      0.055
+     ],
+     [
+      400000,
+      0.06
+     ],
+     [
+      500000,
+      0.065
+     ],
+     [
+      1000000,
+      0.069
+     ],
+     [
+      null,
+      0.0699
+     ]
+    ]
+   },
+   "verified": "2026-08-19",
+   "source": "Tax Foundation, State Individual Income Tax Rates and Brackets, as of 2026-01-01",
+   "status": "verified"
+  },
+  "DE": {
+   "brackets": {
+    "single": [
+     [
+      2000,
+      0
+     ],
+     [
+      5000,
+      0.022
+     ],
+     [
+      10000,
+      0.039
+     ],
+     [
+      20000,
+      0.048
+     ],
+     [
+      25000,
+      0.052
+     ],
+     [
+      60000,
+      0.0555
+     ],
+     [
+      null,
+      0.066
+     ]
+    ],
+    "joint": [
+     [
+      2000,
+      0
+     ],
+     [
+      5000,
+      0.022
+     ],
+     [
+      10000,
+      0.039
+     ],
+     [
+      20000,
+      0.048
+     ],
+     [
+      25000,
+      0.052
+     ],
+     [
+      60000,
+      0.0555
+     ],
+     [
+      null,
+      0.066
+     ]
+    ]
+   },
+   "verified": "2026-08-19",
+   "source": "Tax Foundation, State Individual Income Tax Rates and Brackets, as of 2026-01-01",
+   "status": "verified"
+  },
+  "GA": {
+   "brackets": {
+    "single": [
+     [
+      null,
+      0.0499
+     ]
+    ],
+    "joint": [
+     [
+      null,
+      0.0499
+     ]
+    ]
+   },
+   "verified": "2026-08-19",
+   "source": "GA HB 463, signed 2026-05-11, retroactive to 2026-01-01",
+   "status": "verified",
+   "note": "TF Feb 2026 table shows stale 5.19%"
+  },
+  "HI": {
+   "brackets": {
+    "single": [
+     [
+      9600,
+      0.014
+     ],
+     [
+      14400,
+      0.032
+     ],
+     [
+      19200,
+      0.055
+     ],
+     [
+      24000,
+      0.064
+     ],
+     [
+      36000,
+      0.068
+     ],
+     [
+      48000,
+      0.072
+     ],
+     [
+      125000,
+      0.076
+     ],
+     [
+      175000,
+      0.079
+     ],
+     [
+      225000,
+      0.0825
+     ],
+     [
+      275000,
+      0.09
+     ],
+     [
+      325000,
+      0.1
+     ],
+     [
+      null,
+      0.11
+     ]
+    ],
+    "joint": [
+     [
+      19200,
+      0.014
+     ],
+     [
+      28800,
+      0.032
+     ],
+     [
+      38400,
+      0.055
+     ],
+     [
+      48000,
+      0.064
+     ],
+     [
+      72000,
+      0.068
+     ],
+     [
+      96000,
+      0.072
+     ],
+     [
+      250000,
+      0.076
+     ],
+     [
+      350000,
+      0.079
+     ],
+     [
+      450000,
+      0.0825
+     ],
+     [
+      550000,
+      0.09
+     ],
+     [
+      650000,
+      0.1
+     ],
+     [
+      null,
+      0.11
+     ]
+    ]
+   },
+   "verified": "2026-08-19",
+   "source": "HI Act 46 SLH 2024, brackets effective 2025-01-01, unchanged for 2026",
+   "status": "verified",
+   "note": "site had pre-Act-46 schedule; SB 3125 adds 13% bracket for TY2027"
+  },
+  "ID": {
+   "brackets": {
+    "single": [
+     [
+      4811,
+      0
+     ],
+     [
+      null,
+      0.053
+     ]
+    ],
+    "joint": [
+     [
+      9622,
+      0
+     ],
+     [
+      null,
+      0.053
+     ]
+    ]
+   },
+   "verified": "2026-08-19",
+   "source": "Tax Foundation, State Individual Income Tax Rates and Brackets, as of 2026-01-01",
+   "status": "verified"
+  },
+  "IL": {
+   "brackets": {
+    "single": [
+     [
+      null,
+      0.0495
+     ]
+    ],
+    "joint": [
+     [
+      null,
+      0.0495
+     ]
+    ]
+   },
+   "verified": "2026-08-19",
+   "source": "Tax Foundation, State Individual Income Tax Rates and Brackets, as of 2026-01-01",
+   "status": "verified"
+  },
+  "IN": {
+   "brackets": {
+    "single": [
+     [
+      null,
+      0.0295
+     ]
+    ],
+    "joint": [
+     [
+      null,
+      0.0295
+     ]
+    ]
+   },
+   "verified": "2026-08-19",
+   "source": "Tax Foundation, State Individual Income Tax Rates and Brackets, as of 2026-01-01",
+   "status": "verified"
+  },
+  "IA": {
+   "brackets": {
+    "single": [
+     [
+      null,
+      0.038
+     ]
+    ],
+    "joint": [
+     [
+      null,
+      0.038
+     ]
+    ]
+   },
+   "verified": "2026-08-19",
+   "source": "Tax Foundation, State Individual Income Tax Rates and Brackets, as of 2026-01-01",
+   "status": "verified"
+  },
+  "KS": {
+   "brackets": {
+    "single": [
+     [
+      23000,
+      0.052
+     ],
+     [
+      null,
+      0.0558
+     ]
+    ],
+    "joint": [
+     [
+      46000,
+      0.052
+     ],
+     [
+      null,
+      0.0558
+     ]
+    ]
+   },
+   "verified": "2026-08-19",
+   "source": "Tax Foundation, State Individual Income Tax Rates and Brackets, as of 2026-01-01",
+   "status": "verified"
+  },
+  "KY": {
+   "brackets": {
+    "single": [
+     [
+      null,
+      0.035
+     ]
+    ],
+    "joint": [
+     [
+      null,
+      0.035
+     ]
+    ]
+   },
+   "verified": "2026-08-19",
+   "source": "Tax Foundation, State Individual Income Tax Rates and Brackets, as of 2026-01-01",
+   "status": "verified"
+  },
+  "LA": {
+   "brackets": {
+    "single": [
+     [
+      null,
+      0.03
+     ]
+    ],
+    "joint": [
+     [
+      null,
+      0.03
+     ]
+    ]
+   },
+   "verified": "2026-08-19",
+   "source": "Tax Foundation, State Individual Income Tax Rates and Brackets, as of 2026-01-01",
+   "status": "verified"
+  },
+  "ME": {
+   "brackets": {
+    "single": [
+     [
+      26050,
+      0.058
+     ],
+     [
+      61600,
+      0.0675
+     ],
+     [
+      null,
+      0.0715
+     ]
+    ],
+    "joint": [
+     [
+      52100,
+      0.058
+     ],
+     [
+      123200,
+      0.0675
+     ],
+     [
+      null,
+      0.0715
+     ]
+    ]
+   },
+   "verified": "2026-08-19",
+   "source": "Tax Foundation, State Individual Income Tax Rates and Brackets, as of 2026-01-01",
+   "status": "verified"
+  },
+  "MD": {
+   "brackets": {
+    "single": [
+     [
+      1000,
+      0.02
+     ],
+     [
+      2000,
+      0.03
+     ],
+     [
+      3000,
+      0.04
+     ],
+     [
+      100000,
+      0.0475
+     ],
+     [
+      125000,
+      0.05
+     ],
+     [
+      150000,
+      0.0525
+     ],
+     [
+      250000,
+      0.055
+     ],
+     [
+      500000,
+      0.0575
+     ],
+     [
+      1000000,
+      0.0625
+     ],
+     [
+      null,
+      0.065
+     ]
+    ],
+    "joint": [
+     [
+      1000,
+      0.02
+     ],
+     [
+      2000,
+      0.03
+     ],
+     [
+      3000,
+      0.04
+     ],
+     [
+      150000,
+      0.0475
+     ],
+     [
+      175000,
+      0.05
+     ],
+     [
+      225000,
+      0.0525
+     ],
+     [
+      300000,
+      0.055
+     ],
+     [
+      600000,
+      0.0575
+     ],
+     [
+      1200000,
+      0.0625
+     ],
+     [
+      null,
+      0.065
+     ]
+    ]
+   },
+   "verified": "2026-08-19",
+   "source": "Tax Foundation, State Individual Income Tax Rates and Brackets, as of 2026-01-01",
+   "status": "verified"
+  },
+  "MA": {
+   "brackets": {
+    "single": [
+     [
+      1083150,
+      0.05
+     ],
+     [
+      null,
+      0.09
+     ]
+    ],
+    "joint": [
+     [
+      1083150,
+      0.05
+     ],
+     [
+      null,
+      0.09
+     ]
+    ]
+   },
+   "verified": "2026-08-19",
+   "source": "Tax Foundation, State Individual Income Tax Rates and Brackets, as of 2026-01-01",
+   "status": "verified"
+  },
+  "MI": {
+   "brackets": {
+    "single": [
+     [
+      null,
+      0.0425
+     ]
+    ],
+    "joint": [
+     [
+      null,
+      0.0425
+     ]
+    ]
+   },
+   "verified": "2026-08-19",
+   "source": "Tax Foundation, State Individual Income Tax Rates and Brackets, as of 2026-01-01",
+   "status": "verified"
+  },
+  "MN": {
+   "brackets": {
+    "single": [
+     [
+      33310,
+      0.0535
+     ],
+     [
+      109430,
+      0.068
+     ],
+     [
+      203150,
+      0.0785
+     ],
+     [
+      null,
+      0.0985
+     ]
+    ],
+    "joint": [
+     [
+      48700,
+      0.0535
+     ],
+     [
+      193480,
+      0.068
+     ],
+     [
+      337930,
+      0.0785
+     ],
+     [
+      null,
+      0.0985
+     ]
+    ]
+   },
+   "verified": "2026-08-19",
+   "source": "Published 2026 brackets as of 2026-01-01",
+   "status": "verified",
+   "note": "Corrected 2026-08-19: site carried TY2025 inflation-adjusted thresholds"
+  },
+  "MS": {
+   "brackets": {
+    "single": [
+     [
+      10000,
+      0
+     ],
+     [
+      null,
+      0.04
+     ]
+    ],
+    "joint": [
+     [
+      10000,
+      0
+     ],
+     [
+      null,
+      0.04
+     ]
+    ]
+   },
+   "verified": "2026-08-19",
+   "source": "Tax Foundation, State Individual Income Tax Rates and Brackets, as of 2026-01-01",
+   "status": "verified"
+  },
+  "MO": {
+   "brackets": {
+    "single": [
+     [
+      1348,
+      0
+     ],
+     [
+      2696,
+      0.02
+     ],
+     [
+      4044,
+      0.025
+     ],
+     [
+      5392,
+      0.03
+     ],
+     [
+      6740,
+      0.035
+     ],
+     [
+      8088,
+      0.04
+     ],
+     [
+      9436,
+      0.045
+     ],
+     [
+      null,
+      0.047
+     ]
+    ],
+    "joint": [
+     [
+      1348,
+      0
+     ],
+     [
+      2696,
+      0.02
+     ],
+     [
+      4044,
+      0.025
+     ],
+     [
+      5392,
+      0.03
+     ],
+     [
+      6740,
+      0.035
+     ],
+     [
+      8088,
+      0.04
+     ],
+     [
+      9436,
+      0.045
+     ],
+     [
+      null,
+      0.047
+     ]
+    ]
+   },
+   "verified": "2026-08-19",
+   "source": "Tax Foundation, State Individual Income Tax Rates and Brackets, as of 2026-01-01",
+   "status": "verified"
+  },
+  "MT": {
+   "brackets": {
+    "single": [
+     [
+      47500,
+      0.047
+     ],
+     [
+      null,
+      0.0565
+     ]
+    ],
+    "joint": [
+     [
+      95000,
+      0.047
+     ],
+     [
+      null,
+      0.0565
+     ]
+    ]
+   },
+   "verified": "2026-08-19",
+   "source": "Tax Foundation, State Individual Income Tax Rates and Brackets, as of 2026-01-01",
+   "status": "verified"
+  },
+  "NE": {
+   "brackets": {
+    "single": [
+     [
+      4130,
+      0.0246
+     ],
+     [
+      24760,
+      0.0351
+     ],
+     [
+      null,
+      0.0455
+     ]
+    ],
+    "joint": [
+     [
+      8250,
+      0.0246
+     ],
+     [
+      49530,
+      0.0351
+     ],
+     [
+      null,
+      0.0455
+     ]
+    ]
+   },
+   "verified": "2026-08-19",
+   "source": "Tax Foundation, State Individual Income Tax Rates and Brackets, as of 2026-01-01",
+   "status": "verified"
+  },
+  "NJ": {
+   "brackets": {
+    "single": [
+     [
+      20000,
+      0.014
+     ],
+     [
+      35000,
+      0.0175
+     ],
+     [
+      40000,
+      0.035
+     ],
+     [
+      75000,
+      0.05525
+     ],
+     [
+      500000,
+      0.0637
+     ],
+     [
+      1000000,
+      0.0897
+     ],
+     [
+      null,
+      0.1075
+     ]
+    ],
+    "joint": [
+     [
+      20000,
+      0.014
+     ],
+     [
+      50000,
+      0.0175
+     ],
+     [
+      70000,
+      0.0245
+     ],
+     [
+      80000,
+      0.035
+     ],
+     [
+      150000,
+      0.05525
+     ],
+     [
+      500000,
+      0.0637
+     ],
+     [
+      1000000,
+      0.0897
+     ],
+     [
+      null,
+      0.1075
+     ]
+    ]
+   },
+   "verified": "2026-08-19",
+   "source": "Tax Foundation, State Individual Income Tax Rates and Brackets, as of 2026-01-01",
+   "status": "verified"
+  },
+  "NM": {
+   "brackets": {
+    "single": [
+     [
+      5500,
+      0.015
+     ],
+     [
+      16500,
+      0.032
+     ],
+     [
+      33500,
+      0.043
+     ],
+     [
+      66500,
+      0.047
+     ],
+     [
+      210000,
+      0.049
+     ],
+     [
+      null,
+      0.059
+     ]
+    ],
+    "joint": [
+     [
+      8000,
+      0.015
+     ],
+     [
+      25000,
+      0.032
+     ],
+     [
+      50000,
+      0.043
+     ],
+     [
+      100000,
+      0.047
+     ],
+     [
+      315000,
+      0.049
+     ],
+     [
+      null,
+      0.059
+     ]
+    ]
+   },
+   "verified": "2026-08-19",
+   "source": "Published 2026 brackets as of 2026-01-01",
+   "status": "verified",
+   "note": "Corrected 2026-08-19: site had 5 brackets; current law has 6"
+  },
+  "NY": {
+   "brackets": {
+    "single": [
+     [
+      8500,
+      0.039
+     ],
+     [
+      11700,
+      0.044
+     ],
+     [
+      13900,
+      0.0515
+     ],
+     [
+      80650,
+      0.054
+     ],
+     [
+      215400,
+      0.059
+     ],
+     [
+      1077550,
+      0.0685
+     ],
+     [
+      5000000,
+      0.0965
+     ],
+     [
+      25000000,
+      0.103
+     ],
+     [
+      null,
+      0.109
+     ]
+    ],
+    "joint": [
+     [
+      17150,
+      0.039
+     ],
+     [
+      23600,
+      0.044
+     ],
+     [
+      27900,
+      0.0515
+     ],
+     [
+      161550,
+      0.054
+     ],
+     [
+      323200,
+      0.059
+     ],
+     [
+      2155350,
+      0.0685
+     ],
+     [
+      5000000,
+      0.0965
+     ],
+     [
+      25000000,
+      0.103
+     ],
+     [
+      null,
+      0.109
+     ]
+    ]
+   },
+   "verified": "2026-08-19",
+   "source": "TF 2026 as of 2026-01-01",
+   "status": "verified",
+   "note": "site single array used MFJ thresholds and TY2025 rates"
+  },
+  "NC": {
+   "brackets": {
+    "single": [
+     [
+      null,
+      0.0399
+     ]
+    ],
+    "joint": [
+     [
+      null,
+      0.0399
+     ]
+    ]
+   },
+   "verified": "2026-08-19",
+   "source": "Tax Foundation, State Individual Income Tax Rates and Brackets, as of 2026-01-01",
+   "status": "verified"
+  },
+  "ND": {
+   "brackets": {
+    "single": [
+     [
+      44725,
+      0
+     ],
+     [
+      225975,
+      0.0195
+     ],
+     [
+      null,
+      0.025
+     ]
+    ],
+    "joint": [
+     [
+      74750,
+      0
+     ],
+     [
+      275250,
+      0.0195
+     ],
+     [
+      null,
+      0.025
+     ]
+    ]
+   },
+   "verified": "2026-08-19",
+   "source": "Tax Foundation, State Individual Income Tax Rates and Brackets, as of 2026-01-01",
+   "status": "verified"
+  },
+  "OH": {
+   "brackets": {
+    "single": [
+     [
+      26050,
+      0
+     ],
+     [
+      null,
+      0.0275
+     ]
+    ],
+    "joint": [
+     [
+      26050,
+      0
+     ],
+     [
+      null,
+      0.0275
+     ]
+    ]
+   },
+   "verified": "2026-08-19",
+   "source": "Tax Foundation, State Individual Income Tax Rates and Brackets, as of 2026-01-01",
+   "status": "verified"
+  },
+  "OK": {
+   "brackets": {
+    "single": [
+     [
+      3750,
+      0
+     ],
+     [
+      4900,
+      0.025
+     ],
+     [
+      7200,
+      0.035
+     ],
+     [
+      null,
+      0.045
+     ]
+    ],
+    "joint": [
+     [
+      7500,
+      0
+     ],
+     [
+      9800,
+      0.025
+     ],
+     [
+      14400,
+      0.035
+     ],
+     [
+      null,
+      0.045
+     ]
+    ]
+   },
+   "verified": "2026-08-19",
+   "source": "Tax Foundation, State Individual Income Tax Rates and Brackets, as of 2026-01-01",
+   "status": "verified"
+  },
+  "OR": {
+   "brackets": {
+    "single": [
+     [
+      4550,
+      0.0475
+     ],
+     [
+      11400,
+      0.0675
+     ],
+     [
+      125000,
+      0.0875
+     ],
+     [
+      null,
+      0.099
+     ]
+    ],
+    "joint": [
+     [
+      9100,
+      0.0475
+     ],
+     [
+      22800,
+      0.0675
+     ],
+     [
+      250000,
+      0.0875
+     ],
+     [
+      null,
+      0.099
+     ]
+    ]
+   },
+   "verified": "2026-08-19",
+   "source": "Published 2026 brackets as of 2026-01-01",
+   "status": "verified",
+   "note": "Corrected 2026-08-19: site carried a wrong schedule (single started at $10,000 vs $4,550)"
+  },
+  "PA": {
+   "brackets": {
+    "single": [
+     [
+      null,
+      0.0307
+     ]
+    ],
+    "joint": [
+     [
+      null,
+      0.0307
+     ]
+    ]
+   },
+   "verified": "2026-08-19",
+   "source": "Tax Foundation, State Individual Income Tax Rates and Brackets, as of 2026-01-01",
+   "status": "verified"
+  },
+  "RI": {
+   "brackets": {
+    "single": [
+     [
+      77450,
+      0.0375
+     ],
+     [
+      176050,
+      0.0475
+     ],
+     [
+      null,
+      0.0599
+     ]
+    ],
+    "joint": [
+     [
+      77450,
+      0.0375
+     ],
+     [
+      176050,
+      0.0475
+     ],
+     [
+      null,
+      0.0599
+     ]
+    ]
+   },
+   "verified": "2026-08-19",
+   "source": "Tax Foundation, State Individual Income Tax Rates and Brackets, as of 2026-01-01",
+   "status": "verified"
+  },
+  "SC": {
+   "brackets": {
+    "single": [
+     [
+      30000,
+      0.0199
+     ],
+     [
+      null,
+      0.0521
+     ]
+    ],
+    "joint": [
+     [
+      30000,
+      0.0199
+     ],
+     [
+      null,
+      0.0521
+     ]
+    ]
+   },
+   "verified": "2026-08-19",
+   "source": "SC H.4216 (1.99% under $30,000 / 5.21% above)",
+   "status": "verified-with-caveat",
+   "note": "REVIEW: H.4216 also decouples from federal standard deduction; base treatment unconfirmed"
+  },
+  "UT": {
+   "brackets": {
+    "single": [
+     [
+      null,
+      0.045
+     ]
+    ],
+    "joint": [
+     [
+      null,
+      0.045
+     ]
+    ]
+   },
+   "verified": "2026-08-19",
+   "source": "Tax Foundation, State Individual Income Tax Rates and Brackets, as of 2026-01-01",
+   "status": "verified"
+  },
+  "VT": {
+   "brackets": {
+    "single": [
+     [
+      49400,
+      0.0335
+     ],
+     [
+      119700,
+      0.066
+     ],
+     [
+      249700,
+      0.076
+     ],
+     [
+      null,
+      0.0875
+     ]
+    ],
+    "joint": [
+     [
+      82500,
+      0.0335
+     ],
+     [
+      199450,
+      0.066
+     ],
+     [
+      304000,
+      0.076
+     ],
+     [
+      null,
+      0.0875
+     ]
+    ]
+   },
+   "verified": "2026-08-19",
+   "source": "Published 2026 brackets as of 2026-01-01",
+   "status": "verified",
+   "note": "Corrected 2026-08-19: site carried TY2025 inflation-adjusted thresholds"
+  },
+  "VA": {
+   "brackets": {
+    "single": [
+     [
+      3000,
+      0.02
+     ],
+     [
+      5000,
+      0.03
+     ],
+     [
+      17000,
+      0.05
+     ],
+     [
+      null,
+      0.0575
+     ]
+    ],
+    "joint": [
+     [
+      3000,
+      0.02
+     ],
+     [
+      5000,
+      0.03
+     ],
+     [
+      17000,
+      0.05
+     ],
+     [
+      null,
+      0.0575
+     ]
+    ]
+   },
+   "verified": "2026-08-19",
+   "source": "Tax Foundation, State Individual Income Tax Rates and Brackets, as of 2026-01-01",
+   "status": "verified"
+  },
+  "WV": {
+   "brackets": {
+    "single": [
+     [
+      10000,
+      0.0222
+     ],
+     [
+      25000,
+      0.0296
+     ],
+     [
+      40000,
+      0.0333
+     ],
+     [
+      60000,
+      0.0444
+     ],
+     [
+      null,
+      0.0482
+     ]
+    ],
+    "joint": [
+     [
+      10000,
+      0.0222
+     ],
+     [
+      25000,
+      0.0296
+     ],
+     [
+      40000,
+      0.0333
+     ],
+     [
+      60000,
+      0.0444
+     ],
+     [
+      null,
+      0.0482
+     ]
+    ]
+   },
+   "verified": "2026-08-19",
+   "source": "Tax Foundation, State Individual Income Tax Rates and Brackets, as of 2026-01-01",
+   "status": "verified"
+  },
+  "WI": {
+   "brackets": {
+    "single": [
+     [
+      15110,
+      0.035
+     ],
+     [
+      51950,
+      0.044
+     ],
+     [
+      332720,
+      0.053
+     ],
+     [
+      null,
+      0.0765
+     ]
+    ],
+    "joint": [
+     [
+      20150,
+      0.035
+     ],
+     [
+      69260,
+      0.044
+     ],
+     [
+      443630,
+      0.053
+     ],
+     [
+      null,
+      0.0765
+     ]
+    ]
+   },
+   "verified": "2026-08-19",
+   "source": "Published 2026 brackets as of 2026-01-01",
+   "status": "verified",
+   "note": "Corrected 2026-08-19: site carried TY2025 inflation-adjusted thresholds"
+  },
+  "DC": {
+   "brackets": {
+    "single": [
+     [
+      10000,
+      0.04
+     ],
+     [
+      40000,
+      0.06
+     ],
+     [
+      60000,
+      0.065
+     ],
+     [
+      250000,
+      0.085
+     ],
+     [
+      500000,
+      0.0925
+     ],
+     [
+      1000000,
+      0.0975
+     ],
+     [
+      null,
+      0.1075
+     ]
+    ],
+    "joint": [
+     [
+      10000,
+      0.04
+     ],
+     [
+      40000,
+      0.06
+     ],
+     [
+      60000,
+      0.065
+     ],
+     [
+      250000,
+      0.085
+     ],
+     [
+      500000,
+      0.0925
+     ],
+     [
+      1000000,
+      0.0975
+     ],
+     [
+      null,
+      0.1075
+     ]
+    ]
+   },
+   "verified": "2026-08-19",
+   "source": "TF 2026 as of 2026-01-01",
+   "status": "verified",
+   "note": "was absent from site"
+  }
+ },
+ "localities": {
+  "NY": {
+   "status": "verified",
+   "note": "NYC top rate 3.876% confirmed; progressive 3.078-3.876% but top rate applies well below physician income (overstates by ~$125 at $400K)",
+   "verified": "2026-08-19",
+   "cities": [
+    {
+     "name": "New York City",
+     "rate": 0.03876,
+     "type": "flat",
+     "surchargeRate": 0
+    },
+    {
+     "name": "Yonkers",
+     "rate": 0.0115,
+     "type": "surcharge",
+     "surchargeRate": 0.1675
+    },
+    {
+     "name": "Rest of New York (no city tax)",
+     "rate": 0.0,
+     "type": "flat",
+     "surchargeRate": 0
+    }
+   ]
+  },
+  "MD": {
+   "status": "verified",
+   "note": "County rates confirmed against Comptroller of Maryland Withholding Tax Facts January 2026: Montgomery, Howard, Prince George's, Baltimore County and Baltimore City all 3.20%. Anne Arundel 2.81% is an approximation of a tiered schedule. \"Other Maryland county\" 2.6% is a catch-all average; actual county rates run 2.25% to 3.30%.",
+   "verified": "2026-08-19",
+   "cities": [
+    {
+     "name": "Baltimore City",
+     "rate": 0.032,
+     "type": "flat",
+     "surchargeRate": 0
+    },
+    {
+     "name": "Montgomery County",
+     "rate": 0.032,
+     "type": "flat",
+     "surchargeRate": 0
+    },
+    {
+     "name": "Prince George's County",
+     "rate": 0.032,
+     "type": "flat",
+     "surchargeRate": 0
+    },
+    {
+     "name": "Howard County",
+     "rate": 0.032,
+     "type": "flat",
+     "surchargeRate": 0
+    },
+    {
+     "name": "Baltimore County",
+     "rate": 0.032,
+     "type": "flat",
+     "surchargeRate": 0
+    },
+    {
+     "name": "Anne Arundel County",
+     "rate": 0.0281,
+     "type": "flat",
+     "surchargeRate": 0
+    },
+    {
+     "name": "Other Maryland county",
+     "rate": 0.026,
+     "type": "flat",
+     "surchargeRate": 0
+    }
+   ]
+  },
+  "OH": {
+   "status": "verified",
+   "note": "Columbus 2.5%, Cleveland 2.5%, Cincinnati 1.8%, Akron 2.5%, Dayton 2.5% confirmed. TOLEDO DISPUTED: sources give both 2.25% and 2.5%; file carries 2.5%. \"Other Ohio municipality\" 2.0% is the most common rate, used as a catch-all. Ohio also has a separate School District Income Tax not modelled here.",
+   "verified": "2026-08-19",
+   "cities": [
+    {
+     "name": "Columbus",
+     "rate": 0.025,
+     "type": "flat",
+     "surchargeRate": 0
+    },
+    {
+     "name": "Cleveland",
+     "rate": 0.025,
+     "type": "flat",
+     "surchargeRate": 0
+    },
+    {
+     "name": "Cincinnati",
+     "rate": 0.018,
+     "type": "flat",
+     "surchargeRate": 0
+    },
+    {
+     "name": "Dayton",
+     "rate": 0.025,
+     "type": "flat",
+     "surchargeRate": 0
+    },
+    {
+     "name": "Toledo",
+     "rate": 0.025,
+     "type": "flat",
+     "surchargeRate": 0
+    },
+    {
+     "name": "Akron",
+     "rate": 0.025,
+     "type": "flat",
+     "surchargeRate": 0
+    },
+    {
+     "name": "Other Ohio municipality",
+     "rate": 0.02,
+     "type": "flat",
+     "surchargeRate": 0
+    },
+    {
+     "name": "Unincorporated Ohio (no city tax)",
+     "rate": 0.0,
+     "type": "flat",
+     "surchargeRate": 0
+    }
+   ]
+  },
+  "PA": {
+   "status": "verified",
+   "note": "Philadelphia resident wage tax 3.735% effective 2026-07-01 (was 3.74% through 2026-06-30), per City of Philadelphia Dept of Revenue. Other PA municipal EIT rates unverified.",
+   "verified": "2026-08-19",
+   "cities": [
+    {
+     "name": "Philadelphia",
+     "rate": 0.03735,
+     "type": "flat",
+     "surchargeRate": 0
+    },
+    {
+     "name": "Pittsburgh",
+     "rate": 0.03,
+     "type": "flat",
+     "surchargeRate": 0
+    },
+    {
+     "name": "Scranton",
+     "rate": 0.034,
+     "type": "flat",
+     "surchargeRate": 0
+    },
+    {
+     "name": "Reading",
+     "rate": 0.036,
+     "type": "flat",
+     "surchargeRate": 0
+    },
+    {
+     "name": "Other Pennsylvania municipality",
+     "rate": 0.01,
+     "type": "flat",
+     "surchargeRate": 0
+    }
+   ]
+  },
+  "MI": {
+   "status": "verified",
+   "note": "Detroit 2.4% resident and Grand Rapids 1.5% resident confirmed. Michigan city rates range 0.5% to 2.4%.",
+   "verified": "2026-08-19",
+   "cities": [
+    {
+     "name": "Detroit",
+     "rate": 0.024,
+     "type": "flat",
+     "surchargeRate": 0
+    },
+    {
+     "name": "Grand Rapids",
+     "rate": 0.015,
+     "type": "flat",
+     "surchargeRate": 0
+    },
+    {
+     "name": "Other Michigan city (Lansing, Flint, etc.)",
+     "rate": 0.01,
+     "type": "flat",
+     "surchargeRate": 0
+    },
+    {
+     "name": "Rest of Michigan (no city tax)",
+     "rate": 0.0,
+     "type": "flat",
+     "surchargeRate": 0
+    }
+   ]
+  },
+  "KY": {
+   "status": "verified",
+   "note": "Louisville (Jefferson County) 2.2% resident confirmed. Lexington (Fayette) 2.25%. Kentucky has 210 taxing jurisdictions, 0.0033% to 2.5%.",
+   "verified": "2026-08-19",
+   "cities": [
+    {
+     "name": "Louisville (Jefferson County)",
+     "rate": 0.022,
+     "type": "flat",
+     "surchargeRate": 0
+    },
+    {
+     "name": "Lexington (Fayette County)",
+     "rate": 0.0225,
+     "type": "flat",
+     "surchargeRate": 0
+    },
+    {
+     "name": "Other Kentucky locality",
+     "rate": 0.015,
+     "type": "flat",
+     "surchargeRate": 0
+    }
+   ]
+  },
+  "OR": {
+   "status": "verified",
+   "verified": "2026-08-19",
+   "note": "Portland encoded as tiered. Metro 1% over $125K single / $200K joint; Multnomah 1.5% over the same; additional Multnomah 1.5% over $250K single / $400K joint. Previously a flat 2.5%, which understated high earners.",
+   "cities": [
+    {
+     "name": "Portland (Multnomah County / Metro)",
+     "type": "brackets",
+     "brackets": {
+      "single": [
+       [
+        125000,
+        0.0
+       ],
+       [
+        250000,
+        0.025
+       ],
+       [
+        null,
+        0.04
+       ]
+      ],
+      "joint": [
+       [
+        200000,
+        0.0
+       ],
+       [
+        400000,
+        0.025
+       ],
+       [
+        null,
+        0.04
+       ]
+      ]
+     }
+    },
+    {
+     "name": "Rest of Oregon (no local income tax)",
+     "type": "flat",
+     "rate": 0.0
+    }
+   ]
+  },
+  "MO": {
+   "status": "verified",
+   "note": "Kansas City and St. Louis earnings tax 1% confirmed. Applies to residents and to nonresidents working in the city.",
+   "verified": "2026-08-19",
+   "cities": [
+    {
+     "name": "Kansas City",
+     "rate": 0.01,
+     "type": "flat",
+     "surchargeRate": 0
+    },
+    {
+     "name": "St. Louis",
+     "rate": 0.01,
+     "type": "flat",
+     "surchargeRate": 0
+    },
+    {
+     "name": "Rest of Missouri (no city tax)",
+     "rate": 0.0,
+     "type": "flat",
+     "surchargeRate": 0
+    }
+   ]
+  },
+  "IN": {
+   "status": "verified",
+   "note": "Indianapolis is Marion County 2.02%; there is no separate city tax. Indiana county rates run 0.5% to 3.38%.",
+   "verified": "2026-08-19",
+   "cities": [
+    {
+     "name": "Indianapolis (Marion County)",
+     "rate": 0.0202,
+     "type": "flat",
+     "surchargeRate": 0
+    },
+    {
+     "name": "Other Indiana county",
+     "rate": 0.015,
+     "type": "flat",
+     "surchargeRate": 0
+    }
+   ]
+  },
+  "DE": {
+   "status": "verified",
+   "note": "Wilmington 1.25% confirmed.",
+   "verified": "2026-08-19",
+   "cities": [
+    {
+     "name": "Wilmington",
+     "rate": 0.0125,
+     "type": "flat",
+     "surchargeRate": 0
+    },
+    {
+     "name": "Rest of Delaware (no city tax)",
+     "rate": 0.0,
+     "type": "flat",
+     "surchargeRate": 0
+    }
+   ]
+  },
+  "AL": {
+   "status": "verified",
+   "note": "Birmingham 1% confirmed. Alabama has four local taxing jurisdictions (Birmingham, Bessemer, Gadsden, Macon County).",
+   "verified": "2026-08-19",
+   "cities": [
+    {
+     "name": "Birmingham",
+     "rate": 0.01,
+     "type": "flat",
+     "surchargeRate": 0
+    },
+    {
+     "name": "Other Alabama locality",
+     "rate": 0.01,
+     "type": "flat",
+     "surchargeRate": 0
+    },
+    {
+     "name": "Rest of Alabama (no city tax)",
+     "rate": 0.0,
+     "type": "flat",
+     "surchargeRate": 0
+    }
+   ]
+  }
+ },
+ "physician_loan": {
+  "pmi_waived": true,
+  "min_down_pct": 0,
+  "max_down_pct": 10,
+  "note": "Program terms vary by lender and change frequently. Verify before relying on any figure.",
+  "verified": null,
+  "status": "NEEDS_REVIEW"
+ }
+}

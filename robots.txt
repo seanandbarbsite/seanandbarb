@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /probate-real-estate/pr-first-30-days-checklist.pdf
+
+Sitemap: https://www.seanandbarb.com/sitemap.xml

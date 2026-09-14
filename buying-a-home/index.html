@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<script>document.documentElement.className+=" cbuy-js";</script>
+<style id="cbuy-collapse-css">
+.cbuy-toggle{display:none;align-items:center;gap:10px;margin:4px 0 2px;padding:10px 18px;background:#002349;color:#E8B84B;border:1px solid rgba(196,149,42,.55);border-radius:10px;font-family:'Cormorant Garamond',Georgia,serif;font-size:12px;letter-spacing:.14em;text-transform:uppercase;cursor:pointer;transition:background .2s ease;}
+.cbuy-js .cbuy-toggle{display:inline-flex;}
+.cbuy-toggle:hover{background:#0D1B2E;}
+.cbuy-chev{font-size:11px;line-height:1;transition:transform .45s cubic-bezier(.22,1,.36,1);}
+.cbuy-toggle[aria-expanded="true"] .cbuy-chev{transform:rotate(180deg);}
+.cbuy-panel{overflow:hidden;transition:max-height .55s cubic-bezier(.22,1,.36,1);}
+.cbuy-js .cbuy-panel{max-height:0;}
+</style>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Buy a Luxury Home in Central Florida | Sean &amp; Barb | Premier Sotheby's</title>
+<meta content="Buy a luxury home in Central Florida with Sean and Barb, Premier Sotheby's International Realty. Over 60 years combined across 10 markets. Expert buyer representation, relocation guidance, and access to every listing plus off-market opportunities." name="description"/>
+<link href="https://www.seanandbarb.com/buying-a-home/" rel="canonical"/>
+<meta content="Buy a Luxury Home in Central Florida | Sean &amp; Barb | Premier Sotheby's" property="og:title"/>
+<meta content="Buy a luxury home in Central Florida with Sean and Barb, Premier Sotheby's International Realty. Over 60 years combined across 10 markets. Expert buyer representation, relocation guidance, and access to every listing plus off-market opportunities." property="og:description"/>
+<meta content="https://www.seanandbarb.com/images/hero.webp" property="og:image"/>
+<meta content="website" property="og:type"/>
+<meta content="https://www.seanandbarb.com/buying-a-home/" property="og:url"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Buy a Luxury Home in Central Florida | Sean &amp; Barb | Premier Sotheby's" name="twitter:title"/>
+<meta content="Buy a luxury home in Central Florida with Sean and Barb, Premier Sotheby's International Realty. Over 60 years combined across 10 markets. Expert buyer representation, relocation guidance, and access to every listing plus off-market opportunities." name="twitter:description"/>
+<link href="/_astro/Layout.BuFzuhHC.css" rel="stylesheet"/>
+<link href="/ihomefinder-overrides.css" rel="stylesheet"/>
+<link href="/sb-global.css" rel="stylesheet"/>
+<style>
+.sb-sec-d{display:block;}
+@media (min-width: 1024px) {
+
+  /* ══ GLOBAL ══════════════════════════════════════════════════ */
+  body { padding-bottom: 0 !important; }
+  #bottom-nav  { display: none !important; }
+
+  /* ══ SECTION HEADINGS ════════════════════════════════════════ */
+  .section-eyebrow { font-size: 11px !important; letter-spacing: 0.28em !important; }
+  .section-heading  { font-size: clamp(2.2rem, 3.5vw, 3rem) !important; }
+  .gold-rule        { width: 56px !important; margin-bottom: 28px !important; }
+
+  /* ══ HERO ════════════════════════════════════════════════════ */
+  .hero-section { height: 100vh !important; }
+
+  /* Hide "Specializing in..." subtext on desktop */
+  .hero-sub { display: none !important; }
+
+  /* Fade out headline + eyebrow after 4.5s on desktop */
+  .hero-headline.entered,
+  .hero-eyebrow.entered {
+    animation: desktopHeroFade 1.2s ease 4.5s forwards;
+  }
+  @keyframes desktopHeroFade {
+    from { opacity: 1; }
+    to   { opacity: 0; pointer-events: none; }
+  }
+
+  /* ══ SECTION DIVIDERS - hidden on desktop ════════════════════ */
+  main > div[style*="background:#001428"] { display: none !important; }
+
+  /* ══ FEATURED LISTINGS ═══════════════════════════════════════ */
+  section.py-10.px-5.bg-white { padding: 72px 80px !important; }
+  section.py-10.px-5.bg-white .max-w-screen-xl { max-width: 1280px; margin: 0 auto; }
+  #ihf-featured-widget { max-width: 85% !important; margin: 0 auto !important; padding-bottom: 8px !important; }
+
+  /* ══ CITIES GRID ═════════════════════════════════════════════ */
+  #cities-section { padding: 72px 80px !important; }
+  #cities-section .max-w-screen-xl { max-width: 1280px; margin: 0 auto; }
+  #cities-section .grid.grid-cols-2 { grid-template-columns: repeat(5, 1fr) !important; gap: 14px !important; }
+  .city-card { aspect-ratio: 4/3 !important; border-radius: 14px !important; opacity: 0; transform: translateY(24px); transition: opacity 0.5s cubic-bezier(0.25,0.1,0.25,1), transform 0.5s cubic-bezier(0.25,0.1,0.25,1), box-shadow 0.22s ease !important; }
+  .city-card.sb-visible { opacity: 1 !important; transform: translateY(0) !important; }
+  .city-card-name { font-size: 20px !important; }
+
+  /* ══ CALCULATOR ══════════════════════════════════════════════ */
+  .px-5.py-10[style*="padding-left:2%"] { padding: 72px 80px !important; }
+  #calc-section { padding: 0 !important; max-width: 1280px; margin: 0 auto; }
+  #calc-card { max-width: 580px !important; padding: 40px !important; margin: 0 auto; }
+
+  /* ══ MARKET DATA ═════════════════════════════════════════════ */
+  #market-data { padding: 72px 80px !important; }
+  #market-data .max-w-screen-xl { max-width: 1280px; margin: 0 auto; }
+  #market-data .mkt-col-dom, #market-data .mkt-col-yoy { display: flex !important; }
+  #market-data .mkt-row { margin-bottom: 12px !important; }
+  #mkt-expand-btn { display: none !important; }
+
+  /* ══ LIFESTYLES ══════════════════════════════════════════════ */
+  #lifestyles-section { padding: 72px 80px !important; }
+  #lifestyles-section .max-w-screen-xl { max-width: 1280px; margin: 0 auto; }
+  #lifestyles-section > div.max-w-screen-xl > a.ls-card,
+  #lifestyles-section > div.max-w-screen-xl > div[style*="grid-template-columns:1fr 1fr"] { display: none !important; }
+  .ls-desktop-strip { display: flex !important; }
+
+  /* ══ SEAN & BARB ═════════════════════════════════════════════ */
+  section.bg-cream.py-14.px-5 { padding: 72px 80px !important; }
+  section.bg-cream.py-14.px-5 .max-w-screen-xl { max-width: 1040px; margin: 0 auto; }
+  section.bg-cream.py-14.px-5 .max-w-screen-xl > p.text-center { display: none !important; }
+  #sb-about-grid { grid-template-columns: 1fr 1fr !important; max-width: none !important; width: 100% !important; gap: 80px !important; margin: 0 !important; align-items: start !important; }
+  #sb-about-grid > div.text-center { display: flex !important; flex-direction: row !important; gap: 20px !important; align-items: flex-start !important; text-align: left !important; }
+  #sb-about-grid div.relative.mb-3 { flex-shrink: 0 !important; width: 150px !important; margin-bottom: 0 !important; }
+  #sb-about-grid .sb-about-text { display: flex !important; flex-direction: column !important; align-items: flex-start !important; min-width: 0 !important; }
+  #sb-about-grid .sb-about-text p.font-display { font-size: 20px !important; line-height: 1.25 !important; display: inline !important; }
+  #sb-about-grid .sb-about-text p.font-display + p.font-display { margin-left: 4px !important; }
+  #sb-about-grid .sb-about-text p.text-\[10px\] { display: block !important; margin: 4px 0 10px !important; }
+  #sb-about-grid .sb-about-bio { display: block !important; font-size: 13px !important; line-height: 1.75 !important; color: #4A3D34 !important; margin: 0 0 16px !important; font-family: Inter,sans-serif !important; font-style: normal !important; }
+  #sb-about-grid .sb-learn-more { display: inline-block !important; padding: 8px 22px !important; border: 1px solid #002349 !important; border-radius: 999px !important; font-size: 9px !important; letter-spacing: .16em !important; text-transform: uppercase !important; color: #002349 !important; text-decoration: none !important; font-family: Inter,sans-serif !important; }
+  #sb-about-grid .sb-learn-more:hover { background: #002349 !important; color: #fff !important; }
+  section.bg-cream.py-14.px-5 .grid.grid-cols-3 { max-width: none !important; margin: 40px 0 0 !important; gap: 0 !important; padding-top: 28px !important; border-top: 1px solid rgba(0,35,73,0.1) !important; display: flex !important; align-items: center !important; justify-content: center !important; }
+  section.bg-cream.py-14.px-5 .grid.grid-cols-3 > div { flex: 1 !important; text-align: center !important; }
+  section.bg-cream.py-14.px-5 .grid.grid-cols-3 p.font-display { font-size: 2.2rem !important; display: block !important; }
+
+  /* ══ TESTIMONIALS - 2-col grid instead of carousel ═══════════ */
+  section.py-14.bg-white[style*="overflow:hidden"] { padding: 72px 0 !important; }
+  section.py-14.bg-white[style*="overflow:hidden"] .max-w-screen-xl { max-width: 1280px; margin: 0 auto; padding: 0 80px !important; }
+  #tl-track-wrap { overflow: visible !important; padding: 0 80px !important; }
+  #tl-track { display: grid !important; grid-template-columns: repeat(2, 1fr) !important; gap: 20px !important; overflow: visible !important; scroll-snap-type: none !important; }
+  .tl-card { width: 100% !important; min-height: 200px !important; }
+  div[style*="justify-content:space-between"][style*="padding:20px"] { display: none !important; }
+
+  /* ══ FAQ - 2-col grid ════════════════════════════════════════ */
+  section.py-14.px-5.bg-cream { padding: 72px 80px !important; }
+  section.py-14.px-5.bg-cream .max-w-screen-xl { max-width: 1280px; margin: 0 auto; }
+  #faq-list { display: grid !important; grid-template-columns: 1fr 1fr !important; gap: 12px !important; align-items: start !important; }
+  #faq-list > div:last-child:nth-child(odd) { grid-column: 1 !important; }
+  #faq-list > div { margin-top: 0 !important; }
+
+  /* ══ CTA SECTION ══════════════════════════════════════════════ */
+  section.bg-navy.py-14.px-5 { padding: 80px !important; margin: 0 80px 64px !important; border-radius: 20px !important; }
+  section.bg-navy.py-14.px-5 h2 { font-size: clamp(2.5rem, 4vw, 3.5rem) !important; }
+  section.bg-navy.py-14.px-5 p.text-sm { max-width: 360px !important; font-size: 15px !important; }
+
+  /* ══ FOOTER ══════════════════════════════════════════════════ */
+  footer .max-w-screen-xl { max-width: 1280px; margin: 0 auto; padding: 18px 80px 12px !important; }
+  footer { margin-bottom: 0 !important; }
+  /* Option C: collapse Markets and Lifestyles into inline dot-separated rows */
+  footer [style*="grid-template-columns:1fr 1fr"] { display: block !important; }
+  footer [style*="grid-template-columns:1fr 1fr"] a { display: inline !important; padding: 0 !important; font-size: 11px !important; }
+  footer [style*="grid-template-columns:1fr 1fr"] a + a::before { content: ' · '; color: rgba(196,149,42,0.4); }
+  /* Industry logos: show right-aligned in bottom bar, hide mobile instance */
+  #footer-industry-logos { display: block !important; }
+  #footer-bottom-bar { display: flex !important; align-items: flex-end !important; justify-content: space-between !important; }
+  footer .footer-mobile-logos { display: none !important; }
+
+  /* ══ SELL PAGE - desktop formatting (homepage selectors above do not match this page) ══ */
+  main > div[style*="background:#F5F0E8"] { padding: 56px 64px !important; }
+  main > div[style*="background:#F5F0E8"] > div[style*="max-width:680px"] { max-width: 1040px !important; }
+  main > div[style*="background:#F5F0E8"] > div[style*="max-width:680px"] > p.text-sm,
+  main > div[style*="background:#F5F0E8"] > div[style*="max-width:680px"] > p.text-xs { max-width: 760px !important; }
+  .sell-cards { display: grid !important; grid-template-columns: repeat(2, 1fr) !important; gap: 22px !important; align-items: start !important; }
+  .sell-cards > div { margin-bottom: 0 !important; }
+  .sell-cards > div > div[style*="height:80px"] { height: 210px !important; }
+  /* taller hero on desktop so more of the home photo is revealed */
+  main > section[style*="min-height:260px"] { min-height: 520px !important; }
+  main > section[style*="min-height:300px"] { min-height: 600px !important; }
+  .sb-sec-m { display: none !important; }
+  .sb-sec-d { display: block !important; }
+}
+</style>
+<style>
+/* snc-calc + differentiator v4 */
+#snc-card #snc-cps{ gap:10px !important; }
+#snc-card #snc-cps > div,
+#snc-card .snc-cps > .snc-cp{
+  border:1px solid rgba(0,35,73,0.25) !important; border-radius:10px !important;
+  padding:12px 6px !important; background:#fff !important;
+  transition:border-color .15s ease, background .15s ease !important;
+}
+#snc-card #snc-cps > div::before,
+#snc-card .snc-cps > .snc-cp::before{
+  content:"" !important; display:block !important; width:14px; height:14px;
+  margin:0 auto 7px !important; border:1.5px solid rgba(0,35,73,0.35) !important;
+  border-radius:50% !important; background:transparent !important;
+}
+#snc-card #snc-cps > div > div:last-child,
+#snc-card .snc-cps > .snc-cp > div:last-child{ display:none !important; }
+#snc-card #snc-cps > div > div:first-child,
+#snc-card .snc-cps > .snc-cp > div:first-child{ color:#002349 !important; margin-top:0 !important; }
+#snc-card #snc-cps > div.snc-on,
+#snc-card .snc-cps > .snc-cp.on{ background:#002349 !important; border-color:#C4952A !important; }
+#snc-card #snc-cps > div.snc-on::before,
+#snc-card .snc-cps > .snc-cp.on::before{ border-color:#E8B84B !important; background:#E8B84B !important; }
+#snc-card #snc-cps > div.snc-on > div:first-child,
+#snc-card .snc-cps > .snc-cp.on > div:first-child{ color:#fff !important; }
+@media (min-width:1024px){
+  #snc-card{ max-width:880px !important; }
+  #snc-card > div:first-child{ padding:28px 36px 0 !important; }
+  #snc-card > div:last-child{
+    display:grid !important; grid-template-columns:1fr 1fr !important;
+    column-gap:40px !important; padding:8px 36px 28px !important; align-items:stretch !important;
+  }
+  #snc-card .snc-left{ grid-column:1 !important; }
+  #snc-card > div:last-child > div:nth-child(2){
+    grid-column:2 !important; align-self:stretch !important;
+    display:flex !important; flex-direction:column !important; justify-content:center !important;
+  }
+  #snc-card > div:last-child > div:last-child{
+    grid-column:1 / -1 !important; text-align:center !important; margin-top:18px !important;
+  }
+  .dx-sec > div[style*="background:#C4952A"]{
+    max-width:1040px !important; margin:0 auto !important;
+    display:grid !important; grid-template-columns:1.5fr 1fr !important;
+    column-gap:48px !important; align-items:center !important;
+    padding:46px 56px !important; border-radius:16px !important;
+  }
+  .dx-sec .dx-head{ grid-column:1 !important; }
+  .dx-sec .dx-stat{ grid-column:2 !important; text-align:right !important; }
+  .dx-sec .dx-stat > p:first-child{ font-size:5rem !important; margin:0 0 4px !important; }
+  .dx-sec > div[style*="padding:24px 20px 32px"]{
+    max-width:1040px !important; margin:0 auto !important; padding-top:30px !important;
+  }
+  .dx-sec > div[style*="padding:24px 20px 32px"] > p{ max-width:880px !important; font-size:1.0625rem !important; line-height:1.75 !important; }
+  .dx-sec div[style*="background:#001428"] > p{ font-size:11px !important; }
+  .dx-sec div[style*="background:#001428"] li{ font-size:1.0625rem !important; line-height:1.7 !important; }
+  .dx-sec div[style*="border-top:2px solid rgba(196,149,42,0.28)"] > p:first-child{ font-size:1.2rem !important; line-height:1.6 !important; }
+  .dx-sec div[style*="border-top:2px solid rgba(196,149,42,0.28)"] > p:last-child{ font-size:11px !important; }
+}
+</style>
+<style>
+/* sell-cards-uniform v1 */
+@media (min-width:1024px){
+  #sell-cities-inner{ max-width:1040px !important; }
+  #sell-cities-inner .sell-cards{ align-items:stretch !important; }
+  .sell-cards{ align-items:stretch !important; }
+  .sell-cards > div{ display:flex !important; flex-direction:column !important; }
+  .sell-cards > div > div[style*="padding:14px 16px"]{ flex:1 1 auto !important; display:flex !important; flex-direction:column !important; }
+  .sell-cards > div > div[style*="padding:14px 16px"] > a{ margin-top:auto !important; }
+}
+</style>
+<style>
+/* mkt-sec fonts v1 */
+@media (min-width:1024px){
+  .mkt-sec > p.text-sm{ font-size:1.0625rem !important; line-height:1.75 !important; }
+  .mkt-sec div[style*="background:#fff;border-radius:12px"] > p{ font-size:11px !important; }
+  .mkt-sec div[style*="background:#fff;border-radius:12px"] p.text-xs{ font-size:1.0625rem !important; line-height:1.65 !important; }
+}
+</style>
+<style>
+/* proc+tools fonts v1 */
+@media (min-width:1024px){
+  .proc-sec p.text-sm{ font-size:1.0625rem !important; line-height:1.75 !important; }
+  .proc-sec p[style*="letter-spacing:.14em"]{ font-size:14px !important; }
+  .tools-sec p.text-xs{ font-size:1.0625rem !important; line-height:1.65 !important; }
+  .tools-sec p[style*="letter-spacing:.16em"]{ font-size:14px !important; }
+}
+</style>
+<style>
+/* intro-sec fonts v1 */
+@media (min-width:1024px){
+  .intro-sec > p.text-sm{ font-size:1.0625rem !important; line-height:1.75 !important; }
+  .intro-sec div[style*="border-left:3px solid #C4952A"] p{ font-size:1.0625rem !important; line-height:1.75 !important; }
+}
+</style>
+<style>
+/* uniform-body v1 */
+@media (min-width:1024px){
+  main .text-sm, main .text-xs{ font-size:1.0625rem !important; line-height:1.7 !important; }
+}
+</style>
+<style>/* uniform-body-sitewide v1 */
+main .font-sans.text-sm:not(.rounded-full),main .font-sans.text-xs:not(.rounded-full){font-size:1.0625rem !important;line-height:1.7 !important;}
+.dx-sec > div[style*="padding:24px 20px 32px"] > p,.dx-sec div[style*="background:#001428"] li{font-size:1.0625rem !important;line-height:1.7 !important;}
+</style>
+<style>/* sell-hero-h1-oneline v1 */
+@media (min-width:1024px){
+  div[style*="calc(100% - 40px)"]{max-width:none !important;}
+  div[style*="calc(100% - 40px)"] h1{white-space:nowrap !important;font-size:2rem !important;}
+}
+</style>
+<style>/* drone-fly-through v1 */
+.dft-grid{display:grid;grid-template-columns:1fr;gap:24px;margin-top:10px;}
+@media(min-width:768px){.dft-grid{grid-template-columns:repeat(2,1fr);}}
+.dft-frame{position:relative;aspect-ratio:16/9;border-radius:10px;overflow:hidden;background:#0D1B2E;cursor:pointer;box-shadow:0 2px 12px rgba(0,0,0,.10);}
+.dft-frame img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s ease;}
+.dft-frame:hover img{transform:scale(1.04);}
+.dft-play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(13,27,46,.22);transition:background .3s ease;}
+.dft-frame:hover .dft-play{background:rgba(13,27,46,.08);}
+.dft-play svg{width:62px;height:44px;filter:drop-shadow(0 2px 6px rgba(0,0,0,.4));}
+.dft-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0;}
+.dft-frame:focus-visible{outline:3px solid #C4952A;outline-offset:2px;}
+
+.dft-modal{position:fixed;inset:0;z-index:99999;background:rgba(2,8,20,.9);display:none;align-items:center;justify-content:center;padding:24px;}
+.dft-modal.open{display:flex;}
+.dft-modal-inner{position:relative;width:min(92vw,1200px);}
+.dft-modal-frame{position:relative;width:100%;aspect-ratio:16/9;background:#000;border-radius:8px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.55);}
+.dft-modal-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0;}
+.dft-modal-close{position:absolute;top:-46px;right:0;width:38px;height:38px;border:0;background:transparent;color:#fff;font-size:32px;line-height:1;cursor:pointer;}
+.dft-modal-close:hover{color:#C4952A;}
+</style>
+<style id="nav-dividers">@media (min-width:1024px){}</style>
+<style id="sb-fonts">@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/cormorant-garamond-400.woff2) format('woff2')}@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:400;font-display:swap;src:url(/fonts/cormorant-garamond-400-italic.woff2) format('woff2')}@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:600;font-display:swap;src:url(/fonts/cormorant-garamond-600.woff2) format('woff2')}@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:600;font-display:swap;src:url(/fonts/cormorant-garamond-600-italic.woff2) format('woff2')}@font-face{font-family:'EB Garamond';font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/eb-garamond-400.woff2) format('woff2')}@font-face{font-family:'EB Garamond';font-style:italic;font-weight:400;font-display:swap;src:url(/fonts/eb-garamond-400-italic.woff2) format('woff2')}@font-face{font-family:'Inter';font-style:normal;font-weight:300;font-display:swap;src:url(/fonts/inter-300.woff2) format('woff2')}@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/inter-400.woff2) format('woff2')}@font-face{font-family:'Inter';font-style:normal;font-weight:500;font-display:swap;src:url(/fonts/inter-500.woff2) format('woff2')}@font-face{font-family:'Inter';font-style:normal;font-weight:600;font-display:swap;src:url(/fonts/inter-600.woff2) format('woff2')}</style>
+
+<style>/* Midnight Q&A cards */.faq-accordion-group > div{background:#002349 !important;border:2px solid rgba(196,149,42,0.7) !important;box-shadow:0 4px 18px rgba(0,16,32,0.20) !important;}.faq-accordion-group .faq-q-btn > span:first-child,.faq-accordion-group .faq-btn > span:first-child{color:#FFFFFF !important;}.faq-accordion-group .faq-q-icon,.faq-accordion-group .faq-icon{color:#C4952A !important;transition:transform .55s cubic-bezier(.22,1,.36,1) !important;}.faq-accordion-group .faq-q-body,.faq-accordion-group .faq-answer{transition:max-height .72s cubic-bezier(.22,1,.36,1) !important;}.faq-accordion-group .faq-q-body p,.faq-accordion-group .faq-answer,.faq-accordion-group .faq-answer p{color:#D8CFC0 !important;}.faq-accordion-group .faq-q-body p,.faq-accordion-group .faq-answer p,.faq-accordion-group .faq-answer > div{border-top:1px solid rgba(196,149,42,0.30);padding-top:11px !important;}</style>
+<style>/* Section cards */.sb-band{margin:0 8px 16px !important;border-radius:8px !important;border:1px solid rgba(150,110,30,0.30) !important;box-shadow:0 2px 14px rgba(0,0,0,0.06) !important;}.sb-band::before{display:none !important;}</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Buy a Luxury Home in Central Florida","url":"https://www.seanandbarb.com/buying-a-home/","description":"Buyer representation, relocation guidance, and access to every listing plus off-market opportunities across 10 Central Florida luxury markets.","isPartOf":{"@type":"WebSite","name":"Sean & Barb","url":"https://www.seanandbarb.com/"},"about":{"@id":"https://www.seanandbarb.com/#realestateagent"},"primaryImageOfPage":{"@type":"ImageObject","url":"https://www.seanandbarb.com/images/hero.webp"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.seanandbarb.com/"},{"@type":"ListItem","position":2,"name":"Buying a Home","item":"https://www.seanandbarb.com/buying-a-home/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much does it cost to work with Sean and Barb as a buyer?","acceptedAnswer":{"@type":"Answer","text":"For most resale purchases there is no separate out of pocket fee to you as the buyer. Buyer agent compensation is negotiated and disclosed in writing before you tour a single home, and in many transactions it is still covered through the deal structure. After the 2024 changes to how agent compensation works, the most important thing is transparency, and you will always see the numbers in advance. We walk you through exactly who pays what for your specific purchase, whether it is a $700K townhome or a $5M lakefront estate."}},{"@type":"Question","name":"Which Central Florida communities are best for luxury buyers?","acceptedAnswer":{"@type":"Answer","text":"It depends on what you value. For guarded lakefront prestige, look at Windermere and Isleworth in 34786 and the Bay Hill area of Dr. Phillips in 32819. For walkable charm near shops and dining, Winter Park is hard to beat. For new construction and resort amenities, Winter Garden in 34787 and Lake Nona in 32827 lead the market. For top-rated schools and easy commutes, Lake Mary and Longwood are strong. We represent buyers across all 10 markets, and we will steer you toward the right fit rather than the easiest sale."}},{"@type":"Question","name":"I am relocating to Central Florida for a hospital position. How does that work?","acceptedAnswer":{"@type":"Answer","text":"This is one of our core specialties. If you are joining AdventHealth, Orlando Health, Nemours, or the VA and Medical City campus in Lake Nona, we coordinate your home search around your start date, your commute, and your financing. Many physicians qualify for physician loan programs that allow low or zero down payment on jumbo amounts without the usual reserve requirements, and we can connect you with lenders who handle these every day. Start with our physician relocation guide for a full walk through of neighborhoods, commute times, and timelines: see /lifestyles/physician-relocation/."}},{"@type":"Question","name":"Can you show me homes that are not on Zillow?","acceptedAnswer":{"@type":"Answer","text":"Yes. A meaningful share of luxury inventory moves quietly through coming soon status, private networks, and pocket listings that never hit the public portals. As part of Premier Sotheby's International Realty, we have access to off-market and pre-market opportunities across Central Florida and the wider Sotheby's network. If you are searching above $1M, this access often matters more than any public search tool."}},{"@type":"Question","name":"How long does it take to buy a luxury home in Central Florida?","acceptedAnswer":{"@type":"Answer","text":"From first tour to closing, a typical financed purchase runs about 30 to 45 days once you are under contract, and cash purchases can close faster. The search itself varies. Relocating buyers on a tight timeline often find and tour homes within their first weekend here, while buyers waiting for a specific community or floor plan may search for several months. We help you move decisively when the right home appears, which in a contested market is often the difference between winning and missing it."}},{"@type":"Question","name":"Do you help with new construction and land?","acceptedAnswer":{"@type":"Answer","text":"Yes. We represent buyers in new construction across Winter Garden, Lake Nona, and the wider Orlando corridor, and we negotiate directly with builders on your behalf. Having your own representation at a builder sales center costs you nothing and protects your interests on price, upgrades, and contract terms. We also help buyers source lots and acreage in Longwood and Windermere for custom builds."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"RealEstateAgent","@id":"https://www.seanandbarb.com/#realestateagent","name":"Sean & Barb | Premier Sotheby's International Realty","url":"https://www.seanandbarb.com/","image":"https://www.seanandbarb.com/images/sean-barb-logo-880w.webp","logo":"https://www.seanandbarb.com/images/sean-barb-logo-880w.webp","telephone":"+1-407-383-0707","email":"sean@seanandbarb.com","areaServed":"Central Florida","priceRange":"$700,000 - $5,000,000+","address":{"@type":"PostalAddress","streetAddress":"1117 International Parkway, Suite 1711","addressLocality":"Lake Mary","addressRegion":"FL","postalCode":"32746","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":28.7845,"longitude":-81.3537},"sameAs":["https://www.linkedin.com/in/seanandbarbrealtors/","https://www.facebook.com/SeanAndBarbRealtors","https://www.instagram.com/seanandbarbrealtors/"],"employee":[{"@type":"Person","name":"Sean Spencer","jobTitle":"Real Estate Advisor","worksFor":{"@id":"https://www.seanandbarb.com/#realestateagent"},"sameAs":"https://www.premiersothebysrealty.com/real-estate-agent/4490/sean-spencer"},{"@type":"Person","name":"Barbara Vance","jobTitle":"Real Estate Advisor","worksFor":{"@id":"https://www.seanandbarb.com/#realestateagent"},"sameAs":"https://www.premiersothebysrealty.com/real-estate-agent/4217/barbara-vance"}]}</script>
+<style id="buy-faq-2col">
+.buy-faq-grid{display:grid;grid-template-columns:1fr;gap:10px;align-items:start;}
+.buy-faq-grid details{margin-bottom:0;}
+@media(min-width:1024px){.buy-faq-grid{grid-template-columns:1fr 1fr;column-gap:18px;row-gap:12px;}}
+</style>
+<style id="sb-buy-fullbleed-2026">/* Home: full-bleed sections, no card chrome */.sb-band{margin:0 !important;border-radius:0 !important;border:0 !important;box-shadow:none !important;}.sb-band::before{display:none !important;}html main section.sb-band[style*="background:#002349"]{max-width:none !important;margin-left:0 !important;margin-right:0 !important;}body.sb-rail main section.bg-navy.rounded-2xl.sb-band{max-width:none !important;margin-left:0 !important;margin-right:0 !important;border-radius:0 !important;}main section.rounded-2xl.sb-band{border-radius:0 !important;}body.sb-rail main section:has(.sb-listing-updated) > .max-w-screen-xl > div[style*="overflow:visible"]{margin-left:calc(max(40px, (100% - 1120px) / 2) - 80px) !important;}</style><style id="sb-buy-2026">#sb-buy-hero .btn-gold,#sb-buy-hero .btn-navy{font-size:11px !important;letter-spacing:.12em !important;padding:10px 22px !important;}#sb-buy-hero nav{font-size:10px !important;margin-bottom:7px !important;}#sb-buy-hero .sb-hero-panel::before{top:7px;bottom:7px;}.sbcta{padding:8px 0 24px;}.sbcta-card{position:relative;overflow:hidden;max-width:1180px;margin:0 auto;border-radius:24px;border:1px solid rgba(212,175,55,.22);box-shadow:0 26px 60px rgba(0,0,0,.28);background:linear-gradient(-45deg,#020617,#0f172a,#0a1128,#020617);background-size:200% 200%;animation:sbctaFlow 20s ease infinite;}@keyframes sbctaFlow{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}@media (prefers-reduced-motion:reduce){.sbcta-card{animation:none;}}.sbcta-orb{position:absolute;width:24rem;height:24rem;border-radius:50%;filter:blur(80px);mix-blend-mode:screen;pointer-events:none;}.sbcta-orb.a{top:0;right:0;background:rgba(59,130,246,.10);}.sbcta-orb.b{bottom:0;left:0;background:rgba(168,85,247,.10);}.sbcta-in{position:relative;z-index:2;padding:56px 24px 60px;display:flex;flex-direction:column;align-items:center;text-align:center;}.sbcta-h{color:#fff !important;margin:0 0 18px !important;}.sbcta-rule{display:block;width:96px;height:1px;margin:0 0 26px;background:linear-gradient(to right,transparent,#D4AF37,transparent);}.sbcta-sub{font-family:Inter,system-ui,sans-serif;font-weight:300;font-size:17px;line-height:1.75;color:rgba(255,255,255,.8);max-width:640px;margin:0 0 38px;}.sbcta-form{width:100%;max-width:640px;display:flex;flex-direction:column;gap:22px;}.sbcta-grid{display:grid;grid-template-columns:1fr;gap:18px;}.sbcta-f{display:flex;flex-direction:column;gap:7px;text-align:left;}.sbcta-f label{font-family:Inter,system-ui,sans-serif;font-size:11px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.7);margin-left:4px;}.sbcta-f input{width:100%;background:rgba(255,255,255,.10);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.22);border-radius:12px;padding:13px 16px;color:#fff;font-family:Inter,system-ui,sans-serif;font-size:15px;outline:none;transition:border-color .25s ease,background .25s ease;}.sbcta-f input::placeholder{color:rgba(255,255,255,.35);}.sbcta-f input:focus{border-color:#D4AF37;background:rgba(255,255,255,.16);}.sbcta-btn{padding:16px 46px;border:1px solid rgba(254,240,138,.5);border-radius:999px;background:linear-gradient(to right,#D4AF37,#B8860B);color:#000;font-family:Inter,system-ui,sans-serif;font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;cursor:pointer;box-shadow:0 0 20px rgba(212,175,55,.3);transition:all .3s ease;}.sbcta-btn:hover{background:linear-gradient(to right,#F2C94C,#D4AF37);box-shadow:0 0 30px rgba(212,175,55,.6);transform:translateY(-1px);}.sbcta-btn[disabled]{opacity:.6;cursor:default;transform:none;}.sbcta-hp{position:absolute;left:-6000px;top:auto;}.sbcta-err{display:none;margin:0;font-family:Inter,system-ui,sans-serif;font-size:13px;color:#FCA5A5;}.sbcta-ok{display:none;margin:18px 0 0;font-family:Playfair Display,Georgia,serif;font-size:19px;color:#E8B84B;}@media (min-width:640px){.sbcta-grid{grid-template-columns:1fr 1fr;}.sbcta-grid .sbcta-f:last-child{grid-column:1 / -1;}.sbcta-in{padding:76px 56px 80px;}}.faq-wrap .section-heading{color:#0D1B2E !important;}.faq-wrap .gold-rule{background:#C4952A !important;}.faq-wrap{max-width:1240px !important;}.fx-head{padding:18px 26px !important;font-size:11px !important;letter-spacing:.26em !important;}.fxq{padding:20px 26px !important;gap:18px !important;}.fxq .n{font-size:11px !important;min-width:26px !important;}.fxq .t{font-size:16px !important;line-height:1.5 !important;}.fx-r h3{font-size:clamp(1.5rem,2.6vw,2.15rem) !important;margin:0 0 10px !important;}.fx-grule{width:56px !important;margin-bottom:20px !important;}.fx-r #fx-a{font-size:17px !important;line-height:1.8 !important;}.fx-tag{font-size:10.5px !important;padding:11px 17px !important;}@media (min-width:1000px){.fx{grid-template-columns:minmax(0,.88fr) minmax(0,1.12fr) !important;}.fx-r{padding:42px 46px 46px !important;}}.fx{border:1px solid #0D1B2E;background:#FBFAF7;display:grid;grid-template-columns:1fr;box-shadow:10px 10px 0 #0D1B2E;margin-top:8px;}.fx-l{border-bottom:1px solid #0D1B2E;}.fx-head{padding:16px 20px;border-bottom:1px solid rgba(13,27,46,.22);font-family:Inter,system-ui,sans-serif;font-size:10px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:#0D1B2E;}.fxq{display:flex;gap:14px;align-items:flex-start;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid rgba(13,27,46,.14);padding:16px 20px;cursor:pointer;transition:background .2s ease,color .2s ease;}.fxq:last-child{border-bottom:0;}.fxq .n{font-family:Inter,system-ui,sans-serif;font-size:10px;font-weight:600;line-height:1.5;letter-spacing:.18em;color:#C4952A;min-width:22px;}.fxq .t{flex:1;font-family:Inter,system-ui,sans-serif;font-size:13.5px;font-weight:500;line-height:1.5;color:#4a4335;}.fxq:hover{background:rgba(196,149,42,.08);}.fxq.on{background:#0D1B2E;}.fxq.on .t{color:#F5EEDF;}.fxq.on .n{color:#E8B84B;}.fx-r{padding:30px 24px 32px;position:relative;}.fx-r h3{font-family:Playfair Display,Georgia,serif;font-weight:400;font-size:clamp(1.25rem,2.1vw,1.75rem);line-height:1.25;margin:0 0 8px;color:#0D1B2E;}.fx-grule{display:block;width:44px;height:1px;background:#C4952A;margin:0 0 16px;}.fx-r #fx-a{font-family:Inter,system-ui,sans-serif;font-size:14.5px;line-height:1.78;color:#4a4335;}.fx-tag{position:absolute;top:0;right:0;background:#0D1B2E;color:#E8B84B;font-family:Inter,system-ui,sans-serif;font-size:9.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;padding:9px 14px;}@media (min-width:1000px){.fx{grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);}.fx-l{border-bottom:0;border-right:1px solid #0D1B2E;}.fx-r{padding:34px 36px 38px;}}#sb-buy-css-2026{display:none}.reloc-shot{display:none;}.steps-grid .step-item{display:flex;gap:14px;align-items:flex-start;margin-bottom:18px;}@media (min-width:1024px){.reloc-wrap{display:grid !important;grid-template-columns:minmax(0,1fr) minmax(0,0.92fr);gap:56px;align-items:center;max-width:1180px !important;}.reloc-wrap > *{min-width:0;}.reloc-shot{display:block !important;position:relative;align-self:stretch;}.reloc-shot img{width:100%;height:100%;min-height:340px;object-fit:cover;display:block;border-radius:2px;box-shadow:0 30px 60px rgba(0,0,0,.22);}.reloc-shot::after{content:"";position:absolute;left:-14px;top:-14px;width:96px;height:96px;border-left:1px solid rgba(196,149,42,.75);border-top:1px solid rgba(196,149,42,.75);pointer-events:none;}.reloc-cap{position:absolute;left:0;bottom:-26px;font-family:Inter,system-ui,sans-serif;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:rgba(58,51,39,.6);}.sb-dark .reloc-cap{color:rgba(255,255,255,.55);}.steps-wrap{max-width:1180px !important;}.steps-wrap .cbuy-toggle{display:none !important;}.steps-wrap .cbuy-panel{max-height:none !important;overflow:visible !important;margin-top:26px !important;}.steps-grid{display:grid !important;grid-template-columns:1fr 1fr;gap:34px 56px;}.steps-grid .step-item{margin:0 !important;gap:18px !important;padding-bottom:22px;border-bottom:1px solid rgba(196,149,42,.22);}.steps-grid .step-item:last-child{grid-column:1 / -1;border-bottom:0;padding-bottom:0;}.steps-grid .step-item > span{font-size:2rem !important;min-width:44px !important;line-height:1;opacity:.85;}.steps-grid .step-item h3{font-size:1.3rem !important;margin:0 0 7px !important;}.steps-grid .step-item p{font-size:14.5px !important;line-height:1.65 !important;}}#sb-buy-hero .sb-hero-panel{max-width:680px;width:fit-content;margin:0 0 12px 12px;padding:10px 26px 10px 14px;border-radius:0 18px 18px 0;transform:scale(.66);transform-origin:left bottom;-webkit-backdrop-filter:blur(7px);backdrop-filter:blur(7px);background:linear-gradient(105deg,rgba(4,12,24,.46) 0%,rgba(4,12,24,.30) 55%,rgba(4,12,24,0) 100%);}#sb-buy-hero .sb-hero-panel::before{content:"";position:absolute;left:0;top:10px;bottom:10px;width:2px;border-radius:2px;background:linear-gradient(#D4AF37,rgba(212,175,55,0));}#sb-buy-hero h1{font-size:1.6rem;margin:0 0 5px;line-height:1.1;white-space:nowrap;}#sb-buy-hero p{margin:0 0 9px;max-width:620px;font-size:13px;line-height:1.45;}@media (min-width:1024px){#sb-buy-hero{min-height:min(68vh,640px);}#sb-buy-hero .sb-hero-panel{margin:0 0 14px 22px;padding:12px 34px 12px 18px;}#sb-buy-hero h1{font-size:1.95rem;}}#sb-buy-hero h1,#sb-buy-hero p,#sb-buy-hero nav,#sb-buy-hero a{text-shadow:0 2px 6px rgba(0,0,0,.6),0 10px 34px rgba(0,0,0,.5);}.sb-dark .section-heading{color:#F5EEDF !important;}.sb-dark p,.sb-dark li,.sb-dark span,.sb-dark .text-taupe{color:rgba(255,255,255,.78) !important;}.sb-dark h3,.sb-dark h4{color:#F5EEDF !important;}.sb-dark .gold-rule{background:#D4AF37 !important;}</style></head>
+<body class="sb-rail">
+<header id="site-header" class="fixed top-0 left-0 right-0 z-50 px-5 py-1 bg-navy"><div class="flex items-center justify-between max-w-screen-xl mx-auto"><a href="/" class="flex-shrink-0"><img src="/images/sean-barb-logo-440w.webp" alt="Sean &amp; Barb | Premier Sotheby's International Realty" width="218" height="80"></a></div></header>
+<script type="module">/* nav: injected by worker */</script>
+<main style="background:#F2EFE9;"><style id="sb-bands-css">.sb-band{position:relative;}.sb-band::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;background:rgba(196,149,42,0.30);}</style>
+<section id="sb-buy-hero" style="position:relative;min-height:440px;display:flex;flex-direction:column;justify-content:flex-end;padding:0;overflow:hidden;margin-top:88px;">
+<div style="position:absolute;inset:0;background:url('/images/buy-hero.webp') center/cover no-repeat;"></div>
+<div class="sb-hero-panel" style="position:relative;z-index:2;align-self:flex-start;">
+<nav style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,0.55);margin-bottom:10px;"><a href="/" style="color:rgba(255,255,255,0.55);text-decoration:none;">Home</a> &rsaquo; <span style="color:rgba(255,255,255,0.8);">Buying a Home</span></nav>
+<h1 class="hero-headline" style="color:#fff;font-size:2rem;line-height:1.12;margin:0 0 12px;">Buy Your Central Florida Luxury Home.</h1>
+<p class="text-sm font-sans leading-relaxed" style="color:rgba(255,255,255,0.85);margin:0 0 20px;max-width:520px;">Representation that protects your money, your timeline, and your peace of mind across 10 markets. Sean or Barb, never a handoff.</p>
+<div style="display:flex;gap:10px;flex-wrap:wrap;">
+<a href="/listings/" class="btn-gold">Browse Every Listing</a>
+<a id="buy-hero-cta" href="tel:4073830707" class="btn-navy inline-block">Call Us</a><script>(function(){var el=document.getElementById("buy-hero-cta");if(!el)return;var h=new Date(new Date().toLocaleString("en-US",{timeZone:"America/New_York"})).getHours();if(h>=18||h<9){el.href="mailto:sean@seanandbarb.com";el.textContent="Email Us";}})();</script>
+</div>
+</div>
+</section>
+
+<section style="background:#0A1118;" class="sb-dark py-14 px-5 sb-band">
+<div style="max-width:680px;margin:0 auto;">
+<h2 class="section-heading mb-2">The Right Home Is a Decision, Not a Transaction.</h2>
+<span class="gold-rule"></span>
+<p class="text-sm text-taupe font-sans leading-relaxed" style="margin-bottom:18px;">In the luxury market, the cost of buying wrong is not a few thousand dollars. It is overpaying on a contested estate, missing a hidden flood or HOA issue, or losing the home you wanted because your offer was not structured to win. Over 60 years combined, Sean and Barb have represented buyers through every one of those moments.</p>
+<p class="text-sm text-taupe font-sans leading-relaxed" style="margin:0;">You get hyperlocal pricing judgment, a negotiator who has closed in these neighborhoods for decades, and the full reach of Premier Sotheby's International Realty, including listings that never reach the public portals.</p>
+</div>
+</section>
+
+<style id="sb-collection-2026">#cities-section{background:#F4F2EF !important;color:#0F1115 !important;padding:0 !important;font-family:var(--font-sans,Inter,sans-serif);}#cities-section .cf-grid{display:grid;grid-template-columns:1fr;gap:28px;padding:44px 20px 52px;}#cities-section .cf-side{display:flex;flex-direction:column;min-width:0;}#cities-section .cf-h{font-family:var(--font-serif,Cormorant Garamond,Georgia,serif);font-style:italic;font-weight:400;font-size:clamp(27px,3.4vw,40px);line-height:1.1;color:#0F1115 !important;margin:0;}#cities-section .cf-nav{margin-top:22px;min-height:0;}#cities-section .cf-list{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:12px 16px;}#cities-section .cf-item{position:relative;display:flex;align-items:center;gap:10px;font-family:var(--font-serif,Cormorant Garamond,Georgia,serif);font-size:20px;line-height:1.2;color:#0F1115;text-decoration:none;padding-left:0;transition:color .4s ease,padding-left .4s ease,font-style .4s ease;}#cities-section .cf-item::before{content:"";position:absolute;left:0;top:50%;width:0;height:1px;background:#B59A72;transition:width .4s ease;}#cities-section .cf-item .cf-no{font-family:var(--font-sans,Inter,sans-serif);font-size:11px;letter-spacing:.12em;color:#0F1115;flex:0 0 auto;}#cities-section .cf-item:hover,#cities-section .cf-item:focus-visible,#cities-section .cf-item.cf-on{color:#0F1115;font-style:italic;padding-left:2rem;}#cities-section .cf-item:hover::before,#cities-section .cf-item:focus-visible::before,#cities-section .cf-item.cf-on::before{width:1.2rem;}#cities-section .cf-frame{position:relative;display:flex;flex-direction:column;border:1px solid #0B0B0C;padding:14px;background:#0B0B0C;box-shadow:0 30px 60px rgba(0,0,0,.28);min-width:0;}#cities-section .cf-mask{position:relative;width:100%;aspect-ratio:4/3;overflow:hidden;background:#0B0B0C;}#cities-section .cf-shot{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;clip-path:inset(100% 0 0 0);transition:clip-path .62s cubic-bezier(.4,0,.2,1);}#cities-section .cf-shot.cf-live{clip-path:inset(0 0 0 0);z-index:2;}#cities-section .cf-shot.cf-prev{clip-path:inset(0 0 0 0);z-index:1;transition:none;}#cities-section .cf-foot{padding-top:18px;display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;}#cities-section .cf-t{font-family:var(--font-serif,Cormorant Garamond,Georgia,serif);font-size:26px;line-height:1.15;color:#FFFFFF;margin:0;}#cities-section .cf-d{font-size:14px;font-weight:400;line-height:1.6;color:rgba(255,255,255,.72);margin:8px 0 0;max-width:46ch;}#cities-section .cf-go{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.85);border-bottom:1px solid rgba(255,255,255,.5);padding-bottom:3px;text-decoration:none;white-space:nowrap;transition:color .3s ease,border-color .3s ease;}#cities-section .cf-go:hover{color:#D4AF37;border-color:#D4AF37;}#cities-section .cf-fade{opacity:1;transform:none;transition:opacity .16s ease,transform .16s ease;}#cities-section .cf-fade.cf-hide{opacity:0;transform:translateY(-8px);}@media (min-width:1024px){#cities-section .cf-grid{grid-template-columns:360px 1fr;gap:56px;padding:72px max(40px, calc((100% - 1280px) / 2)) 84px;align-items:stretch;}#cities-section .cf-side{justify-content:center;}#cities-section .cf-list{grid-template-columns:1fr;gap:16px;}#cities-section .cf-item{font-size:23px;}#cities-section .cf-mask{aspect-ratio:auto;flex:1 1 auto;min-height:440px;}#cities-section .cf-frame{padding:16px;}}@media (prefers-reduced-motion:reduce){#cities-section .cf-shot{transition:none !important;}#cities-section .cf-fade{transition:none !important;}}</style><section id="cities-section" class="sb-band " style="background:#F4F2EF"><div class="cf-grid"><div class="cf-side"><div><h2 class="cf-h">Which Central Florida Markets Do We Serve?</h2></div><nav class="cf-nav" aria-label="Central Florida markets"><ul class="cf-list"><li><a class="cf-item" href="/cities/orlando-homes-for-sale/" data-cf="0"><span class="cf-no">01</span><span>Orlando</span></a></li><li><a class="cf-item" href="/cities/winter-garden-homes-for-sale/" data-cf="1"><span class="cf-no">02</span><span>Winter Garden</span></a></li><li><a class="cf-item" href="/cities/windermere-homes-for-sale/" data-cf="2"><span class="cf-no">03</span><span>Windermere</span></a></li><li><a class="cf-item" href="/cities/dr-phillips-homes-for-sale/" data-cf="3"><span class="cf-no">04</span><span>Dr. Phillips</span></a></li><li><a class="cf-item" href="/cities/lake-nona-homes-for-sale/" data-cf="4"><span class="cf-no">05</span><span>Lake Nona</span></a></li><li><a class="cf-item" href="/cities/winter-park-homes-for-sale/" data-cf="5"><span class="cf-no">06</span><span>Winter Park</span></a></li><li><a class="cf-item" href="/cities/maitland-homes-for-sale/" data-cf="6"><span class="cf-no">07</span><span>Maitland</span></a></li><li><a class="cf-item" href="/cities/longwood-homes-for-sale/" data-cf="7"><span class="cf-no">08</span><span>Longwood</span></a></li><li><a class="cf-item" href="/cities/lake-mary-homes-for-sale/" data-cf="8"><span class="cf-no">09</span><span>Lake Mary</span></a></li><li><a class="cf-item" href="/cities/oviedo-homes-for-sale/" data-cf="9"><span class="cf-no">10</span><span>Oviedo</span></a></li></ul></nav></div><div class="cf-frame"><div class="cf-mask" id="cf-mask"><picture><source srcset="/images/orlando.avif" type="image/avif"><source srcset="/images/orlando.webp" type="image/webp"><img class="cf-shot cf-live" id="cf-shot-0" src="/images/orlando.jpg" alt="Orlando luxury homes" width="1000" height="625" loading="lazy" decoding="async"></picture><picture><source srcset="/images/winter-garden.avif" type="image/avif"><source srcset="/images/winter-garden.webp" type="image/webp"><img class="cf-shot" id="cf-shot-1" src="/images/winter-garden.jpg" alt="Winter Garden luxury homes" width="1000" height="625" loading="lazy" decoding="async"></picture><picture><source srcset="/images/windermere.avif" type="image/avif"><source srcset="/images/windermere.webp" type="image/webp"><img class="cf-shot" id="cf-shot-2" src="/images/windermere.jpg" alt="Windermere luxury homes" width="1000" height="625" loading="lazy" decoding="async"></picture><picture><source srcset="/images/dr-phillips.avif" type="image/avif"><source srcset="/images/dr-phillips.webp" type="image/webp"><img class="cf-shot" id="cf-shot-3" src="/images/dr-phillips.jpg" alt="Dr. Phillips luxury homes" width="1000" height="625" loading="lazy" decoding="async"></picture><picture><source srcset="/images/lake-nona.avif" type="image/avif"><source srcset="/images/lake-nona.webp" type="image/webp"><img class="cf-shot" id="cf-shot-4" src="/images/lake-nona.jpg" alt="Lake Nona luxury homes" width="1000" height="625" loading="lazy" decoding="async"></picture><picture><source srcset="/images/winter-park.avif" type="image/avif"><source srcset="/images/winter-park.webp" type="image/webp"><img class="cf-shot" id="cf-shot-5" src="/images/winter-park.jpg" alt="Winter Park luxury homes" width="1000" height="625" loading="lazy" decoding="async"></picture><picture><source srcset="/images/maitland.avif" type="image/avif"><source srcset="/images/maitland.webp" type="image/webp"><img class="cf-shot" id="cf-shot-6" src="/images/maitland.jpg" alt="Maitland luxury homes" width="1000" height="625" loading="lazy" decoding="async"></picture><picture><source srcset="/images/longwood-card.avif" type="image/avif"><source srcset="/images/longwood-card.webp" type="image/webp"><img class="cf-shot" id="cf-shot-7" src="/images/longwood-card.jpg" alt="Longwood luxury homes" width="1000" height="625" loading="lazy" decoding="async"></picture><picture><source srcset="/images/lake-mary.avif" type="image/avif"><source srcset="/images/lake-mary.webp" type="image/webp"><img class="cf-shot" id="cf-shot-8" src="/images/lake-mary.jpg" alt="Lake Mary luxury homes" width="1000" height="625" loading="lazy" decoding="async"></picture><picture><source srcset="/images/oviedo.avif" type="image/avif"><source srcset="/images/oviedo.webp" type="image/webp"><img class="cf-shot" id="cf-shot-9" src="/images/oviedo.jpg" alt="Oviedo luxury homes" width="1000" height="625" loading="lazy" decoding="async"></picture></div><div class="cf-foot"><div><h3 class="cf-t cf-fade" id="cf-title">Orlando</h3><p class="cf-d cf-fade" id="cf-desc">The vibrant urban core and the luxury enclaves around it, offering a dynamic lifestyle minutes from downtown.</p></div><a class="cf-go cf-fade" id="cf-go" href="/cities/orlando-homes-for-sale/">Explore Properties</a></div></div></div></section>
+
+<style>.mc-buy-embed{display:none;}@media(min-width:1024px){.mc-buy-embed{display:block;}}</style><section class="sb-dark mc-buy-embed py-14 px-5 sb-band" style="background:#0F0F11;"><div style="max-width:680px;margin:0 auto;"><h2 class="section-heading mb-2">Estimate Your Monthly Payment</h2><span class="gold-rule"></span><p class="text-sm text-taupe font-sans leading-relaxed" style="margin:16px 0 24px;">A full PITI estimate for Central Florida - principal, interest, county property tax, insurance, PMI, and HOA - using live Freddie Mac rates. Toggle the physician loan option for no-PMI, low-down financing on jumbo balances.</p><span id="buy-mortgage-calc" aria-hidden="true" style="display:block;height:0;scroll-margin-top:118px;"></span><div id="mcx-host"></div></div></section>
+<section style="background:#F4F2EF;" class="py-14 px-5 sb-band">
+<div class="reloc-wrap" style="max-width:680px;margin:0 auto;"><div class="reloc-copy">
+<h2 class="section-heading mb-2">Moving to Central Florida?</h2>
+<span class="gold-rule"></span>
+<p class="text-sm font-sans leading-relaxed" style="color:#3a3327;margin-bottom:18px;">Most of our buyers are not from here yet. They are physicians joining Medical City in Lake Nona (32827), executives relocating for work, and families trading a colder state for the Butler Chain of Lakes. We build your search around your start date, your commute, and your financing, not the other way around.</p>
+<p class="text-sm font-sans leading-relaxed" style="color:#3a3327;margin-bottom:20px;">If you are joining AdventHealth, Orlando Health, Nemours, or the VA, physician loan programs can mean low or zero down on a jumbo purchase. Our relocation guide walks through neighborhoods, commute times, and timelines in detail.</p>
+<div style="display:flex;gap:10px;flex-wrap:wrap;">
+<a href="/lifestyles/physician-relocation/" class="btn-navy inline-block">Physician Relocation Guide</a>
+<a href="/lifestyles/" class="btn-gold">Explore by Lifestyle</a>
+</div>
+</div><div class="reloc-shot"><picture><source srcset="/images/lake-nona.avif" type="image/avif"><source srcset="/images/lake-nona.webp" type="image/webp"><img src="/images/lake-nona.jpg" alt="Lake Nona and Medical City, Central Florida" width="1200" height="800" loading="lazy"></picture><span class="reloc-cap">Lake Nona, Medical City</span></div></div></section>
+
+<section style="background:#06101E;" class="sb-dark py-14 px-5 sb-band">
+<div class="steps-wrap" style="max-width:680px;margin:0 auto;">
+<h2 class="section-heading mb-2">How We Help You Buy.</h2>
+<span class="gold-rule"></span>
+<button type="button" class="cbuy-toggle" aria-expanded="false" aria-controls="help-panel"><span class="cbuy-toggle-txt" data-show="Show the 5 steps" data-hide="Hide steps">Show the 5 steps</span><span class="cbuy-chev" aria-hidden="true">&#9662;</span></button>
+<div style="margin-top:8px;" class="cbuy-panel steps-grid" id="help-panel">
+<div class="step-item"><span class="font-display italic" style="color:#C4952A;font-size:1.4rem;min-width:28px;">1</span><div><h3 class="font-display" style="color:#0D1B2E;font-size:1.1rem;margin:0 0 4px;">Define and search</h3><p class="text-sm text-taupe font-sans leading-relaxed" style="margin:0;">We map your must-haves to real inventory, including coming soon and off-market homes you will not find on Zillow.</p></div></div>
+<div class="step-item"><span class="font-display italic" style="color:#C4952A;font-size:1.4rem;min-width:28px;">2</span><div><h3 class="font-display" style="color:#0D1B2E;font-size:1.1rem;margin:0 0 4px;">Tour privately</h3><p class="text-sm text-taupe font-sans leading-relaxed" style="margin:0;">Sean or Barb attends your showings personally and tells you what is right and wrong about each home, not just what is for sale.</p></div></div>
+<div class="step-item"><span class="font-display italic" style="color:#C4952A;font-size:1.4rem;min-width:28px;">3</span><div><h3 class="font-display" style="color:#0D1B2E;font-size:1.1rem;margin:0 0 4px;">Evaluate true value</h3><p class="text-sm text-taupe font-sans leading-relaxed" style="margin:0;">We pull the comparable sales, flag HOA and flood and resale concerns, and pressure test the price before you ever write an offer.</p></div></div>
+<div class="step-item"><span class="font-display italic" style="color:#C4952A;font-size:1.4rem;min-width:28px;">4</span><div><h3 class="font-display" style="color:#0D1B2E;font-size:1.1rem;margin:0 0 4px;">Negotiate and structure</h3><p class="text-sm text-taupe font-sans leading-relaxed" style="margin:0;">We structure an offer built to win on price and terms, then protect you through inspection, appraisal, and financing.</p></div></div>
+<div class="step-item"><span class="font-display italic" style="color:#C4952A;font-size:1.4rem;min-width:28px;">5</span><div><h3 class="font-display" style="color:#0D1B2E;font-size:1.1rem;margin:0 0 4px;">Close with confidence</h3><p class="text-sm text-taupe font-sans leading-relaxed" style="margin:0;">We manage the details to a clean closing and stay your advisors long after you have the keys.</p></div></div>
+</div>
+</div>
+</section>
+
+<section style="background:#F4F2EF;" class="py-14 px-5 sb-band">
+<div class="faq-wrap" style="max-width:680px;margin:0 auto;">
+<h2 class="section-heading mb-2">What Buyers Ask Sean &amp; Barb.</h2>
+<span class="gold-rule" style="margin-bottom:24px;"></span>
+<div class="fx"><div class="fx-l"><div class="fx-head">Buyer questions</div><div class="fx-qs"><button class="fxq on" type="button" data-i="0"><span class="n">01</span><span class="t">How much does it cost to work with Sean and Barb as a buyer?</span></button><button class="fxq" type="button" data-i="1"><span class="n">02</span><span class="t">Which Central Florida communities are best for luxury buyers?</span></button><button class="fxq" type="button" data-i="2"><span class="n">03</span><span class="t">I am relocating to Central Florida for a hospital position. How does that work?</span></button><button class="fxq" type="button" data-i="3"><span class="n">04</span><span class="t">Can you show me homes that are not on Zillow?</span></button><button class="fxq" type="button" data-i="4"><span class="n">05</span><span class="t">How long does it take to buy a luxury home in Central Florida?</span></button><button class="fxq" type="button" data-i="5"><span class="n">06</span><span class="t">Do you help with new construction and land?</span></button></div></div><div class="fx-r"><span class="fx-tag" id="fx-tag">01</span><h3 id="fx-t"></h3><span class="fx-grule"></span><div id="fx-a"></div></div></div><div class="fx-data" data-i="0" hidden><span class="dq">How much does it cost to work with Sean and Barb as a buyer?</span><span class="da">For most resale purchases there is no separate out of pocket fee to you as the buyer. Buyer agent compensation is negotiated and disclosed in writing before you tour a single home, and in many transactions it is still covered through the deal structure. After the 2024 changes to how agent compensation works, the most important thing is transparency, and you will always see the numbers in advance. We walk you through exactly who pays what for your specific purchase, whether it is a $700K townhome or a $5M lakefront estate.</span></div><div class="fx-data" data-i="1" hidden><span class="dq">Which Central Florida communities are best for luxury buyers?</span><span class="da">It depends on what you value. For guarded lakefront prestige, look at Windermere and Isleworth in 34786 and the Bay Hill area of Dr. Phillips in 32819. For walkable charm near shops and dining, Winter Park is hard to beat. For new construction and resort amenities, Winter Garden in 34787 and Lake Nona in 32827 lead the market. For top-rated schools and easy commutes, Lake Mary and Longwood are strong. We represent buyers across all 10 markets, and we will steer you toward the right fit rather than the easiest sale.</span></div><div class="fx-data" data-i="2" hidden><span class="dq">I am relocating to Central Florida for a hospital position. How does that work?</span><span class="da">This is one of our core specialties. If you are joining AdventHealth, Orlando Health, Nemours, or the VA and Medical City campus in Lake Nona, we coordinate your home search around your start date, your commute, and your financing. Many physicians qualify for physician loan programs that allow low or zero down payment on jumbo amounts without the usual reserve requirements, and we can connect you with lenders who handle these every day. Start with our physician relocation guide for a full walk through of neighborhoods, commute times, and timelines: see <a href="/lifestyles/physician-relocation/" style="color:#0D1B2E;text-decoration:underline;">our physician relocation guide</a>.</span></div><div class="fx-data" data-i="3" hidden><span class="dq">Can you show me homes that are not on Zillow?</span><span class="da">Yes. A meaningful share of luxury inventory moves quietly through coming soon status, private networks, and pocket listings that never hit the public portals. As part of Premier Sotheby's International Realty, we have access to off-market and pre-market opportunities across Central Florida and the wider Sotheby's network. If you are searching above $1M, this access often matters more than any public search tool.</span></div><div class="fx-data" data-i="4" hidden><span class="dq">How long does it take to buy a luxury home in Central Florida?</span><span class="da">From first tour to closing, a typical financed purchase runs about 30 to 45 days once you are under contract, and cash purchases can close faster. The search itself varies. Relocating buyers on a tight timeline often find and tour homes within their first weekend here, while buyers waiting for a specific community or floor plan may search for several months. We help you move decisively when the right home appears, which in a contested market is often the difference between winning and missing it.</span></div><div class="fx-data" data-i="5" hidden><span class="dq">Do you help with new construction and land?</span><span class="da">Yes. We represent buyers in new construction across Winter Garden, Lake Nona, and the wider Orlando corridor, and we negotiate directly with builders on your behalf. Having your own representation at a builder sales center costs you nothing and protects your interests on price, upgrades, and contract terms. We also help buyers source lots and acreage in Longwood and Windermere for custom builds.</span></div></div>
+</section>
+
+<section class="sbcta"><div class="sbcta-card"><span class="sbcta-orb a"></span><span class="sbcta-orb b"></span><div class="sbcta-in"><h2 class="section-heading sbcta-h">Ready to Start Your Search?</h2><span class="sbcta-rule"></span><p class="sbcta-sub">Tell us your timeline and your wish list. We will send you homes that fit, including ones the portals do not show, and there is no pressure and no obligation.</p><form id="sbcta-form" class="sbcta-form" action="https://script.google.com/macros/s/AKfycbzs-zsOdhVg8eqEYyrhujN_Wuh2va_zQieJWk7MXKWDbcPH9Gllt5jkr2nROf7k93OURw/exec" method="POST" target="sbcta-sink" novalidate><input type="hidden" name="source" value="Buy Page - Start Your Search"><input type="hidden" name="page" id="sbcta-page" value=""><input type="hidden" name="message" id="sbcta-message" value="Buyer search request from the buying a home page."><div class="sbcta-hp" aria-hidden="true"><label>Company<input type="text" name="company" tabindex="-1" autocomplete="off"></label></div><div class="sbcta-grid"><div class="sbcta-f"><label for="sbcta-name">Name</label><input type="text" id="sbcta-name" name="name" autocomplete="name" required></div><div class="sbcta-f"><label for="sbcta-phone">Phone</label><input type="tel" id="sbcta-phone" name="phone" autocomplete="tel"></div><div class="sbcta-f"><label for="sbcta-email">Email</label><input type="email" id="sbcta-email" name="email" autocomplete="email" required></div></div><div class="sbcta-act"><button type="submit" class="sbcta-btn">Submit Request</button></div><p class="sbcta-err" id="sbcta-err"></p></form><iframe name="sbcta-sink" title="hidden" style="display:none;width:0;height:0;border:0;"></iframe><p class="sbcta-ok" id="sbcta-ok">Thank you. Sean or Barb will be in touch shortly.</p></div></div></section><div style="height:16px;background:#FCFAF5;"></div>
+</main>
+<footer class="bg-[#001428]"></footer>
+<script>(function(){
+  if(window.__faqBound) return; window.__faqBound = true;
+  document.querySelectorAll('.faq-q-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var body = btn.nextElementSibling;
+      var icon = btn.querySelector('.faq-q-icon');
+      var isOpen = body.getAttribute('data-open') === '1';
+      var group = btn.closest('.faq-accordion-group');
+      if(group){
+        group.querySelectorAll('.faq-q-body').forEach(function(b){ b.style.maxHeight='0px'; b.setAttribute('data-open','0'); });
+        group.querySelectorAll('.faq-q-icon').forEach(function(i){ i.style.transform='rotate(0deg)'; });
+      }
+      if(!isOpen){ body.style.maxHeight=body.scrollHeight+'px'; body.setAttribute('data-open','1'); if(icon) icon.style.transform='rotate(180deg)'; }
+    });
+  });
+})();</script>
+<script>(function(){var b=document.querySelectorAll(".cbuy-toggle");Array.prototype.forEach.call(b,function(btn){var panel=document.getElementById(btn.getAttribute("aria-controls"));if(!panel)return;var txt=btn.querySelector(".cbuy-toggle-txt");function label(e){if(txt)txt.textContent=txt.getAttribute(e?"data-hide":"data-show");}label(false);btn.addEventListener("click",function(){var e=btn.getAttribute("aria-expanded")==="true";if(e){panel.style.maxHeight=panel.scrollHeight+"px";requestAnimationFrame(function(){requestAnimationFrame(function(){panel.style.maxHeight="0px";});});btn.setAttribute("aria-expanded","false");label(false);}else{panel.style.maxHeight=panel.scrollHeight+"px";btn.setAttribute("aria-expanded","true");label(true);var te=function(ev){if(ev.propertyName==="max-height"){if(btn.getAttribute("aria-expanded")==="true")panel.style.maxHeight="none";panel.removeEventListener("transitionend",te);}};panel.addEventListener("transitionend",te);}});});})();</script>
+<script id="sb-collection-js">(function(){var S=document.getElementById("cities-section");if(!S)return;var C=[{n:"Orlando",u:"/cities/orlando-homes-for-sale/",d:"The vibrant urban core and the luxury enclaves around it, offering a dynamic lifestyle minutes from downtown."},{n:"Winter Garden",u:"/cities/winter-garden-homes-for-sale/",d:"Historic brick streets and undeniable charm meet modern luxury in this highly sought-after community."},{n:"Windermere",u:"/cities/windermere-homes-for-sale/",d:"The pinnacle of lakefront living, nestled among the interconnected Butler Chain of Lakes."},{n:"Dr. Phillips",u:"/cities/dr-phillips-homes-for-sale/",d:"A hub for sprawling estate homes, championship golf courses and renowned fine dining."},{n:"Lake Nona",u:"/cities/lake-nona-homes-for-sale/",d:"A tech-forward medical city featuring modern estates, Medical City employers and world-class amenities."},{n:"Winter Park",u:"/cities/winter-park-homes-for-sale/",d:"Cobblestone streets, historic canopy oaks and refined architecture along a pristine chain of lakes."},{n:"Maitland",u:"/cities/maitland-homes-for-sale/",d:"Established streets blended with historic estates and prominent lakefront properties."},{n:"Longwood",u:"/cities/longwood-homes-for-sale/",d:"Expansive private lots and established canopy-tree luxury neighborhoods in the heart of Seminole County."},{n:"Lake Mary",u:"/cities/lake-mary-homes-for-sale/",d:"Premier golf communities, corporate corridors and generous privacy on established lots."},{n:"Oviedo",u:"/cities/oviedo-homes-for-sale/",d:"A growing luxury sector combining rural character with newly built modern estates."}];var I=S.querySelectorAll(".cf-item");var SH=S.querySelectorAll(".cf-shot");var T=document.getElementById("cf-title"),D=document.getElementById("cf-desc"),G=document.getElementById("cf-go");var cur=0,t1=null,t2=null;function pick(k){if(k===cur)return;var prev=cur;cur=k;for(var i=0;i<I.length;i++){I[i].classList.toggle("cf-on",i===k);}for(var j=0;j<SH.length;j++){if(j!==k&&j!==prev){SH[j].classList.remove("cf-live");SH[j].classList.remove("cf-prev");SH[j].style.clipPath="";}}var pv=SH[prev],nx=SH[k];if(pv){pv.classList.remove("cf-live");pv.classList.add("cf-prev");pv.style.clipPath="";}nx.classList.remove("cf-prev");nx.style.clipPath="inset(100% 0 0 0)";if(nx.offsetHeight>=0){nx.classList.add("cf-live");nx.style.clipPath="";}clearTimeout(t1);clearTimeout(t2);T.classList.add("cf-hide");D.classList.add("cf-hide");G.classList.add("cf-hide");t1=setTimeout(function(){T.textContent=C[cur].n;D.textContent=C[cur].d;G.setAttribute("href",C[cur].u);T.classList.remove("cf-hide");D.classList.remove("cf-hide");G.classList.remove("cf-hide");},170);t2=setTimeout(function(){for(var j=0;j<SH.length;j++){if(j!==cur){SH[j].classList.remove("cf-live");SH[j].classList.remove("cf-prev");SH[j].style.clipPath="";}}},700);}for(var i=0;i<I.length;i++){(function(el,k){el.addEventListener("pointerenter",function(){if(window.innerWidth>1023){pick(k);}});el.addEventListener("focus",function(){pick(k);});el.addEventListener("click",function(ev){if(window.innerWidth<=1023&&k!==cur){ev.preventDefault();pick(k);}});})(I[i],i);}I[0].classList.add("cf-on");})();</script><script id="sb-faq-c1-js">(function(){var qs=document.querySelectorAll(".fxq");if(!qs.length)return;var t=document.getElementById("fx-t"),a=document.getElementById("fx-a"),g=document.getElementById("fx-tag");function pad(n){return n<10?"0"+n:""+n;}function set(i){var d=document.querySelector('.fx-data[data-i="'+i+'"]');if(!d)return;t.textContent=d.querySelector(".dq").textContent;a.innerHTML=d.querySelector(".da").innerHTML;g.textContent=pad(i+1);for(var k=0;k<qs.length;k++){qs[k].classList.toggle("on",k===i);}}for(var k=0;k<qs.length;k++){(function(b){b.addEventListener("click",function(){set(+b.getAttribute("data-i"));});})(qs[k]);}set(0);})();</script><script id="sbcta-js">(function(){var f=document.getElementById("sbcta-form");if(!f||f.getAttribute("data-b"))return;f.setAttribute("data-b","1");var pg=document.getElementById("sbcta-page");if(pg)pg.value=location.href;var err=document.getElementById("sbcta-err"),ok=document.getElementById("sbcta-ok");var btn=f.querySelector("button"),sent=false;function val(id){var e=document.getElementById(id);return e?e.value.trim():"";}f.addEventListener("submit",function(e){err.style.display="none";var nm=val("sbcta-name"),em=val("sbcta-email");if(!nm||!em){e.preventDefault();err.textContent="Please add your name and email.";err.style.display="block";return;}if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)){e.preventDefault();err.textContent="Please enter a valid email address.";err.style.display="block";return;}sent=true;btn.disabled=true;btn.textContent="Sending...";});var fr=f.parentNode.querySelector("iframe[name=sbcta-sink]");if(fr)fr.addEventListener("load",function(){if(!sent)return;f.style.display="none";ok.style.display="block";});})();</script></body>
+</html>

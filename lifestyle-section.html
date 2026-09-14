@@ -1,0 +1,222 @@
+<section id="lifestyles-section" class="py-14 px-5 bg-white">
+<style>
+/* ── Lifestyle editorial cards ──────────────────────────── */
+.ls-card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 14px;
+  display: block;
+  text-decoration: none;
+}
+.ls-card img {
+  display: block;
+  width: calc(100vw - 40px);
+  height: 100%;
+  object-fit: cover;
+  object-position: center 35%;
+  transition: transform 0.55s cubic-bezier(.25,0,.15,1);
+}
+.ls-card:hover img, .ls-card:active img {
+  transform: scale(1.04);
+}
+.ls-overlay {
+  position: absolute;
+  inset: 0;
+  border-radius: 14px;
+  background: linear-gradient(
+    to top,
+    rgba(0,16,32,0.92) 0%,
+    rgba(0,16,32,0.58) 30%,
+    rgba(0,16,32,0.14) 62%,
+    rgba(0,16,32,0.0) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px 18px;
+  transition: background 0.3s ease;
+}
+.ls-card:hover .ls-overlay {
+  background: linear-gradient(
+    to top,
+    rgba(0,16,32,0.96) 0%,
+    rgba(0,16,32,0.62) 32%,
+    rgba(0,16,32,0.16) 64%,
+    rgba(0,16,32,0.0) 100%
+  );
+}
+.ls-eyebrow {
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: #C4952A;
+  margin: 0 0 5px;
+  display: block;
+}
+.ls-title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  color: #fff;
+  margin: 0 0 4px;
+  line-height: 1.15;
+}
+.ls-desc {
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 11px;
+  color: rgba(255,255,255,0.62);
+  margin: 0 0 10px;
+  line-height: 1.45;
+  font-weight: 400;
+}
+.ls-cta {
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 9px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: #E8B84B;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  opacity: 0.85;
+  transform: translateY(0);
+  transition: opacity 0.22s ease;
+}
+.ls-card:hover .ls-cta, .ls-card:active .ls-cta {
+  opacity: 1;
+}
+.ls-cta svg {
+  transition: transform 0.2s ease;
+}
+.ls-card:hover .ls-cta svg {
+  transform: translateX(3px);
+}
+/* city pill grid inside expanded panels */
+.ls-city-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  margin-top: 12px;
+}
+.ls-city-pill {
+  display: block;
+  text-align: center;
+  padding: 7px 4px;
+  border: 1px solid rgba(196,149,42,0.35);
+  border-radius: 999px;
+  font-family: Inter, sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  color: #002349;
+  text-decoration: none;
+  letter-spacing: .04em;
+  transition: background 0.15s, border-color 0.15s;
+}
+.ls-city-pill:hover {
+  background: rgba(196,149,42,0.08);
+  border-color: rgba(196,149,42,0.6);
+
+  /* ══ FOOTER ══════════════════════════════════════════════════ */
+  footer .max-w-screen-xl { max-width: 1280px; margin: 0 auto; padding: 18px 80px 12px !important; }
+  footer { margin-bottom: 0 !important; }
+  footer [style*="grid-template-columns:1fr 1fr"] { display: block !important; }
+  footer [style*="grid-template-columns:1fr 1fr"] a { display: inline !important; padding: 0 !important; font-size: 11px !important; }
+  footer [style*="grid-template-columns:1fr 1fr"] a + a::before { content: ' · '; color: rgba(196,149,42,0.4); }
+  #footer-industry-logos { display: block !important; }
+  #footer-bottom-bar { display: flex !important; align-items: flex-end !important; justify-content: space-between !important; }
+  footer .footer-mobile-logos { display: none !important; }
+}
+</style>
+
+<div class="max-w-screen-xl mx-auto">
+
+  <!-- Section header -->
+  <div style="position:relative;overflow:visible;">
+    <span aria-hidden="true" style="position:absolute;top:-0.55em;left:-8px;font-family:Cormorant Garamond,Georgia,serif;font-size:clamp(120px,30vw,200px);font-weight:600;color:#002349;opacity:0.06;line-height:1;pointer-events:none;user-select:none;-webkit-user-select:none;z-index:0;white-space:nowrap;">CF</span>
+    <div style="position:relative;z-index:1;">
+      <p class="section-eyebrow">Find your perfect lifestyle</p>
+      <h2 class="section-heading mb-2">Browse Central Florida homes by lifestyle</h2>
+      <span class="gold-rule"></span>
+    </div>
+  </div>
+
+  <!-- ── Featured primary card: Lakefront ──────────────────── -->
+  <a href="/lifestyles/waterfront/" class="ls-card" style="aspect-ratio:16/9;margin-bottom:10px;">
+    <picture style="display:block;width:100%;height:100%;">
+      <source srcset="/images/waterfront.webp" type="image/webp">
+      <img src="/images/waterfront.jpg" alt="Lakefront luxury homes Central Florida" width="800" height="450" loading="lazy" style="object-position:center 25%;">
+    </picture>
+    <div class="ls-overlay" style="background:linear-gradient(to top,rgba(0,12,26,0.97) 0%,rgba(0,12,26,0.82) 38%,rgba(0,12,26,0.38) 65%,rgba(0,12,26,0.0) 100%);">
+      <p class="ls-title" style="font-size:28px;">Lakefront Homes</p>
+      <p class="ls-desc">Every chain, every lake. Waterfront enclaves no one else lists.</p>
+      <span class="ls-cta">Explore lakefront homes <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+    </div>
+  </a>
+
+  <!-- ── Secondary 2-col grid ──────────────────────────────── -->
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px;">
+
+    <!-- Golf -->
+    <a href="/lifestyles/golf/" class="ls-card" style="aspect-ratio:3/4;">
+      <picture style="display:block;width:100%;height:100%;">
+        <source srcset="/images/golf.webp" type="image/webp">
+        <img src="/images/golf.jpg" alt="Golf front luxury homes Central Florida" width="400" height="533" loading="lazy" style="object-position:center 50%;">
+      </picture>
+      <div class="ls-overlay" style="background:linear-gradient(to top,rgba(0,16,32,0.97) 0%,rgba(0,16,32,0.75) 35%,rgba(0,16,32,0.25) 65%,rgba(0,16,32,0) 100%);">
+        <p class="ls-title" style="font-size:20px;">Golf Front Homes</p>
+        <p class="ls-desc" style="font-size:10px;">Isleworth to Alaqua Lakes.</p>
+        <span class="ls-cta">Explore <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+      </div>
+    </a>
+
+    <!-- Over $2M -->
+    <a href="/lifestyles/over-2-million/" class="ls-card" style="aspect-ratio:3/4;">
+      <picture style="display:block;width:100%;height:100%;">
+        <source srcset="/images/luxury.webp" type="image/webp">
+        <img src="/images/luxury.jpg" alt="Over $2 million luxury homes Central Florida" width="400" height="533" loading="lazy" style="object-position:center 30%;">
+      </picture>
+      <div class="ls-overlay" style="background:linear-gradient(to top,rgba(0,12,26,0.97) 0%,rgba(0,12,26,0.75) 35%,rgba(0,12,26,0.25) 65%,rgba(0,12,26,0) 100%);">
+        <p class="ls-title" style="font-size:20px;">Over $2 Million</p>
+        <p class="ls-desc" style="font-size:10px;">Off-market access &amp; discretion.</p>
+        <span class="ls-cta">Explore <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+      </div>
+    </a>
+
+  </div>
+
+  <!-- ── Tertiary row: Canal Front + Physician - equal 1:1 grid ── -->
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+
+    <!-- Canal Front -->
+    <a href="/cities/orlando-homes-for-sale/canal-front-homes/" class="ls-card" style="aspect-ratio:3/4;">
+      <picture style="display:block;width:100%;height:100%;">
+        <source srcset="/images/canal-front.webp" type="image/webp">
+        <img src="/images/canal-front.jpg" alt="Canal front homes Central Florida" width="400" height="533" loading="lazy" style="object-position:center 40%;">
+      </picture>
+      <div class="ls-overlay" style="background:linear-gradient(to top,rgba(0,12,26,0.97) 0%,rgba(0,12,26,0.80) 38%,rgba(0,12,26,0.28) 68%,rgba(0,12,26,0) 100%);">
+        <p class="ls-title" style="font-size:20px;">Canal Front Homes</p>
+        <p class="ls-desc" style="font-size:10px;">30-50% less than lakefront.</p>
+        <span class="ls-cta">Explore <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+      </div>
+    </a>
+
+    <!-- Physician -->
+    <a href="/lifestyles/physician-relocation/" class="ls-card" style="aspect-ratio:3/4;">
+      <picture style="display:block;width:100%;height:100%;">
+        <source srcset="/images/physician.webp" type="image/webp">
+        <img src="/images/physician.jpg" alt="Physician relocation Central Florida" width="400" height="533" loading="lazy" style="object-position:center bottom;">
+      </picture>
+      <div class="ls-overlay" style="background:linear-gradient(to top,rgba(0,12,26,0.97) 0%,rgba(0,12,26,0.80) 38%,rgba(0,12,26,0.28) 68%,rgba(0,12,26,0) 100%);">
+        <p class="ls-title" style="font-size:20px;">Physician Relocation</p>
+        <p class="ls-desc" style="font-size:10px;">0% down &amp; hospital proximity.</p>
+        <span class="ls-cta">Explore <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+      </div>
+    </a>
+
+  </div>
+
+</div>
+</section>
