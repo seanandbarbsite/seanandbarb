@@ -202,35 +202,35 @@ main .font-sans.text-sm:not(.rounded-full),main .font-sans.text-xs:not(.rounded-
     <!-- IHF Form card - white, gold border accent -->
     </div><!-- /sb-contact-info -->
 
-    <div class="sb-contact-form-card" style="background:#fff;border-radius:14px;border:1px solid rgba(196,149,42,0.25);padding:20px 20px 24px;">
-      <p style="font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:#C4952A;font-weight:700;margin:0 0 3px;">Send a Message</p>
-      <h2 style="font-family:'Cormorant Garamond',Georgia,serif;font-weight:300;font-size:1.4rem;color:#002349;margin:0 0 16px;">How Can We Help?</h2>
+    <div class="sb-contact-form-card" style="background:#141b29;border-radius:24px;border:1px solid rgba(212,175,55,.4);box-shadow:0 26px 60px rgba(0,0,0,.5);padding:24px 22px 28px;">
+      <p style="font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#d4af37;font-weight:700;margin:0 0 4px;">Send a Message</p>
+      <h2 style="font-family:'Cormorant Garamond',Georgia,serif;font-weight:300;font-size:1.5rem;color:#f1f5f9;margin:0 0 18px;">How Can We Help?</h2>
       <!-- Custom lead form -> Google Apps Script -> Google Sheet + email. No iHF, no subscriptions.
            Submits to the Sean & Barb Google Apps Script (writes to the leads Sheet + emails Sean). -->
       <style id="sb-leadform-css">
         .sb-lead{font-family:Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;}
         .sb-lead .field{margin:0 0 14px;}
-        .sb-lead label.fld{display:block;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#002349;font-weight:600;margin:0 0 5px;}
-        .sb-lead .req{color:#C4952A;}
+        .sb-lead label.fld{display:block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#94a3b8;font-weight:700;margin:0 0 6px;}
+        .sb-lead .req{color:#d4af37;}
         .sb-lead input[type=text],.sb-lead input[type=email],.sb-lead input[type=tel],.sb-lead textarea{
-          width:100%;box-sizing:border-box;border:1.5px solid rgba(196,149,42,.35);border-radius:10px;
-          padding:11px 14px;font-size:15px;color:#1A1A1A;background:#FCFAF5;font-family:inherit;
+          width:100%;box-sizing:border-box;border:1px solid rgba(51,65,85,0.5);border-radius:12px;
+          padding:13px 16px;font-size:15px;color:#f1f5f9;background:#080b11;font-family:inherit;
           transition:border-color .15s ease,box-shadow .15s ease;}
-        .sb-lead input:focus,.sb-lead textarea:focus{outline:none;border-color:#C4952A;box-shadow:0 0 0 3px rgba(196,149,42,.15);}
+        .sb-lead input:focus,.sb-lead textarea:focus{outline:none;border-color:#d4af37;box-shadow:0 0 0 3px rgba(212,175,55,.15);}
         .sb-lead textarea{min-height:120px;resize:vertical;}
         .sb-lead .consent{display:flex;gap:9px;align-items:flex-start;margin:2px 0 16px;}
         .sb-lead .consent input{margin-top:3px;flex:0 0 auto;}
-        .sb-lead .consent span{font-size:11px;line-height:1.45;color:#6b5d52;}
+        .sb-lead .consent span{font-size:11px;line-height:1.45;color:#94a3b8;}.sb-lead .consent input{accent-color:#d4af37;}
         .sb-lead .hp{position:absolute!important;left:-9999px!important;width:1px;height:1px;overflow:hidden;}
-        .sb-lead button{width:100%;border:none;cursor:pointer;background:linear-gradient(160deg,#d4a535,#C4952A 60%,#b8891e);
-          color:#fff;font-family:inherit;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
-          border-radius:999px;padding:15px;transition:filter .15s ease,opacity .15s ease;}
-        .sb-lead button:hover{filter:brightness(1.05);}
+        .sb-lead button{width:100%;border:0;cursor:pointer;background:linear-gradient(to right,#d4af37,#aa8822);
+          color:#080d0a;font-family:inherit;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+          border-radius:999px;padding:16px;transition:opacity .3s ease,transform .3s ease;}
+        .sb-lead button:hover{opacity:.9;transform:translateY(-1px);}
         .sb-lead button:disabled{opacity:.6;cursor:default;}
-        .sb-lead .err{color:#b23b3b;font-size:12px;margin:-8px 0 12px;display:none;}
+        .sb-lead .err{color:#FCA5A5;font-size:12px;margin:-8px 0 12px;display:none;}
         .sb-lead .okbox{display:none;text-align:center;padding:24px 8px;}
-        .sb-lead .okbox h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:300;font-size:1.5rem;color:#002349;margin:0 0 8px;}
-        .sb-lead .okbox p{font-size:14px;color:#6b5d52;margin:0;}
+        .sb-lead .okbox h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:300;font-size:1.5rem;color:#d4af37;margin:0 0 8px;}
+        .sb-lead .okbox p{font-size:14px;color:#94a3b8;margin:0;}
       </style>
       <div class="sb-lead" style="margin-top:6px;">
         <form id="sb-lead-form" action="https://script.google.com/macros/s/AKfycbzs-zsOdhVg8eqEYyrhujN_Wuh2va_zQieJWk7MXKWDbcPH9Gllt5jkr2nROf7k93OURw/exec" method="POST" target="sb-lead-sink" novalidate>
