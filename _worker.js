@@ -495,8 +495,12 @@ function applyMarketSnapshot(html, pathname){
   if (p === '/') { return html.includes(A) ? html.replace(A, () => MARKET_GRAPH + A) : html; }
   // r306: city pages opt in to the homepage market widget with an inline slot marker.
   // The widget opens on that city's tab, and its pre-paint headline matches too.
-  if (p.indexOf('/cities/') === 0 && html.indexOf('<!--SB-MKT-SLOT-->') !== -1) {
-    const slug = p.slice(8).replace(/\/$/, '').replace(/-homes-for-sale$/, '');
+  if (html.indexOf('<!--SB-MKT-SLOT-->') !== -1) {
+    // r368: any page can opt in with the slot marker, not just /cities/.
+    // A non-city page (the state relocation pages) gets the default tab.
+    const slug = p.indexOf('/cities/') === 0
+      ? p.slice(8).replace(/\/$/, '').replace(/-homes-for-sale$/, '')
+      : '';
     let mg = MARKET_GRAPH;
     if (slug && mg.indexOf('"' + slug + '":{') !== -1) {
       mg = mg.replace("var cur='orlando'", function(){ return "var cur='" + slug + "'"; });
