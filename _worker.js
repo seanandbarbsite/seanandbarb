@@ -277,12 +277,12 @@ var cRun=0;
 function countTo(el,target,dec,pre,dur,suf){
  suf=suf||'';
  if(!el)return;
- var fin=function(){el.textContent=pre+(dec?target.toFixed(dec):target.toLocaleString('en-US'))+suf;};
+ /* r369: count up from 94% of the value, not from zero. Animating from 0 displayed a materially wrong price for ~2.6s every time the widget scrolled into view, which is long enough to be screenshotted or crawled. */var CFLOOR=0.94;var fin=function(){el.textContent=pre+(dec?target.toFixed(dec):target.toLocaleString('en-US'))+suf;};
  if(reduce||!dur){fin();return;}
  var id=++cRun;el.setAttribute('data-run',id);
  var t0=null;
  function step(ts){if(+el.getAttribute('data-run')!==id)return;
-  if(!t0)t0=ts;var p=Math.min(1,(ts-t0)/dur);var e=1-Math.pow(1-p,3);var v=target*e;
+  if(!t0)t0=ts;var p=Math.min(1,(ts-t0)/dur);var e=1-Math.pow(1-p,3);var v=target*(CFLOOR+(1-CFLOOR)*e);
   el.textContent=pre+(dec?v.toFixed(dec):Math.round(v).toLocaleString('en-US'))+suf;
   if(p<1)requestAnimationFrame(step);else fin();}
  requestAnimationFrame(step);
