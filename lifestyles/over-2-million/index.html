@@ -842,7 +842,7 @@ Hi! I'm Seba, the Sean &amp; Barb AI assistant. I can answer questions about Cen
       if(!t0) t0 = ts;
       var p = Math.min((ts - t0) / duration, 1);
       var eased = 1 - Math.pow(1 - p, 3);
-      var cur = Math.round(num * eased);
+      /* r369: floor the count so a credential never displays a wrong number */var cur = Math.round(num * (0.94 + 0.06 * eased));
       el.textContent = cur + (isPlus ? '+' : '');
       if(p < 1) requestAnimationFrame(tick);
       else el.textContent = raw;
