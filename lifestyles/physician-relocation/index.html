@@ -924,7 +924,7 @@ section#calc-section{padding-top:40px !important;}
 </style>
 <div id="mguide-cover">
   <div class="mgc-stage">
-    <button type="button" class="mgc-book" id="mgcBook" aria-label="Open the physician relocation guide and request access">
+    <button type="button" class="mgc-book" id="mgcBook" aria-label="Open the physician relocation guide">
       <span class="mgc-frame"></span><span class="mgc-shimmer"></span>
       <span class="mgc-content">
         <span class="mgc-yr">2 0 2 6</span><span class="mgc-rule"></span>
@@ -935,11 +935,11 @@ section#calc-section{padding-top:40px !important;}
       </span>
     </button>
   </div>
-  <button type="button" class="mgc-cta" id="mgcCta">
+  <a href="/lifestyles/physician-relocation/guide/" class="mgc-cta" id="mgcCta" style="text-decoration:none;">
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
     Open the Guide
-  </button>
-  <p class="mgc-hint">Tap to unlock instant access &middot; plus a private 15-minute consultation</p>
+  </a>
+  <p class="mgc-hint">Free to read, no sign-up needed</p>
 </div>
 <script>(function(){
   if(!window.matchMedia('(max-width:1023px)').matches) return;
@@ -949,13 +949,7 @@ section#calc-section{padding-top:40px !important;}
   function openForm(){
     if(done)return; done=true;
     cover.classList.add('is-open');
-    outer.classList.add('mform-open');
-    var card=document.getElementById('phys-form-card-m'); if(card) card.style.opacity='1';
-    setTimeout(function(){
-      try{cover.style.display='none';}catch(e){}
-      var f=document.getElementById('guide-mobile-form');
-      if(f&&f.scrollIntoView) f.scrollIntoView({behavior:'smooth',block:'center'});
-    },560);
+    setTimeout(function(){ window.location.href='/lifestyles/physician-relocation/guide/'; },420);
   }
   [book,cta].forEach(function(el){ if(!el)return;
     el.addEventListener('click',function(e){e.preventDefault();openForm();});
@@ -965,10 +959,10 @@ section#calc-section{padding-top:40px !important;}
 <div id="guide-mobile-form" style="background:#F5F0E8;border-radius:0 0 14px 14px;border:1px solid rgba(196,149,42,0.2);border-top:none;overflow:hidden;">
   <div id="phys-form-card-m" style="padding:0 20px 24px;display:flex;flex-direction:column;align-items:center;opacity:0;transition:opacity .5s ease;">
     <p style="font-family:Cormorant Garamond,Georgia,serif;font-style:italic;font-size:22px;color:#002349;margin:0 0 8px;text-align:center;line-height:1.2;">Want the<br>Complete Guide?</p>
-    <p style="font-family:Inter,system-ui,sans-serif;font-size:11px;color:#6B5D52;text-align:center;margin:0 0 18px;line-height:1.65;">Ready to make Central Florida home? Enter your details for instant access to the complete guide - plus a <strong style="color:#002349;font-weight:500;">private 15-minute consultation</strong> with Sean or Barb.</p>
-    <p style="font-family:Inter,system-ui,sans-serif;font-size:10px;color:#6B5D52;text-align:center;margin:0 0 14px;line-height:1.55;">When we connect, we map your <strong style="color:#002349;font-weight:600;">hospital</strong>, target <strong style="color:#002349;font-weight:600;">start date</strong>, and <strong style="color:#002349;font-weight:600;">price range</strong>.</p>
+    <p style="font-family:Inter,system-ui,sans-serif;font-size:11px;color:#6B5D52;text-align:center;margin:0 0 18px;line-height:1.65;">Ready to make Central Florida home? All 28 chapters are free to read. No email, no sign-up.</p>
+    
       <div id="ihf-phys-widget-m" style="width:100%;min-height:300px;"></div>
-    <p style="font-family:Inter,system-ui,sans-serif;font-size:9px;color:#B8AFA4;text-align:center;margin:12px 0 0;letter-spacing:0.04em;">No spam. Your information is kept private and never shared.</p>
+    <p style="font-family:Inter,system-ui,sans-serif;font-size:9px;color:#B8AFA4;text-align:center;margin:12px 0 0;letter-spacing:0.04em;">Want a private 15-minute call with Sean or Barb? <a href="/contact/" style="color:#8a6d1f;font-weight:600;">Reach out anytime</a>.</p>
   </div>
 </div>
 </div><!-- /guide-outer -->
@@ -1678,10 +1672,10 @@ Hi! I'm Seba, the Sean &amp; Barb AI assistant. I can answer questions about Cen
    +   '<div class="sbk-open">'
    +     '<div class="sbk-left">'
    +       '<div id="phys-form-card-dt" style="opacity:0;transition:opacity .5s ease;">'
-   +         '<p class="sbk-form-e">Request Your Copy</p>'
-   +         '<p class="sbk-form-t">Want the Complete Guide?</p>'
-   +         '<p class="sbk-form-d">Get <strong>instant access</strong> to all 28 chapters, plus a <strong>private 15-minute consultation</strong>.</p>'
-   +         '<p class="sbk-form-d" style="margin-bottom:14px;">When we connect, we map your <strong>hospital</strong> (AdventHealth, Orlando Health, UCF Health, HCA), target <strong>start date</strong>, and <strong>price range</strong>.</p>'
+   +         '<p class="sbk-form-e">No Sign-Up Needed</p>'
+   +         '<p class="sbk-form-t">Read the Complete Guide</p>'
+   +         '<p class="sbk-form-d">All <strong>28 chapters</strong>, free to read. No email, no sign-up.</p>'
+   +         '<p class="sbk-form-d" style="margin-bottom:14px;">Want to talk it through? We are happy to map your <strong>hospital</strong>, <strong>start date</strong> and <strong>price range</strong> on a private 15-minute call.</p>'
    +         '<div id="ihf-phys-widget-dt" style="width:100%;min-height:280px;"></div>'
    +       '</div>'
    +     '</div>'
@@ -1724,8 +1718,8 @@ Hi! I'm Seba, the Sean &amp; Barb AI assistant. I can answer questions about Cen
 </script>
 
 <script>
-/* Custom Sheet-backed physician guide form (replaces iHF). Submits to Apps Script -> Google Sheet
-   + email + auto-reply with guide link, then opens the guide. Tagged source="Physician Guide". */
+/* r376 - guide is open access. The Sheet-backed email form was removed at Sean's direction;
+   this now renders a direct Open the Guide link plus an optional call link. */
 (function(){
   if(window.__sbPhysFormDone) return; window.__sbPhysFormDone=true;
   var ACTION='https://script.google.com/macros/s/AKfycbzs-zsOdhVg8eqEYyrhujN_Wuh2va_zQieJWk7MXKWDbcPH9Gllt5jkr2nROf7k93OURw/exec';
@@ -1741,38 +1735,16 @@ Hi! I'm Seba, the Sean &amp; Barb AI assistant. I can answer questions about Cen
       +'.pf-consent input{margin-top:2px;flex:0 0 auto;}'
       +'.pf-consent span{font-size:9.5px;line-height:1.4;color:#8a7d70;}'
       +'.pf button{width:100%;border:0;cursor:pointer;background:linear-gradient(to right,#d4af37,#aa8822);color:#080d0a;font-family:inherit;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;border-radius:999px;padding:14px;transition:opacity .3s ease,transform .3s ease;}'
-      +'.pf button:hover{opacity:.9;}.pf button:disabled{opacity:.6;cursor:default;}';
+      +'.pf button:hover{opacity:.9;}.pf button:disabled{opacity:.6;cursor:default;}'
+      +'.pf .pf-open{display:block;box-sizing:border-box;width:100%;text-align:center;text-decoration:none;background:linear-gradient(to right,#d4af37,#aa8822);color:#080d0a;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;border-radius:999px;padding:14px;transition:opacity .3s ease;}'
+      +'.pf .pf-open:hover{opacity:.9;}.pf .pf-alt{text-align:center;margin:12px 0 0;font-size:11px;}.pf .pf-alt a{color:#8a6d1f;font-weight:600;text-decoration:underline;}';
     document.head.appendChild(st);
   }
   function formHTML(sfx){
-    return '<form id="pf-'+sfx+'" class="pf" action="'+ACTION+'" method="POST" target="pf-sink-'+sfx+'" novalidate>'
-      +'<input type="hidden" name="source" value="Physician Guide">'
-      +'<input type="hidden" name="page" class="pf-page" value="">'
-      +'<div class="pf-hp" aria-hidden="true"><input type="text" name="company" tabindex="-1" autocomplete="off"></div>'
-      +'<input type="text" id="pf-name-'+sfx+'" name="name" placeholder="Full Name" autocomplete="name" required>'
-      +'<input type="email" id="pf-email-'+sfx+'" name="email" placeholder="Email" autocomplete="email" required>'
-      +'<input type="tel" id="pf-phone-'+sfx+'" name="phone" placeholder="Phone (optional)" autocomplete="tel">'
-      +'<div class="pf-err" id="pf-err-'+sfx+'"></div>'
-      +'<label class="pf-consent"><input type="checkbox" name="consent" value="yes"><span>Text me listing updates &amp; relocation tips. Msg &amp; data rates may apply; reply STOP to opt out.</span></label>'
-      +'<button type="submit" id="pf-send-'+sfx+'">Open My Relocation Guide</button>'
-      +'</form><iframe name="pf-sink-'+sfx+'" id="pf-sink-'+sfx+'" style="display:none" title="form target"></iframe>';
+    return '<div class="pf"><a href="'+GUIDE_URL+'" id="pf-send-'+sfx+'" class="pf-open">Open the Guide</a>'
+      +'<p class="pf-alt"><a href="/contact/">Book a 15-minute call instead</a></p></div>';
   }
-  function wire(sfx){
-    var f=document.getElementById('pf-'+sfx); if(!f||f.__wired) return; f.__wired=true;
-    var sink=document.getElementById('pf-sink-'+sfx), btn=document.getElementById('pf-send-'+sfx), err=document.getElementById('pf-err-'+sfx);
-    var pg=f.querySelector('.pf-page'); if(pg) pg.value=location.href;
-    var submitting=false;
-    f.addEventListener('submit', function(e){
-      err.style.display='none';
-      var name=document.getElementById('pf-name-'+sfx).value.trim();
-      var email=document.getElementById('pf-email-'+sfx).value.trim();
-      if(!name||!email){ e.preventDefault(); err.textContent='Please add your name and email.'; err.style.display='block'; return; }
-      if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)){ e.preventDefault(); err.textContent='Please enter a valid email.'; err.style.display='block'; return; }
-      if(f.action.indexOf('script.google.com')===-1){ e.preventDefault(); err.textContent='Form is not connected yet.'; err.style.display='block'; return; }
-      submitting=true; btn.disabled=true; btn.textContent='Opening\u2026';
-    });
-    sink.addEventListener('load', function(){ if(!submitting) return; submitting=false; window.location.href=GUIDE_URL; });
-  }
+  function wire(sfx){}
   function fill(){
     [['m','ihf-phys-widget-m'],['dt','ihf-phys-widget-dt']].forEach(function(pr){
       var c=document.getElementById(pr[1]);

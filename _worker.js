@@ -1398,7 +1398,7 @@ export default {
     const REDIRECTS = {
       '/central-florida-communities/dr.-phillips': '/cities/dr-phillips-homes-for-sale/',
       '/central-florida-communities/lake-nona':   '/cities/lake-nona-homes-for-sale/',
-      '/properties':  '/listings/',
+      '/properties':  '/idx/',
       '/contact-8':   '/contact/',
       '/sell':                       '/selling-your-home/',
       '/sell/downsizing':            '/selling-your-home/downsizing/',
@@ -1427,10 +1427,21 @@ export default {
       '/windermere-homes-for-sale': '/cities/windermere-homes-for-sale/',
       '/winter-garden-homes-for-sale': '/cities/winter-garden-homes-for-sale/',
       '/winter-park-homes-for-sale': '/cities/winter-park-homes-for-sale/',
+      // r376 - low-value pages retired, 301 to the closest live page
+      '/listings':   '/idx/',
+      '/markets':    '/market-report/',
+      '/lifestyles/new-york-to-florida-relocation': '/relocation/new-york-to-florida/',
+      '/insights/central-florida-seller-pricing-2026': '/selling-your-home/',
+      '/insights/central-florida-buyer-market-shift-2026': '/buying-a-home/',
+      '/insights/downtown-orlando-lake-eola-tower-2026': '/cities/orlando-homes-for-sale/',
+      '/insights/lake-nona-laureate-park-426-homes-2026': '/cities/lake-nona-homes-for-sale/',
     };
     if (REDIRECTS[cleanPath]) {
       return Response.redirect('https://www.seanandbarb.com' + REDIRECTS[cleanPath], 301);
     }
+    // r376 - /listings/* and /markets/* were template rewrites; send every subpath to the live equivalent.
+    if (cleanPath.indexOf('/listings/') === 0) return Response.redirect('https://www.seanandbarb.com/idx/', 301);
+    if (cleanPath.indexOf('/markets/') === 0) return Response.redirect('https://www.seanandbarb.com/market-report/', 301);
 
     // 410 Gone → permanently removed pages (drops them from Google faster than 404).
     const GONE = new Set(['/free-pre-listing-checklist', '/mo', '/yr', '/relocation/texas-to-florida']);
