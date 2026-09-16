@@ -605,8 +605,9 @@
 
   /* ══ PHYSICIAN PAGE - SECTION 15: Sean & Barb ═══════════════ */
   section.px-5.py-10[style*="padding-left:2%"] { padding: 72px 80px !important; }
+}
 
-: override font-display to swap for Cormorant Garamond on this page only.
+/* LCP fix: override font-display to swap for Cormorant Garamond on this page only.
    Georgia renders immediately as fallback; Cormorant swaps in when loaded. */
 @font-face {
   font-family: 'Cormorant Garamond';
