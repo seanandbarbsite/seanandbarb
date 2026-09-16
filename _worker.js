@@ -493,6 +493,11 @@ function applyMarketSnapshot(html, pathname){
   const p = pathname.replace(/index\.html$/, '');
   const A = '<div class="tx-head">';
   if (p === '/') { return html.includes(A) ? html.replace(A, () => MARKET_GRAPH + A) : html; }
+  // r378: seller city pages carry the slot too and open the widget on their own city tab.
+  const sbSellCity = p.match(/^\/selling-your-home\/([a-z\-]+)\/$/);
+  if (sbSellCity && html.indexOf('<!--SB-MKT-SLOT-->') !== -1 && MARKET_GRAPH.indexOf('"' + sbSellCity[1] + '":{') !== -1) {
+    return applyMarketSnapshot(html, '/cities/' + sbSellCity[1] + '-homes-for-sale/');
+  }
   // r306: city pages opt in to the homepage market widget with an inline slot marker.
   // The widget opens on that city's tab, and its pre-paint headline matches too.
   if (html.indexOf('<!--SB-MKT-SLOT-->') !== -1) {
