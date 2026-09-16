@@ -1715,6 +1715,8 @@ export default {
       },
     };
 
+    const SB_NBHD_CSS = "<style id=\"sb-nbhd-2026\">.sb-band{position:relative;}.sb-band::before{content:\"\";position:absolute;top:0;left:0;right:0;height:1px;background:rgba(196,149,42,0.30);}.sb-band{margin:0 8px 16px !important;border-radius:8px !important;border:1px solid rgba(150,110,30,0.30) !important;box-shadow:0 2px 14px rgba(0,0,0,0.06) !important;}.sb-band::before{display:none !important;}.sb-band{margin:0 !important;border-radius:0 !important;border:0 !important;box-shadow:none !important;}.sb-band::before{display:none !important;}html main section.sb-band[style*=\"background:#002349\"]{max-width:none !important;margin-left:0 !important;margin-right:0 !important;}body.sb-rail main section.bg-navy.rounded-2xl.sb-band{max-width:none !important;margin-left:0 !important;margin-right:0 !important;border-radius:0 !important;}main section.rounded-2xl.sb-band{border-radius:0 !important;}body.sb-rail main section:has(.sb-listing-updated) > .max-w-screen-xl > div[style*=\"overflow:visible\"]{margin-left:calc(max(40px, (100% - 1120px) / 2) - 80px) !important;}@media (min-width:1024px){main .text-sm, main .text-xs{ font-size:1.0625rem !important; line-height:1.7 !important; }}#sb-nbhd-hero .btn-gold,#sb-nbhd-hero .btn-navy{font-size:11px !important;letter-spacing:.12em !important;padding:10px 22px !important;}#sb-nbhd-hero nav{font-size:10px !important;margin-bottom:7px !important;}#sb-nbhd-hero .sb-hero-panel::before{top:7px;bottom:7px;}.sbcta{padding:8px 0 24px;}.sbcta-card{position:relative;overflow:hidden;max-width:1180px;margin:0 auto;border-radius:24px;border:1px solid rgba(212,175,55,.55);box-shadow:0 26px 60px rgba(0,0,0,.5);background:linear-gradient(-45deg,#0b0f17,#141b29,#080b11,#1a2335);background-size:200% 200%;animation:sbctaFlow 20s ease infinite;}@keyframes sbctaFlow{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}@media (prefers-reduced-motion:reduce){.sbcta-card{animation:none;}}.sbcta-orb{display:none;}.sbcta-in{position:relative;z-index:2;padding:56px 24px 60px;display:flex;flex-direction:column;align-items:center;text-align:center;}.sbcta-h{color:#f1f5f9 !important;margin:0 0 18px !important;}.sbcta-rule{display:block;width:96px;height:1px;margin:0 0 26px;background:linear-gradient(to right,transparent,#D4AF37,transparent);}.sbcta-sub{font-family:Inter,system-ui,sans-serif;font-weight:300;font-size:17px;line-height:1.75;color:#94a3b8;max-width:640px;margin:0 0 38px;}.sbcta-form{width:100%;max-width:640px;display:flex;flex-direction:column;gap:22px;}.sbcta-grid{display:grid;grid-template-columns:1fr;gap:18px;}.sbcta-f{display:flex;flex-direction:column;gap:7px;text-align:left;}.sbcta-f label{font-family:Inter,system-ui,sans-serif;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#94a3b8;margin-left:4px;}.sbcta-f input{width:100%;background:#080b11;border:1px solid rgba(212,175,55,0.30);border-radius:12px;padding:13px 16px;color:#f1f5f9;font-family:Inter,system-ui,sans-serif;font-size:15px;outline:none;transition:border-color .25s ease,background .25s ease;}.sbcta-f input::placeholder{color:rgba(148,163,184,.4);}.sbcta-f input:focus{border-color:#d4af37;background:#080b11;}.sbcta-btn{padding:16px 46px;border:0;border-radius:999px;background:linear-gradient(to right,#d4af37,#aa8822);color:#080d0a;font-family:Inter,system-ui,sans-serif;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;cursor:pointer;transition:all .3s ease;}.sbcta-btn:hover{opacity:.9;transform:translateY(-1px);}.sbcta-btn[disabled]{opacity:.6;cursor:default;transform:none;}.sbcta-hp{position:absolute;left:-6000px;top:auto;}.sbcta-err{display:none;margin:0;font-family:Inter,system-ui,sans-serif;font-size:13px;color:#FCA5A5;}.sbcta-ok{display:none;margin:18px 0 0;font-family:Playfair Display,Georgia,serif;font-size:19px;color:#d4af37;}@media (min-width:640px){.sbcta-grid{grid-template-columns:1fr 1fr;}.sbcta-grid .sbcta-f:last-child{grid-column:1 / -1;}.sbcta-in{padding:76px 56px 80px;}}.faq-wrap .section-heading{color:#0D1B2E !important;}.faq-wrap .gold-rule{background:#C4952A !important;}.faq-wrap{max-width:1240px !important;}.fx-head{padding:18px 26px !important;font-size:11px !important;letter-spacing:.26em !important;}.fxq{padding:20px 26px !important;gap:18px !important;}.fxq .n{font-size:11px !important;min-width:26px !important;}.fxq .t{font-size:16px !important;line-height:1.5 !important;}.fx-r h3{font-size:clamp(1.5rem,2.6vw,2.15rem) !important;margin:0 0 10px !important;}.fx-grule{width:56px !important;margin-bottom:20px !important;}.fx-r #fx-a{font-size:17px !important;line-height:1.8 !important;}.fx-tag{font-size:10.5px !important;padding:11px 17px !important;}@media (min-width:1000px){.fx{grid-template-columns:minmax(0,.88fr) minmax(0,1.12fr) !important;}.fx-r{padding:42px 46px 46px !important;}}.fx{border:1px solid #0D1B2E;background:#FBFAF7;display:grid;grid-template-columns:1fr;box-shadow:10px 10px 0 #0D1B2E;margin-top:8px;}.fx-l{border-bottom:1px solid #0D1B2E;}.fx-head{padding:16px 20px;border-bottom:1px solid rgba(13,27,46,.22);font-family:Inter,system-ui,sans-serif;font-size:10px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:#0D1B2E;}.fxq{display:flex;gap:14px;align-items:flex-start;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid rgba(13,27,46,.14);padding:16px 20px;cursor:pointer;transition:background .2s ease,color .2s ease;}.fxq:last-child{border-bottom:0;}.fxq .n{font-family:Inter,system-ui,sans-serif;font-size:10px;font-weight:600;line-height:1.5;letter-spacing:.18em;color:#C4952A;min-width:22px;}.fxq .t{flex:1;font-family:Inter,system-ui,sans-serif;font-size:13.5px;font-weight:500;line-height:1.5;color:#4a4335;}.fxq:hover{background:rgba(196,149,42,.08);}.fxq.on{background:#0D1B2E;}.fxq.on .t{color:#F5EEDF;}.fxq.on .n{color:#E8B84B;}.fx-r{padding:30px 24px 32px;position:relative;}.fx-r h3{font-family:Playfair Display,Georgia,serif;font-weight:400;font-size:clamp(1.25rem,2.1vw,1.75rem);line-height:1.25;margin:0 0 8px;color:#0D1B2E;}.fx-grule{display:block;width:44px;height:1px;background:#C4952A;margin:0 0 16px;}.fx-r #fx-a{font-family:Inter,system-ui,sans-serif;font-size:14.5px;line-height:1.78;color:#4a4335;}.fx-tag{position:absolute;top:0;right:0;background:#0D1B2E;color:#E8B84B;font-family:Inter,system-ui,sans-serif;font-size:9.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;padding:9px 14px;}@media (min-width:1000px){.fx{grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);}.fx-l{border-bottom:0;border-right:1px solid #0D1B2E;}.fx-r{padding:34px 36px 38px;}}#sb-buy-css-2026{display:none}.reloc-shot{display:none;}.steps-grid .step-item{display:flex;gap:14px;align-items:flex-start;margin-bottom:18px;}@media (min-width:1024px){.reloc-wrap{display:grid !important;grid-template-columns:minmax(0,1fr) minmax(0,0.92fr);gap:56px;align-items:center;max-width:1180px !important;}.reloc-wrap > *{min-width:0;}.reloc-shot{display:block !important;position:relative;align-self:stretch;}.reloc-shot img{width:100%;height:100%;min-height:340px;object-fit:cover;display:block;border-radius:2px;box-shadow:0 30px 60px rgba(0,0,0,.22);}.reloc-shot::after{content:\"\";position:absolute;left:-14px;top:-14px;width:96px;height:96px;border-left:1px solid rgba(196,149,42,.75);border-top:1px solid rgba(196,149,42,.75);pointer-events:none;}.reloc-cap{position:absolute;left:0;bottom:-26px;font-family:Inter,system-ui,sans-serif;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:rgba(58,51,39,.6);}.sb-dark .reloc-cap{color:rgba(255,255,255,.55);}.steps-wrap{max-width:1180px !important;}.steps-wrap .cbuy-toggle{display:none !important;}.steps-wrap .cbuy-panel{max-height:none !important;overflow:visible !important;margin-top:26px !important;}.steps-grid{display:grid !important;grid-template-columns:1fr 1fr;gap:34px 56px;}.steps-grid .step-item{margin:0 !important;gap:18px !important;padding-bottom:22px;border-bottom:1px solid rgba(196,149,42,.22);}.steps-grid .step-item:last-child{grid-column:1 / -1;border-bottom:0;padding-bottom:0;}.steps-grid .step-item > span{font-size:2rem !important;min-width:44px !important;line-height:1;opacity:.85;}.steps-grid .step-item h3{font-size:1.3rem !important;margin:0 0 7px !important;}.steps-grid .step-item p{font-size:14.5px !important;line-height:1.65 !important;}}#sb-nbhd-hero .sb-hero-panel{max-width:680px;width:fit-content;margin:0 0 12px 12px;padding:10px 26px 10px 14px;border-radius:0 18px 18px 0;transform:scale(.66);transform-origin:left bottom;-webkit-backdrop-filter:blur(7px);backdrop-filter:blur(7px);background:linear-gradient(105deg,rgba(4,12,24,.46) 0%,rgba(4,12,24,.30) 55%,rgba(4,12,24,0) 100%);}#sb-nbhd-hero .sb-hero-panel::before{content:\"\";position:absolute;left:0;top:10px;bottom:10px;width:2px;border-radius:2px;background:linear-gradient(#D4AF37,rgba(212,175,55,0));}#sb-nbhd-hero h1{font-size:1.6rem;margin:0 0 5px;line-height:1.1;white-space:nowrap;}#sb-nbhd-hero p{margin:0 0 9px;max-width:620px;font-size:13px;line-height:1.45;}@media (min-width:1024px){#sb-nbhd-hero{min-height:min(68vh,640px);}#sb-nbhd-hero .sb-hero-panel{margin:0 0 14px 22px;padding:12px 34px 12px 18px;}#sb-nbhd-hero h1{font-size:1.95rem;}}#sb-nbhd-hero h1,#sb-nbhd-hero p,#sb-nbhd-hero nav,#sb-nbhd-hero a{text-shadow:0 2px 6px rgba(0,0,0,.6),0 10px 34px rgba(0,0,0,.5);}.sb-dark .section-heading{color:#F5EEDF !important;}.sb-dark p,.sb-dark li,.sb-dark span,.sb-dark .text-taupe{color:rgba(255,255,255,.78) !important;}.sb-dark h3,.sb-dark h4{color:#F5EEDF !important;}.sb-dark .gold-rule{background:#D4AF37 !important;}#sb-nbhd-hero h1{white-space:normal;}#sb-nbhd-more .step-item a{color:#F5EEDF;text-decoration:none;}#sb-nbhd-more .step-item a:hover{color:#E8B84B;}#sb-nbhd-more .nb-links{margin-top:30px;display:flex;flex-wrap:wrap;gap:12px;}#sb-nbhd-listings .nb-wrap{max-width:1180px;margin:0 auto;}#sb-nbhd-about .nb-wrap{max-width:760px;margin:0 auto;}</style>";
+    const SB_NBHD_CTA_JS = "<script id=\"sbcta-js\">(function(){var f=document.getElementById(\"sbcta-form\");if(!f||f.getAttribute(\"data-b\"))return;f.setAttribute(\"data-b\",\"1\");var pg=document.getElementById(\"sbcta-page\");if(pg)pg.value=location.href;var err=document.getElementById(\"sbcta-err\"),ok=document.getElementById(\"sbcta-ok\");var btn=f.querySelector(\"button\"),sent=false;function val(id){var e=document.getElementById(id);return e?e.value.trim():\"\";}f.addEventListener(\"submit\",function(e){err.style.display=\"none\";var nm=val(\"sbcta-name\"),em=val(\"sbcta-email\");if(!nm||!em){e.preventDefault();err.textContent=\"Please add your name and email.\";err.style.display=\"block\";return;}if(!/^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$/.test(em)){e.preventDefault();err.textContent=\"Please enter a valid email address.\";err.style.display=\"block\";return;}sent=true;btn.disabled=true;btn.textContent=\"Sending...\";});var fr=f.parentNode.querySelector(\"iframe[name=sbcta-sink]\");if(fr)fr.addEventListener(\"load\",function(){if(!sent)return;f.style.display=\"none\";ok.style.display=\"block\";});})();</script>";
     // r382 - server-rendered neighborhood copy, city hub for breadcrumb and Place schema
     const SB_NBHD_COPY = {
        "/orlando-homes-for-sale/bay-hill/": {
@@ -1727,7 +1729,8 @@ export default {
          "If you're thinking about Bay Hill, the first question is which part fits you best, golf, open water or a gated street. We're happy to walk you through the differences."
         ],
         "cu": "/cities/dr-phillips-homes-for-sale/",
-        "cn": "Dr. Phillips"
+        "cn": "Dr. Phillips",
+        "l": "Golf and Butler Chain of Lakes living around the Bay Hill Club."
        },
        "/orlando-homes-for-sale/cypress-point/": {
         "p": [
@@ -1738,7 +1741,8 @@ export default {
          "One thing that trips people up is the name. The Reserve at Cypress Point is a separate neighborhood next door with its own HOA and its own feel. If you're looking in this part of Dr. Phillips, we can help you sort out which one fits what you're after."
         ],
         "cu": "/cities/dr-phillips-homes-for-sale/",
-        "cn": "Dr. Phillips"
+        "cn": "Dr. Phillips",
+        "l": "Guard-gated Dr. Phillips community between Lake Tibet and Lake Sheen on the Butler Chain."
        },
        "/orlando-homes-for-sale/emerson-pointe/": {
         "p": [
@@ -1750,7 +1754,8 @@ export default {
          "If Emerson Pointe is on your list, we're glad to keep an eye out for you."
         ],
         "cu": "/cities/dr-phillips-homes-for-sale/",
-        "cn": "Dr. Phillips"
+        "cn": "Dr. Phillips",
+        "l": "Guard-gated Bay Hill enclave on a peninsula between Lake Chase and Lake Tibet."
        },
        "/orlando-homes-for-sale/estates-at-phillips-landing/": {
         "p": [
@@ -1762,7 +1767,8 @@ export default {
          "If you want Big Sand Lake frontage behind a staffed gate, the Estates at Phillips Landing is one of the first places we'd show you."
         ],
         "cu": "/cities/dr-phillips-homes-for-sale/",
-        "cn": "Dr. Phillips"
+        "cn": "Dr. Phillips",
+        "l": "Guard-gated Dr. Phillips lakefront homes on Big Sand Lake."
        },
        "/orlando-homes-for-sale/vizcaya/": {
         "p": [
@@ -1774,7 +1780,8 @@ export default {
          "If you're considering Vizcaya, the first thing to figure out is which section fits how you live. We can walk you through the differences."
         ],
         "cu": "/cities/dr-phillips-homes-for-sale/",
-        "cn": "Dr. Phillips"
+        "cn": "Dr. Phillips",
+        "l": "Guard-gated Mediterranean community surrounded by Big Sand Lake, Little Sand Lake and Lake Serene."
        },
        "/orlando-homes-for-sale/turtle-creek/": {
         "p": [
@@ -1786,7 +1793,8 @@ export default {
          "If you want the Dr. Phillips location with a real range of home sizes, Turtle Creek deserves a look. We're happy to show you around."
         ],
         "cu": "/cities/dr-phillips-homes-for-sale/",
-        "cn": "Dr. Phillips"
+        "cn": "Dr. Phillips",
+        "l": "Guard-gated Dr. Phillips community on Little Fish Lake with canal access to the Butler Chain."
        },
        "/orlando-homes-for-sale/reserve-at-cypress-point/": {
         "p": [
@@ -1797,7 +1805,8 @@ export default {
          "If you're comparing the Reserve with Cypress Point, the biggest differences come down to lake access, lot size and the feel of the streets. We can help you figure out which one fits."
         ],
         "cu": "/cities/dr-phillips-homes-for-sale/",
-        "cn": "Dr. Phillips"
+        "cn": "Dr. Phillips",
+        "l": "Gated Dr. Phillips neighborhood of estate homes near Restaurant Row."
        },
        "/orlando-homes-for-sale/royal-cypress-preserve/": {
         "p": [
@@ -1808,7 +1817,8 @@ export default {
          "If a newer, lower maintenance home behind a guarded gate near Disney sounds right, Royal Cypress Preserve should be on your list. We'd be glad to show it to you."
         ],
         "cu": "/cities/dr-phillips-homes-for-sale/",
-        "cn": "Dr. Phillips"
+        "cn": "Dr. Phillips",
+        "l": "Guard-gated Toll Brothers community near Grand Cypress and Disney Springs."
        },
        "/orlando-homes-for-sale/lake-nona-estates/": {
         "p": [
@@ -1819,7 +1829,8 @@ export default {
          "If you want a private club community with serious golf and a short commute to Medical City, we'd love to show you Lake Nona Estates."
         ],
         "cu": "/cities/lake-nona-homes-for-sale/",
-        "cn": "Lake Nona"
+        "cn": "Lake Nona",
+        "l": "Guard-gated homes inside Lake Nona Golf and Country Club near Medical City."
        },
        "/winter-garden-homes-for-sale/canopy-oaks/": {
         "p": [
@@ -1831,7 +1842,8 @@ export default {
          "If you're thinking about Canopy Oaks, whether you're buying or selling, give us a call. We've spent a lot of time in this neighborhood."
         ],
         "cu": "/cities/winter-garden-homes-for-sale/",
-        "cn": "Winter Garden"
+        "cn": "Winter Garden",
+        "l": "Gated A.R. Bailey Homes neighborhood under preserved oaks off Roper Road."
        },
        "/winter-garden-homes-for-sale/bronsons-landing/": {
         "p": [
@@ -1841,7 +1853,8 @@ export default {
          "People who like Bronson's Landing usually want a gate, a real yard and a home with some size, without the scale of a master-planned community. If that sounds like you, we'd be glad to show you around."
         ],
         "cu": "/cities/winter-garden-homes-for-sale/",
-        "cn": "Winter Garden"
+        "cn": "Winter Garden",
+        "l": "Gated neighborhood of about 126 homes near Winter Garden Village and SR 429."
        },
        "/winter-garden-homes-for-sale/hickory-hammock/": {
         "p": [
@@ -1852,7 +1865,8 @@ export default {
          "If you want a newer home, a gate, a big lake and a full set of amenities, Hickory Hammock checks a lot of boxes. We'd be glad to walk you through it."
         ],
         "cu": "/cities/winter-garden-homes-for-sale/",
-        "cn": "Winter Garden"
+        "cn": "Winter Garden",
+        "l": "Gated community on Johns Lake with a community dock, pool and fitness center."
        },
        "/winter-garden-homes-for-sale/lakeshore-preserve/": {
         "p": [
@@ -1863,7 +1877,8 @@ export default {
          "If you want a newer luxury home on a lake in Horizon West without building from scratch, Lakeshore Preserve is a great place to start. We're happy to show you how the different collections compare."
         ],
         "cu": "/cities/winter-garden-homes-for-sale/",
-        "cn": "Winter Garden"
+        "cn": "Winter Garden",
+        "l": "Toll Brothers community on Panther Lake in Horizon West."
        },
        "/winter-garden-homes-for-sale/waterleigh/": {
         "p": [
@@ -1874,7 +1889,8 @@ export default {
          "If you want a newer home, great amenities and a real neighborhood feel in Horizon West, Waterleigh is worth a close look. We can help you sort through the different sections and builders."
         ],
         "cu": "/cities/winter-garden-homes-for-sale/",
-        "cn": "Winter Garden"
+        "cn": "Winter Garden",
+        "l": "Master-planned Horizon West community on Hickorynut Lake."
        },
        "/winter-garden-homes-for-sale/stoneybrook-west/": {
         "p": [
@@ -1886,7 +1902,8 @@ export default {
          "If you want a gated golf community with lots of amenities and plenty of homes to choose from, Stoneybrook West is a great fit in Winter Garden. We can help you narrow down the sections."
         ],
         "cu": "/cities/winter-garden-homes-for-sale/",
-        "cn": "Winter Garden"
+        "cn": "Winter Garden",
+        "l": "Guard-gated golf community with an Arthur Hills course on Black Lake."
        },
        "/winter-garden-homes-for-sale/hamlin-reserve/": {
         "p": [
@@ -1897,7 +1914,8 @@ export default {
          "If you like the idea of a newer home close to Hamlin Town Center, Hamlin Reserve is a smart place to look. We'd be glad to show you how it compares with the other Hamlin neighborhoods."
         ],
         "cu": "/cities/winter-garden-homes-for-sale/",
-        "cn": "Winter Garden"
+        "cn": "Winter Garden",
+        "l": "Ashton Woods neighborhood in Hamlin near Lake Hancock and Hamlin Town Center."
        },
        "/winter-garden-homes-for-sale/watermark/": {
         "p": [
@@ -1908,7 +1926,8 @@ export default {
          "If you want a newer home with a lot of amenities in Horizon West, Watermark is worth a look. We can help you compare it with the other neighborhoods along Seidel Road, including Lakeshore Preserve."
         ],
         "cu": "/cities/winter-garden-homes-for-sale/",
-        "cn": "Winter Garden"
+        "cn": "Winter Garden",
+        "l": "Meritage Homes community in Horizon West with a resort style pool and tennis."
        },
        "/winter-garden-homes-for-sale/deer-island/": {
         "p": [
@@ -1920,7 +1939,8 @@ export default {
          "If you want real acreage on a big lake without leaving Winter Garden, Deer Island is a great fit. We'd be glad to show you around."
         ],
         "cu": "/cities/winter-garden-homes-for-sale/",
-        "cn": "Winter Garden"
+        "cn": "Winter Garden",
+        "l": "Gated community on Johns Lake with one to two acre lots and a community boat ramp."
        },
        "/winter-garden-homes-for-sale/stanton-estates/": {
         "p": [
@@ -1931,7 +1951,8 @@ export default {
          "If you want a newer home with some land close to downtown Winter Garden, Stanton Estates is hard to beat. We'd be glad to show it to you."
         ],
         "cu": "/cities/winter-garden-homes-for-sale/",
-        "cn": "Winter Garden"
+        "cn": "Winter Garden",
+        "l": "45 homes near downtown Winter Garden and the West Orange Trail."
        }
       };
 
@@ -2006,15 +2027,54 @@ export default {
           .replace('<span class="text-white/75" id="lr-breadcrumb-label"></span>', function () { return '<span class="text-white/75" id="lr-breadcrumb-label">' + escA(community.label) + '</span>'; })
           .replace('<source id="lr-hero-src-webp" srcset="/images/hero.webp" type="image/webp"/>', function () { return '<source id="lr-hero-src-webp" srcset="' + community.image + '" type="image/webp"/>'; })
           .replace('<img alt="Community Homes for Sale" class="w-full h-full object-cover" height="192" id="lr-hero-img" src="/images/hero.webp" width="800"/>', function () { return '<img alt="' + escA(community.label) + ' community, ' + escA(community.city) + ' FL" class="w-full h-full object-cover" fetchpriority="high" height="192" id="lr-hero-img" src="' + community.image + '" width="800"/>'; });
+        // r385 - neighborhood page rebuilt on the buy page design system
+        const lab = escA(community.label);
+        let m = SB_NBHD_CSS + '<main id="sb-nbhd-main" style="background:#F2EFE9;">';
+        m += '<section id="sb-nbhd-hero" style="position:relative;min-height:440px;display:flex;flex-direction:column;justify-content:flex-end;padding:0;overflow:hidden;margin-top:88px;">'
+          + '<div style="position:absolute;inset:0;background:url(\'' + community.image + '\') center/cover no-repeat;" role="img" aria-label="' + lab + ' community, ' + escA(community.city) + ' FL"></div>'
+          + '<div class="sb-hero-panel" style="position:relative;z-index:2;align-self:flex-start;">'
+          + '<nav style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,0.55);margin-bottom:10px;"><a href="/" style="color:rgba(255,255,255,0.55);text-decoration:none;">Home</a> &rsaquo; <a href="' + nbCopy.cu + '" style="color:rgba(255,255,255,0.55);text-decoration:none;">' + escA(nbCopy.cn) + '</a> &rsaquo; <span style="color:rgba(255,255,255,0.8);">' + lab + '</span></nav>'
+          + '<h1 class="hero-headline" id="lr-h1" style="color:#fff;font-size:2rem;line-height:1.12;margin:0 0 12px;">' + lab + ' Homes for Sale</h1>'
+          + '<p class="text-sm font-sans leading-relaxed" style="color:rgba(255,255,255,0.85);margin:0 0 20px;max-width:520px;">' + nbCopy.l + '</p>'
+          + '<div style="display:flex;gap:10px;flex-wrap:wrap;"><a href="#sb-nbhd-listings" class="btn-gold">See Listings</a><a href="tel:4073830707" class="btn-navy inline-block">Call Us</a></div>'
+          + '</div></section>';
+        m += '<section id="sb-nbhd-about" style="background:#0A1118;" class="sb-dark py-14 px-5 sb-band"><div class="nb-wrap"><h2 class="section-heading mb-2">About ' + lab + '</h2><span class="gold-rule"></span>';
+        for (let pi = 0; pi < nbCopy.p.length; pi++) {
+          m += '<p class="text-sm text-taupe font-sans leading-relaxed" style="margin:0 0 18px;">' + nbCopy.p[pi] + '</p>';
+        }
+        m += '</div></section>';
+        m += '<section id="sb-nbhd-listings" style="background:#F4F2EF;scroll-margin-top:96px;" class="py-14 px-5 sb-band"><div class="nb-wrap"><h2 class="section-heading mb-2">' + lab + ' Homes for Sale</h2><span class="gold-rule"></span>'
+          + '<p class="text-sm text-taupe font-sans leading-relaxed" style="margin:0 0 24px;">Active listings in ' + lab + ', pulled live from the MLS and updated every 15 minutes.</p>'
+          + '<div id="ihf-lifestyle-widget" style="display:none;min-height:400px;isolation:isolate;"></div></div></section>';
+        const sibKeys = Object.keys(SB_NBHD_COPY).filter(function (k) { return k !== pathname && SB_NBHD_COPY[k].cu === nbCopy.cu && COMMUNITIES[k]; });
+        const rpt = { '/cities/dr-phillips-homes-for-sale/': 'dr-phillips', '/cities/lake-nona-homes-for-sale/': 'lake-nona', '/cities/winter-garden-homes-for-sale/': 'winter-garden' }[nbCopy.cu];
+        m += '<section id="sb-nbhd-more" style="background:#06101E;" class="sb-dark py-14 px-5 sb-band"><div class="steps-wrap" style="max-width:680px;margin:0 auto;">'
+          + '<h2 class="section-heading mb-2">' + (sibKeys.length ? 'More ' + escA(nbCopy.cn) + ' Neighborhoods' : 'Explore ' + escA(nbCopy.cn)) + '</h2><span class="gold-rule"></span>';
+        if (sibKeys.length) {
+          m += '<div class="steps-grid" style="margin-top:8px;">';
+          sibKeys.forEach(function (k, n) {
+            m += '<div class="step-item"><span class="font-display italic" style="color:#C4952A;font-size:1.4rem;min-width:28px;">' + (n + 1) + '</span><div><h3 class="font-display" style="font-size:1.1rem;margin:0 0 4px;"><a href="' + k + '">' + escA(COMMUNITIES[k].label) + '</a></h3><p class="text-sm text-taupe font-sans leading-relaxed" style="margin:0;">' + SB_NBHD_COPY[k].l + '</p></div></div>';
+          });
+          m += '</div>';
+        }
+        m += '<div class="nb-links"><a href="' + nbCopy.cu + '" class="btn-gold">' + escA(nbCopy.cn) + ' Homes</a>' + (rpt ? '<a href="/market-report/' + rpt + '-fl/" class="btn-gold-outline">' + escA(nbCopy.cn) + ' Market Report</a>' : '') + '</div></div></section>';
+        m += '<section class="sbcta"><div class="sbcta-card"><div class="sbcta-in"><h2 class="section-heading sbcta-h">Thinking About ' + lab + '?</h2><span class="sbcta-rule"></span>'
+          + '<p class="sbcta-sub">Tell us what you are looking for and we will send you ' + lab + ' homes that fit, including ones the portals do not show. No pressure and no obligation.</p>'
+          + '<form id="sbcta-form" class="sbcta-form" action="https://script.google.com/macros/s/AKfycbzs-zsOdhVg8eqEYyrhujN_Wuh2va_zQieJWk7MXKWDbcPH9Gllt5jkr2nROf7k93OURw/exec" method="POST" target="sbcta-sink" novalidate><input type="hidden" name="source" value="Neighborhood Page - ' + lab + '"><input type="hidden" name="page" id="sbcta-page" value=""><input type="hidden" name="message" id="sbcta-message" value="Buyer inquiry from the ' + lab + ' neighborhood page."><div class="sbcta-hp" aria-hidden="true"><label>Company<input type="text" name="company" tabindex="-1" autocomplete="off"></label></div>'
+          + '<div class="sbcta-grid"><div class="sbcta-f"><label for="sbcta-name">Name</label><input type="text" id="sbcta-name" name="name" autocomplete="name" required></div><div class="sbcta-f"><label for="sbcta-phone">Phone</label><input type="tel" id="sbcta-phone" name="phone" autocomplete="tel"></div><div class="sbcta-f"><label for="sbcta-email">Email</label><input type="email" id="sbcta-email" name="email" autocomplete="email" required></div></div>'
+          + '<div class="sbcta-act"><button type="submit" class="sbcta-btn">Submit Request</button></div><p class="sbcta-err" id="sbcta-err"></p></form><iframe name="sbcta-sink" title="hidden" style="display:none;width:0;height:0;border:0;"></iframe><p class="sbcta-ok" id="sbcta-ok">Thank you. Sean or Barb will be in touch shortly.</p></div></div></section>'
+          + SB_NBHD_CTA_JS + '</main>';
+        html = html.replace(/<main\b[^>]*>[\s\S]*?<\/main>/, function () { return m; });
       }
 
-      return new Response(applyHeader(applyFooter(html), pathname), {
+      // r385 - community pages now get the same global chrome as every other page
+      return serveHTML(new Response(html, {
         status: 200,
         headers: {
           'content-type': 'text/html;charset=UTF-8',
           'cache-control': 'public, max-age=0, must-revalidate',
         },
-      });
+      }), pathname, request);
     }
 
 
