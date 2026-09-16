@@ -1531,7 +1531,7 @@ export default {
         priceRange: '$1.2M-$4M',
         image: '/images/nbhd-bay-hill.webp',
         title: 'Bay Hill Homes for Sale | Orlando FL 32819 | Sean & Barb',
-        description: 'Bay Hill luxury homes for sale in Orlando FL 32819 - Arnold Palmer\'s guard-gated enclave on the Butler Chain of Lakes. Browse active listings with Sean & Barb, Premier Sotheby\'s International Realty.',
+        description: "Bay Hill homes for sale in Orlando FL 32819. Golf and Butler Chain of Lakes living around the Bay Hill Club, with Sean & Barb.",
       },
       '/orlando-homes-for-sale/cypress-point/': {
         id: 3002959,
@@ -1541,7 +1541,7 @@ export default {
         priceRange: '$900K-$2.5M',
         image: '/images/nbhd-cypress-point.webp',
         title: 'Cypress Point Homes for Sale | Orlando FL 32836 | Sean & Barb',
-        description: 'Cypress Point luxury homes for sale in Orlando FL 32836 - guard-gated community in the Dr. Phillips corridor near Restaurant Row and Big Sand Lake. Browse active listings with Sean & Barb.',
+        description: "Cypress Point homes for sale in Orlando FL 32836. Guard-gated Dr. Phillips community between Lake Tibet and Lake Sheen on the Butler Chain, with Sean & Barb.",
       },
       '/orlando-homes-for-sale/emerson-pointe/': {
         id: 3002960,
@@ -1551,7 +1551,7 @@ export default {
         priceRange: '$1.5M-$4M',
         image: '/images/nbhd-emerson-pointe.webp',
         title: 'Emerson Pointe Homes for Sale | Orlando FL 32819 | Sean & Barb',
-        description: 'Emerson Pointe lakefront homes for sale in Orlando FL 32819 - exclusive guard-gated enclave on Lake Tibet in Bay Hill. Browse active listings with Sean & Barb, Premier Sotheby\'s International Realty.',
+        description: "Emerson Pointe homes for sale in Orlando FL 32819. Guard-gated Bay Hill enclave on a peninsula between Lake Chase and Lake Tibet, with Sean & Barb.",
       },
       '/orlando-homes-for-sale/estates-at-phillips-landing/': {
         id: 3002962,
@@ -1561,7 +1561,7 @@ export default {
         priceRange: '$1M-$3.5M',
         image: '/images/nbhd-phillips-landing.webp',
         title: 'Estates at Phillips Landing Homes for Sale | Orlando FL 32836 | Sean & Barb',
-        description: 'Estates at Phillips Landing luxury homes for sale in Orlando FL 32836 - premier guard-gated community in Dr. Phillips with lakefront lots and A-rated schools. Browse active listings with Sean & Barb.',
+        description: "Estates at Phillips Landing homes for sale in Orlando FL 32836. Guard-gated Dr. Phillips lakefront homes on Big Sand Lake, with Sean & Barb.",
       },
       '/orlando-homes-for-sale/vizcaya/': {
         id: 3002989,
@@ -1571,7 +1571,7 @@ export default {
         priceRange: '$900K-$2.5M',
         image: '/images/nbhd-vizcaya.webp',
         title: 'Vizcaya Homes for Sale | Orlando FL 32836 | Sean & Barb',
-        description: 'Vizcaya luxury homes for sale in Orlando FL 32836 - Mediterranean-inspired guard-gated community on Big Sand Lake in Dr. Phillips. Browse active listings with Sean & Barb, Premier Sotheby\'s.',
+        description: "Vizcaya homes for sale in Orlando FL 32836. Guard-gated Mediterranean community surrounded by Big Sand Lake, Little Sand Lake and Lake Serene.",
       },
       '/orlando-homes-for-sale/turtle-creek/': {
         id: 3003020,
@@ -1581,7 +1581,7 @@ export default {
         priceRange: '$800K-$2M',
         image: '/images/nbhd-turtle-creek.webp',
         title: 'Turtle Creek Homes for Sale | Orlando FL 32836 | Sean & Barb',
-        description: 'Turtle Creek luxury homes for sale in Orlando FL 32836 - guard-gated community on Little Fish Lake in the Dr. Phillips corridor. Browse active listings with Sean & Barb, Premier Sotheby\'s.',
+        description: "Turtle Creek homes for sale in Orlando FL 32836. Guard-gated Dr. Phillips community on Little Fish Lake with canal access to the Butler Chain, with Sean & Barb.",
       },
       '/orlando-homes-for-sale/reserve-at-cypress-point/': {
         id: 3003023,
@@ -1591,7 +1591,7 @@ export default {
         priceRange: '$900K-$2.5M',
         image: '/images/nbhd-reserve-cypress-point.webp',
         title: 'Reserve at Cypress Point Homes for Sale | Orlando FL 32836 | Sean & Barb',
-        description: 'Reserve at Cypress Point luxury homes for sale in Orlando FL 32836 - intimate guard-gated enclave in Dr. Phillips near Restaurant Row and top-rated schools. Browse active listings with Sean & Barb.',
+        description: "Reserve at Cypress Point homes for sale in Orlando FL 32836. Gated Dr. Phillips neighborhood of estate homes near Restaurant Row, with Sean & Barb.",
       },
       '/orlando-homes-for-sale/royal-cypress-preserve/': {
         id: 3003025,
@@ -1601,7 +1601,7 @@ export default {
         priceRange: '$700K-$1.8M',
         image: '/images/nbhd-royal-cypress-preserve.webp',
         title: 'Royal Cypress Preserve Homes for Sale | Orlando FL 32836 | Sean & Barb',
-        description: 'Royal Cypress Preserve luxury homes for sale in Orlando FL 32836 - Toll Brothers guard-gated community in Dr. Phillips with resort amenities and A-rated schools. Browse active listings with Sean & Barb.',
+        description: "Royal Cypress Preserve homes for sale in Orlando FL 32836. Guard-gated Toll Brothers community near Grand Cypress and Disney Springs, with Sean & Barb.",
       },
       '/orlando-homes-for-sale/lake-nona-estates/': {
         id: 3003029,
@@ -1611,7 +1611,7 @@ export default {
         priceRange: '$2M-$15M+',
         image: '/images/nbhd-lake-nona-gcc.webp',
         title: 'Lake Nona Estates Homes for Sale | Orlando FL 32827 | Sean & Barb',
-        description: 'Lake Nona Estates luxury homes for sale in Orlando FL 32827 - ultra-exclusive guard-gated golf community with custom estates from $2M. Adjacent to Medical City and UCF Health. Browse listings with Sean & Barb.',
+        description: "Lake Nona Estates homes for sale in Orlando FL 32827. Guard-gated homes inside Lake Nona Golf and Country Club near Medical City, with Sean & Barb.",
       },
       '/winter-garden-homes-for-sale/canopy-oaks/': {
         id: 3009250,
@@ -1621,7 +1621,7 @@ export default {
         priceRange: '$550K-$1.1M',
         image: '/images/nbhd-wg-canopy-oaks.webp',
         title: 'Canopy Oaks Homes for Sale | Winter Garden FL 34787 | Sean & Barb',
-        description: 'Canopy Oaks gated community homes for sale in Winter Garden FL 34787 - boutique enclave of 98 single-family homes near Fowler Groves. Browse listings with Sean & Barb, Premier Sotheby\'s International Realty.',
+        description: "Canopy Oaks homes for sale in Winter Garden FL 34787. Gated A.R. Bailey Homes neighborhood under preserved oaks off Roper Road, with Sean & Barb.",
       },
       '/winter-garden-homes-for-sale/bronsons-landing/': {
         id: 3009251,
@@ -1631,7 +1631,7 @@ export default {
         priceRange: '$900K-$3M',
         image: '/images/nbhd-wg-bronsons-landing.webp',
         title: "Bronson's Landing Homes for Sale | Winter Garden FL 34787 | Sean & Barb",
-        description: "Bronson's Landing gated lakefront community homes for sale in Winter Garden FL 34787 - exclusive estates on Lake Apopka with private docks. Browse listings with Sean & Barb.",
+        description: "Bronson's Landing homes for sale in Winter Garden FL 34787. Gated neighborhood of about 126 homes near Winter Garden Village and SR 429, with Sean & Barb.",
       },
       '/winter-garden-homes-for-sale/hickory-hammock/': {
         id: 3009252,
@@ -1641,7 +1641,7 @@ export default {
         priceRange: '$500K-$1.4M',
         image: '/images/nbhd-wg-hickory-hammock.webp',
         title: 'Hickory Hammock Homes for Sale | Winter Garden FL 34787 | Sean & Barb',
-        description: 'Hickory Hammock at Johns Lake homes for sale in Winter Garden FL 34787 - 800+ home master-planned community with resort amenities. Browse listings with Sean & Barb.',
+        description: "Hickory Hammock homes for sale in Winter Garden FL 34787. Gated community on Johns Lake with a community dock, pool and fitness center, with Sean & Barb.",
       },
       '/winter-garden-homes-for-sale/lakeshore-preserve/': {
         id: 3009253,
@@ -1651,7 +1651,7 @@ export default {
         priceRange: '$800K-$2.2M',
         image: '/images/nbhd-wg-lakeshore-preserve.webp',
         title: 'Lakeshore Preserve Homes for Sale | Winter Garden FL 34787 | Sean & Barb',
-        description: 'Lakeshore Preserve by Toll Brothers homes for sale in Winter Garden FL 34787 - luxury community on Lake Hancock with resort pool and fitness center. Browse listings with Sean & Barb.',
+        description: "Lakeshore Preserve homes for sale in Winter Garden FL 34787. Toll Brothers community on Panther Lake in Horizon West, with Sean & Barb.",
       },
       '/winter-garden-homes-for-sale/waterleigh/': {
         id: 3009254,
@@ -1661,7 +1661,7 @@ export default {
         priceRange: '$400K-$950K',
         image: '/images/nbhd-wg-waterleigh.webp',
         title: 'Waterleigh Homes for Sale | Winter Garden FL 34787 | Sean & Barb',
-        description: 'Waterleigh homes for sale in Winter Garden FL 34787 - master-planned community spanning 1,400+ acres across multiple lakes with two clubhouses. Browse listings with Sean & Barb.',
+        description: "Waterleigh homes for sale in Winter Garden FL 34787. Master-planned Horizon West community on Hickorynut Lake, with Sean & Barb.",
       },
       '/winter-garden-homes-for-sale/stoneybrook-west/': {
         id: 3009255,
@@ -1671,7 +1671,7 @@ export default {
         priceRange: '$450K-$1.2M',
         image: '/images/nbhd-wg-stoneybrook-west.webp',
         title: 'Stoneybrook West Homes for Sale | Winter Garden FL 34787 | Sean & Barb',
-        description: 'Stoneybrook West guard-gated golf community homes for sale in Winter Garden FL 34787 - 1,400 homes on Johns Lake with 18-hole course. Browse listings with Sean & Barb.',
+        description: "Stoneybrook West homes for sale in Winter Garden FL 34787. Guard-gated golf community with an Arthur Hills course on Black Lake, with Sean & Barb.",
       },
       '/winter-garden-homes-for-sale/hamlin-reserve/': {
         id: 3009256,
@@ -1681,7 +1681,7 @@ export default {
         priceRange: '$600K-$1.3M',
         image: '/images/nbhd-wg-hamlin-reserve.webp',
         title: 'Hamlin Reserve Homes for Sale | Winter Garden FL 34787 | Sean & Barb',
-        description: 'Hamlin Reserve gated community homes for sale in Horizon West, Winter Garden FL 34787 - walking distance to Hamlin town center and Lake Hancock. Browse listings with Sean & Barb.',
+        description: "Hamlin Reserve homes for sale in Winter Garden FL 34787. Ashton Woods neighborhood in Hamlin near Lake Hancock and Hamlin Town Center, with Sean & Barb.",
       },
       '/winter-garden-homes-for-sale/watermark/': {
         id: 3009257,
@@ -1691,7 +1691,7 @@ export default {
         priceRange: '$550K-$1.1M',
         image: '/images/nbhd-wg-watermark.webp',
         title: 'Watermark Homes for Sale | Winter Garden FL 34787 | Sean & Barb',
-        description: 'Watermark gated community homes for sale in Horizon West, Winter Garden FL 34787 - Meritage Homes community with resort amenities. Browse listings with Sean & Barb.',
+        description: "Watermark homes for sale in Winter Garden FL 34787. Meritage Homes community in Horizon West with a resort style pool and tennis, with Sean & Barb.",
       },
       '/winter-garden-homes-for-sale/deer-island/': {
         id: 3009258,
@@ -1699,9 +1699,9 @@ export default {
         city: 'Winter Garden',
         zip: '34787',
         priceRange: '$500K-$1.5M',
-        image: '/images/city-winter-garden.webp',
+        image: '/images/nbhd-wg-deer-island.webp',
         title: 'Deer Island Homes for Sale | Winter Garden FL 34787 | Sean & Barb',
-        description: 'Deer Island guard-gated community homes for sale on Lake Apopka, Winter Garden FL 34787 - private island enclave with golf course and club amenities. Browse listings with Sean & Barb.',
+        description: "Deer Island homes for sale in Winter Garden FL 34787. Gated community on Johns Lake with one to two acre lots and a community boat ramp, with Sean & Barb.",
       },
       '/winter-garden-homes-for-sale/stanton-estates/': {
         id: 3009259,
@@ -1709,11 +1709,231 @@ export default {
         city: 'Winter Garden',
         zip: '34787',
         priceRange: '$700K-$2M',
-        image: '/images/city-winter-garden.webp',
+        image: '/images/nbhd-wg-stanton-estates.webp',
         title: 'Stanton Estates Homes for Sale | Winter Garden FL 34787 | Sean & Barb',
-        description: 'Stanton Estates gated luxury community homes for sale in Winter Garden FL 34787 - boutique enclave with custom estate homes and top-rated schools nearby. Browse listings with Sean & Barb.',
+        description: "Stanton Estates homes for sale in Winter Garden FL 34787. 45 homes near downtown Winter Garden and the West Orange Trail, with Sean & Barb.",
       },
     };
+
+    // r382 - server-rendered neighborhood copy, city hub for breadcrumb and Place schema
+    const SB_NBHD_COPY = {
+       "/orlando-homes-for-sale/bay-hill/": {
+        "p": [
+         "Bay Hill is one of the best known names in Orlando, and a lot of that comes from the golf. The Bay Hill Club opened in 1961, Arnold Palmer bought it in the 1970s, and it has hosted the Arnold Palmer Invitational every March since 1979. The club is private, with 27 holes, a lodge, tennis, a spa and a marina.",
+         "What surprises a lot of people is that Bay Hill is really a group of neighborhoods around the club, each with its own feel. A few sections are gated, like Emerson Pointe, Isle of Osprey and Bay Hill Village. Much of the rest is open, with patrol paid for by the Bay Hill Property Owners Association.",
+         "The water is a big part of the story. Bay Hill touches Lake Tibet-Butler, Lake Chase and Lake Blanche, all part of the Butler Chain of Lakes. That's 13 connected lakes and more than 5,000 acres, and the chain is a designated Outstanding Florida Water. If you want to boat from your backyard in Orlando, this is one of the best places to do it.",
+         "Homes were built from the late 1960s right up to today. You'll see original homes on the fairways, villas and condos, and newer lakefront estates. That range is part of why people keep coming back to Bay Hill. There's more than one way in.",
+         "Restaurant Row on Sand Lake Road is a few minutes away, and I-4 and the theme parks are an easy drive.",
+         "If you're thinking about Bay Hill, the first question is which part fits you best, golf, open water or a gated street. We're happy to walk you through the differences."
+        ],
+        "cu": "/cities/dr-phillips-homes-for-sale/",
+        "cn": "Dr. Phillips"
+       },
+       "/orlando-homes-for-sale/cypress-point/": {
+        "p": [
+         "Cypress Point sits on a peninsula in Dr. Phillips, just off Apopka Vineland Road south of Sand Lake Road. Lake Tibet-Butler is on one side and Lake Sheen is on the other, both part of the Butler Chain of Lakes. The neighborhood has its own community dock and boat ramp, so even if your home isn't right on the water, the chain is still yours to enjoy.",
+         "It's a guard-gated community, and it feels settled in the best way. Most homes were built in the 1990s and early 2000s. You'll see a lot of Mediterranean and Spanish styles, block and stucco with tile roofs, on lots from about a half acre up to an acre. Some are comfortable family homes and some are true estates.",
+         "Residents share a clubhouse, a community beach, tennis, basketball, a fishing pier and a playground. Those shared spaces are a big part of why families stay here a long time.",
+         "Day to day, it's a very convenient spot. Restaurant Row is about a mile and a half away, Dr. Phillips shopping is right there, and downtown Orlando is around 12 miles.",
+         "One thing that trips people up is the name. The Reserve at Cypress Point is a separate neighborhood next door with its own HOA and its own feel. If you're looking in this part of Dr. Phillips, we can help you sort out which one fits what you're after."
+        ],
+        "cu": "/cities/dr-phillips-homes-for-sale/",
+        "cn": "Dr. Phillips"
+       },
+       "/orlando-homes-for-sale/emerson-pointe/": {
+        "p": [
+         "Emerson Pointe is a small guard-gated neighborhood tucked into the back of Bay Hill. It sits on a peninsula between Lake Chase and Lake Tibet-Butler, both on the Butler Chain of Lakes, so the water is part of everyday life here.",
+         "There are about 72 homesites, and most of the homes went up between 2006 and 2013. They're custom homes, mostly Mediterranean and Spanish in style, running from about 3,200 to 8,500 square feet. Because the neighborhood was built out over a short stretch of years, the streets have a consistent, finished look.",
+         "Being inside Bay Hill means the Bay Hill Club is right around the corner. Residents can also use the Bay Hill Marina boat ramp with an annual sticker, which is handy if your lot isn't directly on the water.",
+         "Emerson Pointe has its own homeowners association, separate from the larger Bay Hill POA. For buyers who love the Bay Hill address but want something newer and more private, this is usually where the conversation ends up.",
+         "Restaurant Row, Dr. Phillips shopping and I-4 are all just minutes away.",
+         "If Emerson Pointe is on your list, we're glad to keep an eye out for you."
+        ],
+        "cu": "/cities/dr-phillips-homes-for-sale/",
+        "cn": "Dr. Phillips"
+       },
+       "/orlando-homes-for-sale/estates-at-phillips-landing/": {
+        "p": [
+         "Phillips Landing is a guard-gated community in Dr. Phillips, off Apopka Vineland Road south of Sand Lake Road. Inside are three neighborhoods, Heritage Bay, Bay Harbour and the Estates. The Estates is the lakefront section, with homes along Southern Breeze Drive facing Big Sand Lake.",
+         "Big Sand Lake is more than 1,000 acres, and it isn't part of the Butler Chain. That matters to some buyers and not at all to others. It's a big open lake on its own, with plenty of room for skiing, wakeboarding and long sunset views, and many Estates homes have private docks.",
+         "Homes in the Estates are custom, usually on half acre and larger lots, and most run from about 4,200 square feet to more than 8,000. Phillips Landing was built out from the mid 1990s through about 2011.",
+         "The gate is staffed around the clock, and residents share a boating dock, tennis, a playground and a gazebo. Each neighborhood has its own HOA under a master association.",
+         "Restaurant Row, Dr. Phillips shopping, the theme parks and I-4 are all close.",
+         "If you want Big Sand Lake frontage behind a staffed gate, the Estates at Phillips Landing is one of the first places we'd show you."
+        ],
+        "cu": "/cities/dr-phillips-homes-for-sale/",
+        "cn": "Dr. Phillips"
+       },
+       "/orlando-homes-for-sale/vizcaya/": {
+        "p": [
+         "Vizcaya covers about 85 acres on a peninsula in Dr. Phillips, with Big Sand Lake, Little Sand Lake and Lake Serene all around it. About 70 percent of the homes in the master community are lakefront or have a lake view, and you're still just minutes from Restaurant Row.",
+         "It's a guard-gated community with a Mediterranean look throughout, built mostly in the 2000s. What makes Vizcaya different is the mix. There are about 680 residences in three sections. Vizcaya itself has single-family homes, townhomes and high-rise condos. Mirabella at Vizcaya has about 60 single-family homes. Bella Notte at Vizcaya has villas and townhomes.",
+         "That range means Vizcaya works for a lot of people. A family can buy a lakefront home, and someone who wants to lock the door and travel can buy a condo behind the same gate with the same lake views.",
+         "Amenities include clubhouses, resort style pools, fitness centers, tennis, a lakeside gazebo, a children's park and dog parks. Each section has its own association.",
+         "Dr. Phillips shopping is close by, and the theme parks and I-4 are a short drive.",
+         "If you're considering Vizcaya, the first thing to figure out is which section fits how you live. We can walk you through the differences."
+        ],
+        "cu": "/cities/dr-phillips-homes-for-sale/",
+        "cn": "Dr. Phillips"
+       },
+       "/orlando-homes-for-sale/turtle-creek/": {
+        "p": [
+         "Turtle Creek is a guard-gated neighborhood on the west side of Apopka Vineland Road in Dr. Phillips, just north of the shops and restaurants. You'll know it by the red brick entry and the guardhouse.",
+         "It's the only neighborhood on Little Fish Lake, a small lake at the southern tip of the Butler Chain. A canal runs from Little Fish Lake out to Pocket Lake and the rest of the chain. It's a narrow run with a couple of tight turns, so it suits smaller boats and people who know the route, but it does connect. A small group of homes sits on the lake or the canal, and a larger group backs up to a big pond on the west side.",
+         "Homes were built from the mid 1990s into the early 2000s, from about 1,800 square feet to more than 8,000, on lots up to about an acre. The neighborhood has three sections, Avalon, Boca Pointe and Waters Edge, and Avalon has its own pool.",
+         "Residents share tennis, basketball, sand volleyball and a playground, and the Turtle Creek Homeowners Association runs the community.",
+         "Turtle Creek is one of the easiest places in Dr. Phillips to live day to day. Groceries, restaurants and I-4 are all close, and you still come home through a staffed gate.",
+         "If you want the Dr. Phillips location with a real range of home sizes, Turtle Creek deserves a look. We're happy to show you around."
+        ],
+        "cu": "/cities/dr-phillips-homes-for-sale/",
+        "cn": "Dr. Phillips"
+       },
+       "/orlando-homes-for-sale/reserve-at-cypress-point/": {
+        "p": [
+         "The Reserve at Cypress Point is a gated neighborhood off Point Cypress Drive in Dr. Phillips, west of Apopka Vineland Road. It shares a name with Cypress Point next door, but it's its own community with its own homeowners association.",
+         "There are about 130 homes here, most built in the 1990s and early 2000s. These are estate homes on generous lots, from about 2,900 square feet to more than 12,000. You'll see a lot of variety from one street to the next, which is part of the charm. It doesn't feel like a tract neighborhood.",
+         "Residents have a recreation building, a tennis court, Bentley Park and a playground. It's a quiet, established setting.",
+         "The location is one of the best parts. Restaurant Row and Dr. Phillips shopping are minutes away, and Universal is less than four miles. For families who want space and privacy without driving far for everything, that's a strong combination.",
+         "If you're comparing the Reserve with Cypress Point, the biggest differences come down to lake access, lot size and the feel of the streets. We can help you figure out which one fits."
+        ],
+        "cu": "/cities/dr-phillips-homes-for-sale/",
+        "cn": "Dr. Phillips"
+       },
+       "/orlando-homes-for-sale/royal-cypress-preserve/": {
+        "p": [
+         "Royal Cypress Preserve is a guard-gated Toll Brothers community off Winter Garden Vineland Road, across from Grand Cypress. It has an Orlando 32836 address and sits between Windermere and the Lake Buena Vista and Disney Springs area.",
+         "It's a newer neighborhood, with about 200 homes built from roughly 2015 to 2022. Toll Brothers built from a set of its luxury plans, one and two story, generally about 2,200 to 4,100 square feet. If you like the idea of a newer home with a modern floor plan but don't want to build, this is a good place to look. The community is sold out, so homes come up only as resales.",
+         "The amenities feel like a resort. There's a residents' clubhouse, a resort style pool and a fitness center, with lake, pond and conservation views throughout the neighborhood. HOA dues also cover yard care.",
+         "Location is a big draw. Grand Cypress, Disney Springs and the theme parks are right there, and Windermere and Dr. Phillips are an easy drive.",
+         "If a newer, lower maintenance home behind a guarded gate near Disney sounds right, Royal Cypress Preserve should be on your list. We'd be glad to show it to you."
+        ],
+        "cu": "/cities/dr-phillips-homes-for-sale/",
+        "cn": "Dr. Phillips"
+       },
+       "/orlando-homes-for-sale/lake-nona-estates/": {
+        "p": [
+         "Lake Nona Estates is a neighborhood inside Lake Nona Golf and Country Club, the private club that opened in 1986 on about 600 acres in southeast Orlando. It was a luxury address in Lake Nona long before Medical City and Lake Nona Town Center came along.",
+         "Golf is the heart of it. The club's private 18 hole course was designed by Tom Fazio. Beyond golf, there's a 40,000 square foot clubhouse with an 18 room lodge, a Bath and Racquet Club with fitness and tennis, a lakeside pool and time on the water on Lake Nona.",
+         "The gate is guarded 24 hours a day. Homes were built from the late 1980s right up to today, so you'll find established custom estates alongside brand new custom homes. Lake Nona Estates has about 200 homes, so it stays quiet and private even as the area around it has grown.",
+         "That growth is a big reason buyers look here now. Lake Nona Medical City, with Nemours Children's Hospital, the Orlando VA Medical Center and HCA Florida Lake Nona Hospital, is a short drive, and Orlando International Airport is close. For physicians and anyone who travels a lot, the location just makes sense.",
+         "If you want a private club community with serious golf and a short commute to Medical City, we'd love to show you Lake Nona Estates."
+        ],
+        "cu": "/cities/lake-nona-homes-for-sale/",
+        "cn": "Lake Nona"
+       },
+       "/winter-garden-homes-for-sale/canopy-oaks/": {
+        "p": [
+         "Canopy Oaks is a gated neighborhood of 49 homes off Roper Road in Winter Garden, between historic downtown Winter Garden and Winter Garden Village at Fowler Groves. It's a community we know about as well as anyone, because we sold it out when it was new and have helped many of those owners sell since.",
+         "The name says a lot. When Canopy Oaks was developed in 2016, the grandfather oaks were saved, along with the tree canopy over Roper Road. Driving in feels different from the newer neighborhoods around it.",
+         "The homes were built by A.R. Bailey Homes, mostly between 2016 and 2019. The plans run about 3,600 to 4,600 square feet in Mediterranean, Italian and French Country styles, with tile roofs and many private pools. Because one builder did the whole neighborhood, the streets have a consistent look.",
+         "Residents have a children's park and nature trails, and with just 49 homes the neighborhood stays small and quiet.",
+         "A lot of the original buyers here were physicians relocating to Central Florida, and it's easy to see why. Downtown Winter Garden and the West Orange Trail are a short drive, Winter Garden Village is minutes away, and SR 429 is close for the commute.",
+         "If you're thinking about Canopy Oaks, whether you're buying or selling, give us a call. We've spent a lot of time in this neighborhood."
+        ],
+        "cu": "/cities/winter-garden-homes-for-sale/",
+        "cn": "Winter Garden"
+       },
+       "/winter-garden-homes-for-sale/bronsons-landing/": {
+        "p": [
+         "Bronson's Landing is a gated neighborhood in Winter Garden with two entrances, one on Tillman Avenue off Winter Garden Vineland Road and one on Stoneybrook West Parkway. It isn't part of Horizon West, and for a lot of buyers that's part of the appeal. It's a smaller, settled community close to everything.",
+         "There are about 126 single-family homes, built mostly between 2006 and 2010. Homes generally run from about 2,500 to 4,900 square feet, and many lots look out over the interior ponds. Instead of a big amenity center, residents have a community park and playground.",
+         "Getting around is easy. Winter Garden Village at Fowler Groves is close for shopping and dining, SR 429 is right there, and downtown Orlando is about 20 minutes away. Disney and the theme parks are an easy drive too.",
+         "People who like Bronson's Landing usually want a gate, a real yard and a home with some size, without the scale of a master-planned community. If that sounds like you, we'd be glad to show you around."
+        ],
+        "cu": "/cities/winter-garden-homes-for-sale/",
+        "cn": "Winter Garden"
+       },
+       "/winter-garden-homes-for-sale/hickory-hammock/": {
+        "p": [
+         "Hickory Hammock at Johns Lake is a gated community in Winter Garden, off Avalon Road and Marsh Road just west of Stoneybrook West. The big draw is the water. The community touches Johns Lake, Lake Burnett and Lake Claire, and residents have a community dock on Johns Lake, which the HOA puts at about 2,500 acres.",
+         "There are about 500 homesites, a mix of single-family homes and townhomes built mostly between 2013 and 2020 by builders including M/I Homes and Ryland. That gives you a range of sizes in one gated neighborhood.",
+         "The amenities are a real highlight. The Club has a catering kitchen, a zero-entry pool with lap lanes and a fitness center. There are also two tennis courts, a sand volleyball court, a dog park, playgrounds and five parks spread through the community.",
+         "Winter Garden Village, downtown Winter Garden and the West Orange Trail are all a short drive, and SR 429 makes the commute simple. Disney is close too.",
+         "If you want a newer home, a gate, a big lake and a full set of amenities, Hickory Hammock checks a lot of boxes. We'd be glad to walk you through it."
+        ],
+        "cu": "/cities/winter-garden-homes-for-sale/",
+        "cn": "Winter Garden"
+       },
+       "/winter-garden-homes-for-sale/lakeshore-preserve/": {
+        "p": [
+         "Lakeshore Preserve is a Toll Brothers community on Seidel Road in Horizon West, near SR 429 and Avalon Road. It sits on Panther Lake, which separates it from Orange County National Golf Center, so a lot of homes here have open views you don't find in most of Horizon West.",
+         "Toll Brothers built the whole community between about 2016 and 2022. There are roughly 370 single-family homes and 84 townhomes from Toll's Estates and Executive collections, in Spanish Colonial and Tuscan styles.",
+         "Life here centers on the lakehouse clubhouse, with a resort style pool, a fitness center and a social room, plus parks, a playground and a dog park. The HOA also covers yard maintenance.",
+         "Horizon West keeps adding shopping and restaurants, and Lakeshore Preserve is well placed for all of it. SR 429 is close, the theme parks are an easy drive, and downtown Winter Garden is a short trip.",
+         "If you want a newer luxury home on a lake in Horizon West without building from scratch, Lakeshore Preserve is a great place to start. We're happy to show you how the different collections compare."
+        ],
+        "cu": "/cities/winter-garden-homes-for-sale/",
+        "cn": "Winter Garden"
+       },
+       "/winter-garden-homes-for-sale/waterleigh/": {
+        "p": [
+         "Waterleigh is a large master-planned community in southern Horizon West, spread across about 1,400 acres around Hickorynut Lake. It's one of the bigger neighborhoods in Winter Garden, and it's built for people who want a lot going on close to home.",
+         "D.R. Horton and Emerald Homes have been building here since about 2014, with single-family homes and townhomes in a wide range of sizes. It isn't gated, and it isn't trying to be. It's an open, active community with room for a lot of families.",
+         "Amenities are the reason many buyers choose Waterleigh. There are several resort style amenity centers with pools and indoor fitness, plus playgrounds, sports fields, volleyball, mini golf, walking trails and a community garden. Hickorynut Lake has a fishing pier.",
+         "The theme parks are only a few miles away, downtown Orlando is about 30 minutes, and SR 429 is close for getting around the west side.",
+         "If you want a newer home, great amenities and a real neighborhood feel in Horizon West, Waterleigh is worth a close look. We can help you sort through the different sections and builders."
+        ],
+        "cu": "/cities/winter-garden-homes-for-sale/",
+        "cn": "Winter Garden"
+       },
+       "/winter-garden-homes-for-sale/stoneybrook-west/": {
+        "p": [
+         "Stoneybrook West is a golf community in Winter Garden with a gate that's staffed around the clock, which is rare on this side of town. It's a big community, with somewhere between 1,200 and 1,450 homes in 11 neighborhoods, including the Reserve at Black Lake, Spinnaker Cove, St. Andrews and Masthead Landing.",
+         "The golf course is the centerpiece. It's an 18 hole, par 72 Arthur Hills design that opened in 2000 and overlooks Black Lake. The course closed in 2018. The City of Winter Garden bought it and handed it to the HOA, and it reopened in 2023. That comeback was a big deal for the neighborhood.",
+         "Most homes were built between 2000 and 2008, and you'll find a wide range of home sizes across the different sections.",
+         "Beyond golf, residents have a clubhouse, a pool with a splash pad, a fitness center, tennis and basketball courts, a sports field, trails and playgrounds, all run by the Stoneybrook West Master Association.",
+         "Winter Garden Village is close, Disney's main gate is about 15 minutes away and downtown Orlando is about 20.",
+         "If you want a gated golf community with lots of amenities and plenty of homes to choose from, Stoneybrook West is a great fit in Winter Garden. We can help you narrow down the sections."
+        ],
+        "cu": "/cities/winter-garden-homes-for-sale/",
+        "cn": "Winter Garden"
+       },
+       "/winter-garden-homes-for-sale/hamlin-reserve/": {
+        "p": [
+         "Hamlin Reserve is one of the neighborhoods inside Hamlin, the master-planned community in Horizon West built around Lake Hancock, with trails and parks tying it all together. The homes were built by Ashton Woods, mostly between 2016 and 2020.",
+         "There are about 350 homesites, with single-family homes from about 1,700 to more than 3,500 square feet and townhomes of about 1,500 to 2,000 square feet. That mix makes Hamlin Reserve a good fit for growing families and for people who want less to take care of.",
+         "Residents have a clubhouse, a fitness center, a pool, a playground and a dog park, plus trails and boardwalks with lake views.",
+         "The bigger story is Hamlin itself. Hamlin Town Center is about a mile away with restaurants and shopping, and SR 429 is about two miles away, so Winter Garden, Windermere, Disney and the rest of Orlando are easy to reach.",
+         "If you like the idea of a newer home close to Hamlin Town Center, Hamlin Reserve is a smart place to look. We'd be glad to show you how it compares with the other Hamlin neighborhoods."
+        ],
+        "cu": "/cities/winter-garden-homes-for-sale/",
+        "cn": "Winter Garden"
+       },
+       "/winter-garden-homes-for-sale/watermark/": {
+        "p": [
+         "Watermark is a Meritage Homes community on Seidel Road in Horizon West, just east of SR 429. It's a newer neighborhood, built out mostly between 2014 and 2020, with about 237 homesites of single-family homes and townhomes.",
+         "Homes range from about 1,750 square feet to more than 5,500, so there's room for a lot of different buyers in one place. The neighborhood borders Huckleberry Lake.",
+         "Amenities are a big reason people pick Watermark. There's a resort style pool with a splash pad and cabanas, a fitness center, two tennis courts, a playground, an amphitheater, a fire pit and pavilion, and an observation deck where residents watch the fireworks.",
+         "Orange County National Golf Center is close by, Hamlin Town Center is an easy drive, and so are the theme parks.",
+         "If you want a newer home with a lot of amenities in Horizon West, Watermark is worth a look. We can help you compare it with the other neighborhoods along Seidel Road, including Lakeshore Preserve."
+        ],
+        "cu": "/cities/winter-garden-homes-for-sale/",
+        "cn": "Winter Garden"
+       },
+       "/winter-garden-homes-for-sale/deer-island/": {
+        "p": [
+         "Deer Island is a gated neighborhood on Johns Lake in west Winter Garden, off West Colonial Drive about a mile from the Florida Turnpike. The name fits. The community sits on an island in the lake, and the water is the whole point of living here.",
+         "Johns Lake covers roughly 2,400 acres, which is plenty of room for boating, skiing and fishing. Most of the homes in Deer Island are lakefront, and residents who aren't on the water still have a community boat ramp.",
+         "There are about 120 homes, built mostly between the late 1980s and 2010. Lots are big, usually one to two acres, and the homes are custom, so no two look alike. You'll see everything from Mediterranean and Key West styles to contemporary designs, from about 2,000 square feet to nearly 12,000.",
+         "Residents share a neighborhood park and tennis and basketball courts, and golf carts are welcome. It's a quiet, private setting with a lot of space between neighbors.",
+         "Getting out is easy. The Turnpike and SR 429 are close, the West Orange Trail is nearby, and downtown Winter Garden and Clermont are both a short drive.",
+         "If you want real acreage on a big lake without leaving Winter Garden, Deer Island is a great fit. We'd be glad to show you around."
+        ],
+        "cu": "/cities/winter-garden-homes-for-sale/",
+        "cn": "Winter Garden"
+       },
+       "/winter-garden-homes-for-sale/stanton-estates/": {
+        "p": [
+         "Stanton Estates is a boutique neighborhood of 45 homes on about 20 acres off West Bay Street, close to downtown Winter Garden and one block from the West Orange Trail.",
+         "Jones Homes USA built the neighborhood between about 2018 and 2019. The homes are semi-custom, generally about 2,900 to 5,100 square feet, on quarter acre to half acre lots. Styles range from contemporary to Florida and traditional, so the street has variety without feeling mismatched.",
+         "There's no clubhouse or pool, and that's part of the point. The HOA stays simple, there's no CDD, golf carts are welcome, and the real amenity is where you are. Downtown Winter Garden's restaurants, shops and farmers market are a short ride away, and the West Orange Trail is practically at your door.",
+         "Stanton Estates borders Valencia Shores, Lake Cove Pointe and Traditions, with a single entry on Stanton Estates Circle.",
+         "If you want a newer home with some land close to downtown Winter Garden, Stanton Estates is hard to beat. We'd be glad to show it to you."
+        ],
+        "cu": "/cities/winter-garden-homes-for-sale/",
+        "cn": "Winter Garden"
+       }
+      };
 
     const community = COMMUNITIES[pathname];
     if (community) {
@@ -1747,6 +1967,35 @@ export default {
         .replace(/(<h1\b[^>]*\bid="lr-h1"[^>]*>)[^<]*(<\/h1>)/i, `$1${h1}$2`)
         .replace('</head>', `${nbhdScript}</head>`)
         .replace('<head>', sbIsLikelyBot(request) ? '<head>' : ('<head>' + GA4_TAG));
+
+      const nbCopy = SB_NBHD_COPY[pathname];
+      if (nbCopy) {
+        const escA = function (s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;'); };
+        const cityUrl = 'https://www.seanandbarb.com' + nbCopy.cu;
+        let copyHtml = '<div class="px-5 max-w-screen-xl mx-auto" id="sb-nbhd-copy" style="padding-top:40px;">'
+          + '<section><p class="section-eyebrow">' + escA(nbCopy.cn) + ' · ' + escA(community.label) + '</p>'
+          + '<h2 class="section-heading mb-2">About ' + escA(community.label) + '</h2><span class="gold-rule"></span>';
+        for (let pi = 0; pi < nbCopy.p.length; pi++) {
+          copyHtml += '<p class="text-sm text-taupe font-sans leading-relaxed" style="margin-top:16px;">' + nbCopy.p[pi] + '</p>';
+        }
+        copyHtml += '</section></div>';
+        const crumbs = JSON.stringify({ '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.seanandbarb.com/' },
+          { '@type': 'ListItem', position: 2, name: nbCopy.cn, item: cityUrl },
+          { '@type': 'ListItem', position: 3, name: community.label, item: canonicalUrl }
+        ] });
+        const place = JSON.stringify({ '@context': 'https://schema.org', '@type': 'Place', name: community.label, description: community.description, url: canonicalUrl,
+          image: ogImage,
+          address: { '@type': 'PostalAddress', addressLocality: community.city, addressRegion: 'FL', postalCode: community.zip, addressCountry: 'US' },
+          containedInPlace: { '@type': 'Place', name: nbCopy.cn + ', Florida', url: cityUrl } });
+        html = html
+          .replace(/<script type="application\/ld\+json">\{"@context":"https:\/\/schema\.org","@type":"BreadcrumbList"[^<]*<\/script>/, function () { return '<script type="application/ld+json">' + crumbs + '</script><script type="application/ld+json">' + place + '</script>'; })
+          .replace('<div id="lr-content-below" style="scroll-margin-top:96px;"></div>', function (m) { return m + copyHtml; })
+          .replace('<span class="text-white/75" id="lr-breadcrumb-city"></span>', function () { return '<a class="hover:text-white text-white/75" href="' + nbCopy.cu + '">' + escA(nbCopy.cn) + '</a>'; })
+          .replace('<span class="text-white/75" id="lr-breadcrumb-label"></span>', function () { return '<span class="text-white/75" id="lr-breadcrumb-label">' + escA(community.label) + '</span>'; })
+          .replace('<source id="lr-hero-src-webp" srcset="/images/hero.webp" type="image/webp"/>', function () { return '<source id="lr-hero-src-webp" srcset="' + community.image + '" type="image/webp"/>'; })
+          .replace('<img alt="Community Homes for Sale" class="w-full h-full object-cover" height="192" id="lr-hero-img" src="/images/hero.webp" width="800"/>', function () { return '<img alt="' + escA(community.label) + ' community, ' + escA(community.city) + ' FL" class="w-full h-full object-cover" fetchpriority="high" height="192" id="lr-hero-img" src="' + community.image + '" width="800"/>'; });
+      }
 
       return new Response(applyHeader(applyFooter(html), pathname), {
         status: 200,
