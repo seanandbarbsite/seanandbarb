@@ -770,7 +770,8 @@ main .font-sans.text-sm:not(.rounded-full),main .font-sans.text-xs:not(.rounded-
   var wrap = document.getElementById('ihf-main-wrap');
   var render = function(){
     if(!wrap || !window.ihfKestrel || typeof window.ihfKestrel.render !== 'function') return;
-    var el = window.ihfKestrel.render({
+    var sbRoute = new URLSearchParams(location.search).get('path');
+    var el = sbRoute ? window.ihfKestrel.render() : window.ihfKestrel.render({
       component: 'featuredListingSearchWidget',
       propertyType: 'SFR,CND',
       status: 'active',
@@ -784,7 +785,7 @@ main .font-sans.text-sm:not(.rounded-full),main .font-sans.text-xs:not(.rounded-
       setTimeout(function(){
         // hide filters first, then reveal
         var sels = ['[class*="SearchFilters"]','[class*="FilterBar"]','[class*="SearchForm"]','[class*="QuickSearch"]','[class*="RefineSearch"]'];
-        sels.forEach(function(s){ document.querySelectorAll('#ihf-main ' + s).forEach(function(e){ e.style.setProperty('display','none','important'); }); });
+        if(!sbRoute) sels.forEach(function(s){ document.querySelectorAll('#ihf-main ' + s).forEach(function(e){ e.style.setProperty('display','none','important'); }); });
         wrap.classList.add('sb-ready');
       }, 500);
     }
