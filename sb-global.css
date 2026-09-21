@@ -261,6 +261,52 @@ html .wgs-ledger button.on .pr .dn,html .wgs-cmp-grid a.cur .v .dn{color:#F2937E
 .sb-mr-cityref a{color:#0D1B2E;font-weight:600;text-decoration:none;border-bottom:1px solid rgba(196,149,42,.6)}
 
 
+/* ===== Widget and form theme (Sep 2026): one palette for every calculator, sheet, widget and form, matching the market stats widget. Change a color here and it changes sitewide. ===== */
+:root{--sbw-canvas:#070d1a;--sbw-panel:#0d172c;--sbw-input:#080f20;--sbw-hero:linear-gradient(135deg,#0e1933 0%,#0a1224 100%);--sbw-edge:rgba(212,175,55,.35);--sbw-line:rgba(212,175,55,.12);--sbw-gold:#d4af37;--sbw-ivory:#fae8b4;--sbw-label:#38bdf8;--sbw-text:#f1f5f9;--sbw-soft:#cbd5e1;--sbw-muted:#94a3b8;--sbw-on:rgba(212,175,55,.14);--sbw-btn:linear-gradient(180deg,#d8b344 0%,#ad8522 100%);--sbw-btn-text:#050b14;--sbw-up:#34d399;--sbw-down:#fb7185;--sbw-field:#f8fafc;--sbw-field-text:#0d1b2e;--sbw-field-line:rgba(212,175,55,.35);--sbw-field-ph:#64748b;}
+/* cards */
+html body :is(#tax-sheet,#seller-sheet,#chat-sheet,#svp,#nx,#snc-card,.prsch-finder,.share-panel,#mortgagecalc,#dv-card,#prc-card,.sb-contact-form-card),html body #mortgage-sheet .mcx-card,html body #calc-section #calc-card,html body #taxcalc #calc-card{background:var(--sbw-canvas)!important;border:1px solid var(--sbw-edge)!important;}
+html body :is(#svp .svp-tile,#calc-section #calc-card .calc-left,#taxcalc #calc-card .calc-left,#chat-sheet .bg-navy:not(button):not(.rounded-full),#chat-sheet .bg-cream:not(:has(#chat-input)),#mortgagecalc div[style*="rgba(196,149,42,0.12)"]){background:var(--sbw-panel)!important;border-color:var(--sbw-line)!important;}
+html body :is(#svp .svp-side,#nx .nx-net,#mortgage-sheet .sumcard,#sb-mrc-p,.prsch-finder .sb-map-banner,#tax-sheet div:has(>#tc-savings),#seller-sheet div:has(>#sn-net),#mortgagecalc div:has(>#mc-total),#snc-card div:has(>div>#snc-net)){background:var(--sbw-hero)!important;border:1px solid var(--sbw-edge)!important;}
+html body #sb-mrc-p{border-radius:16px!important;padding:14px!important;}
+html body :is(#nx .nx-wait,#nx .nx-row,#svp .svp-row,#snc-card div[style*="border-bottom:1px solid rgba(0,35,73"],.prsch-foot,#chat-sheet .border-t){border-color:var(--sbw-line)!important;}
+html body :is(#nx .nx-total,#snc-card div[style*="border-top:2px solid #002349"]){border-top-color:var(--sbw-edge)!important;}
+html body #snc-card div[style*="height:1px"]{background:var(--sbw-line)!important;}
+/* inputs, selects, textareas */
+html body :is(#mortgage-sheet,#tax-sheet,#seller-sheet,#calc-card,.sbcta-card,#svp,.sb-contact-form-card,#dv-card,#prc-card,#nx,#snc-card,.prsch-finder,.share-panel,.sb-mrc,#sb-home-wgs,#mortgagecalc,.pf) :is(input:where(:not([type=checkbox],[type=radio],[type=range],[type=hidden],[tabindex="-1"])),select,textarea),html body #sb-rail-select,html body #calc-section #calc-card #hp-income-display,html body :is(.sch-row,#chat-sheet .bg-cream:has(#chat-input),#mortgage-sheet .tile,#seller-sheet #sn-price-display,#calc-section #state-trigger,#taxcalc #state-trigger){background-color:var(--sbw-field)!important;border-color:var(--sbw-field-line)!important;color:var(--sbw-field-text)!important;}
+html body :is(#mortgage-sheet .tile input,.sch-row .sch-input,#chat-sheet #chat-input){background-color:transparent!important;border-color:transparent!important;color:var(--sbw-field-text)!important;}
+html body #svp #svp-price{padding:4px 14px!important;border-radius:12px!important;border:1px solid var(--sbw-field-line)!important;}
+html body #snc-card input{padding-left:10px!important;padding-right:10px!important;border:1px solid var(--sbw-field-line)!important;border-radius:8px!important;}
+html body :is(#mortgage-sheet,#tax-sheet,#seller-sheet,#calc-card,.sbcta-card,#svp,.sb-contact-form-card,#dv-card,#prc-card,#nx,#snc-card,.sch-row,.prsch-finder,.share-panel,.sb-mrc,#sb-home-wgs,#mortgagecalc,.pf,#chat-sheet) :is(input,textarea)::placeholder{color:var(--sbw-field-ph)!important;opacity:1!important;}
+html body :is(#mortgage-sheet,#tax-sheet,#seller-sheet,#calc-card,.sbcta-card,#svp,.sb-contact-form-card,#dv-card,#prc-card,#nx,.prsch-finder,.share-panel,#sb-mrc-p,#mortgagecalc,.pf) :is(input,select,textarea):focus,html body .sch-row:focus-within,html body #sb-rail-select:focus{border-color:var(--sbw-gold)!important;outline:none!important;}
+html body :is(#mortgage-sheet,#tax-sheet,#seller-sheet,#calc-card,.sbcta-card,#svp,.sb-contact-form-card,#dv-card,#prc-card,#nx,#snc-card,.prsch-finder,.share-panel,#sb-mrc-p,#mortgagecalc,.pf) select option,html body #sb-rail-select option{background:var(--sbw-field)!important;color:var(--sbw-field-text)!important;}
+html body #snc-card #snc-cps > div{background:var(--sbw-panel)!important;border-color:var(--sbw-line)!important;}
+html body #snc-card #snc-cps > div > div:first-child{color:var(--sbw-ivory)!important;}
+html body :is(#mortgage-sheet,#tax-sheet,#seller-sheet,#calc-card,.sbcta-card,#svp,.sb-contact-form-card,#dv-card,#prc-card,#nx,#snc-card,.prsch-finder,.share-panel,#sb-mrc-p,#mortgagecalc,.pf) :is(input[type=checkbox],input[type=radio]){accent-color:var(--sbw-gold);}
+html body #mortgage-sheet .tile :is(.ad,span){color:var(--sbw-field-ph)!important;}
+html body #mortgage-sheet .tile label{color:#334155!important;}
+html body #calc-section #state-trigger #state-label,html body #taxcalc #state-trigger #state-label{color:var(--sbw-field-text)!important;}
+/* labels and eyebrows */
+html body :is(#mortgage-sheet,#tax-sheet,#seller-sheet,#calc-card,.sbcta-card,#svp,.sb-contact-form-card,#dv-card,#prc-card,#nx,.prsch-finder,.share-panel,#mortgagecalc,.pf) label:where(:not(:has(input[type=checkbox],input[type=radio]))),html body :is(#calc-section,#taxcalc) #calc-card :is(.calc-label,.result-label),html body :is(#mortgage-sheet .sumcard .k,#tax-sheet p[style*="color:#d4af37"],#seller-sheet p[style*="color:#d4af37"],#svp .svp-lbl,#svp .svp-sidetop h3,#nx .nx-net h3,#nx .nx-wait h4,.sb-contact-form-card>p:first-child,#snc-card [style*="color:#C4952A"][style*="uppercase"],.prsch-finder .sb-map-banner b,#mortgagecalc p[style*="color:#C4952A"]){color:var(--sbw-label)!important;}
+html body :is(.sbcta-card,.sb-contact-form-card,#dv-card,#prc-card,.pf,.share-panel,#svcta-form) label:has(input[type=checkbox]) :is(span,*){color:var(--sbw-muted)!important;}
+html body #sb-mrc-p .mrc-l{color:var(--sbw-ivory)!important;}
+/* key figures */
+html body :is(#tc-savings,#sn-net,#mc-pay,#svp-net,#nx-net,#nx-total,#snc-net,#mc-total,#tc-10yr,#sn-net2),html body :is(#calc-section,#taxcalc) #calc-card .result-value,html body #nx .nx-total .nx-lab{color:var(--sbw-ivory)!important;}
+/* supporting text in cards that were light themed */
+html body #snc-card [style*="color:#002349"]:not(#snc-net):not(input),html body #mortgagecalc [style*="color:#002349"]:not(input,select,textarea,button),html body #mortgagecalc [style*="color:#1A1A1A"]:not(input,select,textarea){color:var(--sbw-text)!important;}
+html body :is(#snc-card [style*="color:#9B8E84"],#snc-card [style*="color:#6B5D52"],#snc-card div[style*="color:#C4952A"]:not([style*="uppercase"]),#mortgagecalc [style*="color:#5f5448"],#mortgagecalc [style*="color:#3a3a3a"],#mortgagecalc [style*="color:#7a6a58"]){color:var(--sbw-soft)!important;}
+html body #chat-sheet .bg-cream{color:var(--sbw-text)!important;}
+html body #chat-sheet .bg-navy .w-7,html body #chat-sheet .rounded-full.bg-navy:not(button){background:var(--sbw-input)!important;}
+/* toggles */
+html body :is(#mortgage-sheet .seg,#svp .svp-seg,#calc-section #filing-pill,#taxcalc #filing-pill){background:var(--sbw-input)!important;border-color:var(--sbw-line)!important;}
+html body :is(#mortgage-sheet .seg button,#svp .svp-seg button,#calc-card .filing-btn){background:transparent!important;color:var(--sbw-muted)!important;box-shadow:none!important;border-color:transparent!important;}
+html body :is(#mortgage-sheet .seg button.on,#svp .svp-seg button.on,#calc-card .filing-btn.active){background:var(--sbw-on)!important;color:var(--sbw-ivory)!important;box-shadow:inset 0 0 0 1px var(--sbw-edge)!important;}
+html body #seller-sheet .sn-key{background:transparent!important;border-color:var(--sbw-line)!important;color:var(--sbw-text)!important;}
+html body #seller-sheet .sn-key:not([data-k="C"]):not([data-k="B"]):not([data-k="back"]){background:var(--sbw-panel)!important;}
+html body #calc-card .state-item.selected,html body #calc-card .state-item:hover{background:var(--sbw-on)!important;}
+/* primary buttons */
+html body :is(.sbcta-btn,.prc-btn,#sb-send,.mcx-cta,.svp-cta,.prc-dl,.pf button,#sb-mrc-p button,.sch-btn,.prsch-btn,.prsch-link:not(.alt),.sh-btn,#chat-send,#m-calc,#mortgagecalc button[type=submit]){background:var(--sbw-btn)!important;color:var(--sbw-btn-text)!important;border-color:transparent!important;}
+html body #chat-send svg{fill:var(--sbw-btn-text)!important;}
+html body :is(.sch-row,.prsch-finder) :is(.sch-btn,.prsch-btn):hover{filter:brightness(1.08);}
 @media (min-width: 1024px) {
 
   /* ══ GLOBAL ══════════════════════════════════════════════════ */

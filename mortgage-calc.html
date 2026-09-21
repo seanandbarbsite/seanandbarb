@@ -1,36 +1,36 @@
-<div id="mortgage-sheet" class="slide-panel fixed inset-x-0 bottom-0 z-[90] flex flex-col" style="height:auto;max-height:90dvh;border-radius:20px 20px 0 0;overflow-y:auto;background:#F5F0E8;border:1.5px solid #002349;box-shadow:0 -4px 0 #002349;">
-  <div style="background:#F5F0E8;padding:14px 16px;border-radius:20px 20px 0 0;border-bottom:1.5px solid #002349;display:flex;align-items:center;gap:10px;flex-shrink:0;">
-    <div style="width:36px;height:36px;border-radius:50%;background:#002349;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+<div id="mortgage-sheet" class="slide-panel fixed inset-x-0 bottom-0 z-[90] flex flex-col" style="height:auto;max-height:90dvh;border-radius:20px 20px 0 0;overflow-y:auto;background:#070d1a;border:1px solid rgba(212,175,55,.35);box-shadow:0 -8px 32px rgba(0,0,0,0.6);">
+  <div style="background:#070d1a;padding:14px 16px;border-radius:20px 20px 0 0;border-bottom:1px solid rgba(212,175,55,.12);display:flex;align-items:center;gap:10px;flex-shrink:0;">
+    <div style="width:36px;height:36px;border-radius:50%;background:#080f20;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C4952A" stroke-width="2" stroke-linecap="round"><path d="M9 7H6a2 2 0 00-2 2v9a2 2 0 002 2h9a2 2 0 002-2v-3M13 3h8m0 0v8m0-8L11 13"/></svg>
     </div>
     <div style="flex:1;">
-      <p style="font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:18px;color:#002349;line-height:1.2;">Mortgage & Tax Savings Calculator</p>
-      <p style="font-family:Inter,system-ui,sans-serif;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:#7a6a58;margin-top:2px;">Florida vs. your current state</p>
+      <p style="font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:18px;color:#fae8b4;line-height:1.2;">Mortgage & Tax Savings Calculator</p>
+      <p style="font-family:Inter,system-ui,sans-serif;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:#38bdf8;margin-top:2px;">Florida vs. your current state</p>
     </div>
-    <button id="mortgage-close" style="color:#002349;font-size:20px;background:none;border:none;cursor:pointer;padding:4px;line-height:1;">✕</button>
+    <button id="mortgage-close" style="color:#fae8b4;font-size:20px;background:none;border:none;cursor:pointer;padding:4px;line-height:1;">✕</button>
   </div>
-  <div style="padding:16px;background:#fff;">
+  <div style="padding:16px;background:#070d1a;">
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px;">
       <div>
-        <label for="m-price" style="display:block;font-family:Inter,system-ui,sans-serif;font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:#6B5D52;margin-bottom:3px;">Home Price</label>
-        <input id="m-price" type="number" value="1200000" style="width:100%;border:1.5px solid #002349;border-radius:6px;padding:7px 9px;font-size:12px;font-family:Inter,system-ui,sans-serif;background:#fff;color:#002349;box-sizing:border-box;">
+        <label for="m-price" style="display:block;font-family:Inter,system-ui,sans-serif;font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:#cbd5e1;margin-bottom:3px;">Home Price</label>
+        <input id="m-price" type="number" value="1200000" style="width:100%;border:1px solid rgba(212,175,55,.35);border-radius:6px;padding:7px 9px;font-size:12px;font-family:Inter,system-ui,sans-serif;background:#f8fafc;color:#0d1b2e;box-sizing:border-box;">
       </div>
       <div>
-        <label for="m-down" style="display:block;font-family:Inter,system-ui,sans-serif;font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:#6B5D52;margin-bottom:3px;">Down Payment %</label>
-        <input id="m-down" type="number" value="20" style="width:100%;border:1.5px solid #002349;border-radius:6px;padding:7px 9px;font-size:12px;font-family:Inter,system-ui,sans-serif;background:#fff;color:#002349;box-sizing:border-box;">
+        <label for="m-down" style="display:block;font-family:Inter,system-ui,sans-serif;font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:#cbd5e1;margin-bottom:3px;">Down Payment %</label>
+        <input id="m-down" type="number" value="20" style="width:100%;border:1px solid rgba(212,175,55,.35);border-radius:6px;padding:7px 9px;font-size:12px;font-family:Inter,system-ui,sans-serif;background:#f8fafc;color:#0d1b2e;box-sizing:border-box;">
       </div>
       <div>
-        <label for="m-rate" style="display:block;font-family:Inter,system-ui,sans-serif;font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:#6B5D52;margin-bottom:3px;">Interest Rate %</label>
-        <input id="m-rate" type="number" value="6.75" step="0.01" style="width:100%;border:1.5px solid #002349;border-radius:6px;padding:7px 9px;font-size:12px;font-family:Inter,system-ui,sans-serif;background:#fff;color:#002349;box-sizing:border-box;">
+        <label for="m-rate" style="display:block;font-family:Inter,system-ui,sans-serif;font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:#cbd5e1;margin-bottom:3px;">Interest Rate %</label>
+        <input id="m-rate" type="number" value="6.75" step="0.01" style="width:100%;border:1px solid rgba(212,175,55,.35);border-radius:6px;padding:7px 9px;font-size:12px;font-family:Inter,system-ui,sans-serif;background:#f8fafc;color:#0d1b2e;box-sizing:border-box;">
       </div>
       <div>
-        <label for="m-income" style="display:block;font-family:Inter,system-ui,sans-serif;font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:#6B5D52;margin-bottom:3px;">Annual Income</label>
-        <input id="m-income" type="number" value="400000" style="width:100%;border:1.5px solid #002349;border-radius:6px;padding:7px 9px;font-size:12px;font-family:Inter,system-ui,sans-serif;background:#fff;color:#002349;box-sizing:border-box;">
+        <label for="m-income" style="display:block;font-family:Inter,system-ui,sans-serif;font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:#cbd5e1;margin-bottom:3px;">Annual Income</label>
+        <input id="m-income" type="number" value="400000" style="width:100%;border:1px solid rgba(212,175,55,.35);border-radius:6px;padding:7px 9px;font-size:12px;font-family:Inter,system-ui,sans-serif;background:#f8fafc;color:#0d1b2e;box-sizing:border-box;">
       </div>
     </div>
     <div style="margin-bottom:8px;">
-      <label for="m-state" style="display:block;font-family:Inter,system-ui,sans-serif;font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:#6B5D52;margin-bottom:3px;">Current State</label>
-      <select id="m-state" style="width:100%;border:1.5px solid #002349;border-radius:6px;padding:7px 9px;font-size:12px;font-family:Inter,system-ui,sans-serif;background:#fff;color:#002349;box-sizing:border-box;">
+      <label for="m-state" style="display:block;font-family:Inter,system-ui,sans-serif;font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:#cbd5e1;margin-bottom:3px;">Current State</label>
+      <select id="m-state" style="width:100%;border:1px solid rgba(212,175,55,.35);border-radius:6px;padding:7px 9px;font-size:12px;font-family:Inter,system-ui,sans-serif;background:#f8fafc;color:#0d1b2e;box-sizing:border-box;">
         <option value="0">Florida (0%)</option>
         <option value="0.0685" selected>New York (6.85%)</option>
         <option value="0.0897">New Jersey (8.97%)</option>
@@ -40,30 +40,30 @@
         <option value="0.09">Massachusetts (9%)</option>
       </select>
     </div>
-    <button id="m-calc" style="width:100%;background:#C4952A;color:#fff;border:none;border-radius:8px;padding:11px;font-family:Inter,system-ui,sans-serif;font-size:10px;letter-spacing:.2em;text-transform:uppercase;cursor:pointer;box-shadow:3px 3px 0 #002349;margin-bottom:12px;">Calculate Payment/Tax Savings</button>
+    <button id="m-calc" style="width:100%;background:linear-gradient(180deg,#d8b344 0%,#ad8522 100%);color:#050b14;border:none;border-radius:8px;padding:11px;font-family:Inter,system-ui,sans-serif;font-size:10px;letter-spacing:.2em;text-transform:uppercase;cursor:pointer;box-shadow:none;margin-bottom:12px;">Calculate Payment/Tax Savings</button>
     <div id="m-results" style="display:none;flex-direction:column;gap:8px;">
-      <div style="border:1.5px solid #002349;border-radius:10px;padding:12px 14px;box-shadow:3px 3px 0 #002349;display:flex;justify-content:space-between;align-items:center;">
+      <div style="border:1px solid rgba(212,175,55,.35);border-radius:10px;padding:12px 14px;box-shadow:none;display:flex;justify-content:space-between;align-items:center;">
         <div>
-          <p style="font-family:Inter,system-ui,sans-serif;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:#6B5D52;margin:0 0 2px;">Monthly Payment</p>
-          <p id="m-monthly" style="font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:22px;color:#002349;margin:0;"></p>
+          <p style="font-family:Inter,system-ui,sans-serif;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:#cbd5e1;margin:0 0 2px;">Monthly Payment</p>
+          <p id="m-monthly" style="font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:22px;color:#fae8b4;margin:0;"></p>
         </div>
       </div>
-      <div style="border:1.5px solid #002349;border-radius:10px;padding:12px 14px;box-shadow:3px 3px 0 #002349;display:flex;justify-content:space-between;align-items:center;background:#fef9ee;">
+      <div style="border:1px solid rgba(212,175,55,.35);border-radius:10px;padding:12px 14px;box-shadow:none;display:flex;justify-content:space-between;align-items:center;background:linear-gradient(135deg,#0e1933 0%,#0a1224 100%);">
         <div>
-          <p style="font-family:Inter,system-ui,sans-serif;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:#6B5D52;margin:0 0 2px;">Annual FL Tax Savings</p>
-          <p id="m-annual" style="font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:22px;color:#002349;margin:0;"></p>
-          <p style="font-family:Inter,system-ui,sans-serif;font-size:10px;color:#7a6a58;margin:3px 0 0;">vs. your current state</p>
+          <p style="font-family:Inter,system-ui,sans-serif;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:#cbd5e1;margin:0 0 2px;">Annual FL Tax Savings</p>
+          <p id="m-annual" style="font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:22px;color:#fae8b4;margin:0;"></p>
+          <p style="font-family:Inter,system-ui,sans-serif;font-size:10px;color:#38bdf8;margin:3px 0 0;">vs. your current state</p>
         </div>
       </div>
-      <div style="border:1.5px solid #002349;border-radius:10px;padding:12px 14px;box-shadow:3px 3px 0 #002349;display:flex;justify-content:space-between;align-items:center;background:#fef9ee;">
+      <div style="border:1px solid rgba(212,175,55,.35);border-radius:10px;padding:12px 14px;box-shadow:none;display:flex;justify-content:space-between;align-items:center;background:linear-gradient(135deg,#0e1933 0%,#0a1224 100%);">
         <div>
-          <p style="font-family:Inter,system-ui,sans-serif;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:#6B5D52;margin:0 0 2px;">10-Year Total Savings</p>
-          <p id="m-decade" style="font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:22px;color:#002349;margin:0;"></p>
+          <p style="font-family:Inter,system-ui,sans-serif;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:#cbd5e1;margin:0 0 2px;">10-Year Total Savings</p>
+          <p id="m-decade" style="font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:22px;color:#fae8b4;margin:0;"></p>
         </div>
       </div>
     </div>
-    <div style="border-top:1px solid #e8e0d4;padding-top:14px;margin-top:14px;">
-      <a href="tel:4073830707" style="display:block;width:100%;background:#002349;color:#C4952A;text-align:center;padding:12px;border-radius:8px;font-family:Inter,system-ui,sans-serif;font-size:10px;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;box-shadow:3px 3px 0 #C4952A;">Call Us</a>
+    <div style="border-top:1px solid rgba(212,175,55,.12);padding-top:14px;margin-top:14px;">
+      <a href="tel:4073830707" style="display:block;width:100%;background:#080f20;color:#C4952A;text-align:center;padding:12px;border-radius:8px;font-family:Inter,system-ui,sans-serif;font-size:10px;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;box-shadow:none;">Call Us</a>
     </div>
   </div>
 </div>
