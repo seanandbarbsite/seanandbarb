@@ -335,18 +335,10 @@ main .font-sans.text-sm:not(.rounded-full),main .font-sans.text-xs:not(.rounded-
 
 
 <span style="font-family:Inter,sans-serif;font-size:9px;letter-spacing:0.14em;text-transform:uppercase;color:#C4952A;font-weight:500;display:block;margin-bottom:5px;">Total listing commission</span>
-<div id="snc-cps" style="display:flex;gap:8px;margin-bottom:16px;">
-<div class="snc-on" onclick="sncSetM(0.925,this)" style="flex:1;border-bottom:2px solid #C4952A;padding:10px 4px;text-align:center;cursor:pointer;background:transparent;">
-<div style="font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:24px;color:#002349;">6%</div>
-<div style="font-family:Inter,sans-serif;font-size:10px;color:#C4952A;margin-top:2px;">Standard</div>
-</div>
-<div onclick="sncSetM(0.930,this)" style="flex:1;border-bottom:2px solid rgba(0,35,73,0.1);padding:10px 4px;text-align:center;cursor:pointer;background:transparent;">
-<div style="font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:24px;color:rgba(0,35,73,0.3);">5.5%</div>
-<div style="font-family:Inter,sans-serif;font-size:10px;color:#9B8E84;margin-top:2px;">Preferred</div>
-</div>
-<div onclick="sncSetM(0.935,this)" style="flex:1;border-bottom:2px solid rgba(0,35,73,0.1);padding:10px 4px;text-align:center;cursor:pointer;background:transparent;">
-<div style="font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:24px;color:rgba(0,35,73,0.3);">5%</div>
-<div style="font-family:Inter,sans-serif;font-size:10px;color:#9B8E84;margin-top:2px;">Select</div>
+<div id="snc-cps" style="display:flex;align-items:center;justify-content:center;padding:10px 4px;margin-bottom:16px;">
+<div style="text-align:center;">
+<div style="font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:24px;color:#002349;">5.75%</div>
+<div style="font-family:Inter,sans-serif;font-size:10px;color:#C4952A;margin-top:2px;">Average</div>
 </div>
 </div>
 <span style="font-family:Inter,sans-serif;font-size:9px;letter-spacing:0.14em;text-transform:uppercase;color:#C4952A;font-weight:500;display:block;margin-bottom:5px;">Loan &amp; HELOC balance</span>
@@ -355,17 +347,17 @@ main .font-sans.text-sm:not(.rounded-full),main .font-sans.text-xs:not(.rounded-
 <div style="flex:1;"><div style="font-family:Inter,sans-serif;font-size:10px;color:#9B8E84;margin-bottom:5px;">HELOC</div><input id="snc-heloc" oninput="sncFmtLive(this)" style="width:100%;background:transparent;border:none;border-bottom:1px solid rgba(0,35,73,0.12);padding:8px 0;font-size:15px;color:#002349;outline:none;font-family:Inter,sans-serif;" type="text" value="$0"/></div>
 </div>
 </div><div style="background:#F5F0E8;border-radius:10px;padding:14px 16px;">
-<div style="display:flex;justify-content:space-between;align-items:baseline;padding:5px 0;border-bottom:1px solid rgba(0,35,73,0.06);"><span style="font-family:Inter,sans-serif;font-size:11px;color:#9B8E84;">After commission &amp; closing costs</span><span id="snc-r1" style="font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:16px;color:#6B5D52;">$786,250</span></div>
+<div style="display:flex;justify-content:space-between;align-items:baseline;padding:5px 0;border-bottom:1px solid rgba(0,35,73,0.06);"><span style="font-family:Inter,sans-serif;font-size:11px;color:#9B8E84;">After commission &amp; closing costs</span><span id="snc-r1" style="font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:16px;color:#6B5D52;">$788,375</span></div>
 <div style="display:flex;justify-content:space-between;align-items:baseline;padding:5px 0;border-bottom:1px solid rgba(0,35,73,0.06);"><span style="font-family:Inter,sans-serif;font-size:11px;color:#9B8E84;">Less loan payoff</span><span id="snc-r2" style="font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:16px;color:#6B5D52;">- $0</span></div>
-<div style="padding-top:12px;display:flex;justify-content:space-between;align-items:baseline;border-top:2px solid #002349;margin-top:8px;"><span style="font-family:Inter,sans-serif;font-size:9px;letter-spacing:0.14em;text-transform:uppercase;color:#002349;font-weight:500;">Estimated net proceeds</span><span id="snc-net" style="font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:36px;color:#002349;">$786,250</span></div>
+<div style="padding-top:12px;display:flex;justify-content:space-between;align-items:baseline;border-top:2px solid #002349;margin-top:8px;"><span style="font-family:Inter,sans-serif;font-size:9px;letter-spacing:0.14em;text-transform:uppercase;color:#002349;font-weight:500;">Estimated net proceeds</span><span id="snc-net" style="font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:36px;color:#002349;">$788,375</span></div>
 </div>
-<div style="font-family:Inter,sans-serif;font-size:10px;color:#9B8E84;text-align:center;margin-top:14px;line-height:1.6;">Estimate Only. Accuracy generally within a few hundred dollars. Does not factor in prorations, or currently due HOA fees.</div>
+<div style="font-family:Inter,sans-serif;font-size:10px;color:#9B8E84;text-align:center;margin-top:14px;line-height:1.6;">Estimate Only. Commission assumed at 5.75%. Accuracy generally within a few hundred dollars. Does not factor in prorations, or currently due HOA fees.</div>
 </div>
 </div>
 </div>
 <script>
 (function(){
-  var sncP=850000,sncM=0.925;
+  var sncP=850000,sncM=0.9275;
   function sncPd(s){return parseFloat((s||'0').replace(/[^0-9.]/g,''))||0;}
   function sncFmt(n){return '$'+Math.round(n).toLocaleString();}
   window.sncCalc=function(v){sncP=v;document.getElementById('snc-pdisp').textContent=sncFmt(v);sncRun();};
